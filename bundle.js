@@ -1598,7 +1598,9 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
                 d = document.getElementById("playerNameInput");
                 J.submitToLocalStorage("playerNameInput");
                 b.playerName = z.name = d.value;
-                b.playerKey = "z" === b.server.id ? Da : Ea;
+                 //       d = document.getElementById("playerKeyInput");
+          //     H.submitToLocalStorage("playerKeyInput");
+          //   b.playerKey = z.key = d.value;
                 b.screenWidth = window.innerWidth;
                 b.screenHeight = window.innerHeight;
                 document.getElementById("startMenuWrapper").style.top = "-600px";
@@ -1744,7 +1746,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
           neon: !1,
         },
         gui: {
-          expectedMaxSkillLevel: 9,
+          expectedMaxSkillLevel: 8,
         },
         lag: {
           memory: 60,
