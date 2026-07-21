@@ -210,7 +210,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
           case 19:
             return l.guiblack;
           case 20:
-            return "b57d40";
+            return "#b57d40"; //b57d40
           case 21:
             return "#e78246";
           case 22:
@@ -888,7 +888,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
           case 345:
             return '#ff9c98';
           case 346:
-            return 'J';
+            return '#000002'; //J
           case 347:
             return '#71ff37';
           case 348:
@@ -924,7 +924,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
           case 365:
             return '#3d72d2';
           case 366:
-            return ''; //8cb5ff to 960000
+            return '#8cb5ff'; //8cb5ff to 960000
           case 367:
             return '#00be52';
           case 368:
@@ -945,9 +945,9 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
           case 600:
             return "#be46fa";
           case 621:
-            return ''; //5c009a to ff34ff
+            return '#5c009a'; //5c009a to ff34ff
           case 622:
-            return ''; //00489a to 5bffcd
+            return '#00489a'; //00489a to 5bffcd
           case 641:
             return '#ff0000';
           case 642:
@@ -1113,7 +1113,9 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
           default:
             return "#FF0000";
         }
-      }
+      } else if (typeof b == 'string') {
+                return b
+          }
         }
         function K(b) {
             let d = D.graphical.neon ? l.white : l.black;
@@ -1305,7 +1307,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
             if (!B.graphical.eyesenstivity) {
             return T( 
               [
-                "#FF1000",
+                "#ff1000",
                 "#ff9000",
                 "#ffd300",
                 "#00e00b",
