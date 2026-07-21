@@ -232,7 +232,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
           case 35:
             return "#FFD300";
           case 36:
-            if (!B.graphical.eyesenstivity) {
+            if (!D.graphical.eyesenstivity) {
               return T(
                 [
                   "#FF1000", // 32
@@ -256,7 +256,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
               return "#ff0000";
             }
           case 37:
-            if (!B.graphical.eyesenstivity) {
+            if (!D.graphical.eyesenstivity) {
               return T(
                 [
                   "#644321",
@@ -286,7 +286,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
           case 41:
             return "#444444";
           case 42:
-            if (!B.graphical.eyesenstivity) {
+            if (!D.graphical.eyesenstivity) {
               return T(
                 [
                   "#000000",
@@ -632,7 +632,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
           case 203:
             return "#9867c7";
           case 204:
-            if (!B.graphical.eyesenstivity) {
+            if (!D.graphical.eyesenstivity) {
               return T(
                 [
                   "#ff0000",
@@ -782,7 +782,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
           case 267:
             return "#8e91c2";
           case 268:
-            if (!B.graphical.eyesenstivity) {
+            if (!D.graphical.eyesenstivity) {
               return T(
                 [
                   "#ea00ff",
@@ -806,7 +806,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
               return "#000000";
             }
           case 269:
-            if (!B.graphical.eyesenstivity) {
+            if (!D.graphical.eyesenstivity) {
               return T(
                 [
                   "#ffffff",
@@ -830,7 +830,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
               return "#000000";
             }
           case 270:
-            if (!B.graphical.eyesenstivity) {
+            if (!D.graphical.eyesenstivity) {
               return T(
                 [
                   "#0000ff",
@@ -854,7 +854,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
               return "#000000";
             }
           case 271:
-            if (!B.graphical.eyesenstivity) {
+            if (!D.graphical.eyesenstivity) {
               return T(
                 [
                   "#ffff00",
@@ -965,7 +965,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
           case 800:
             return "#ffde4d";
           case 987:
-            if (!B.graphical.eyesenstivity) {
+            if (!D.graphical.eyesenstivity) {
               return T(
                 [
                   "#ffffff",
@@ -989,7 +989,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
               return "#ffffff";
             }
           case 1125:
-            if (!B.graphical.eyesenstivity) {
+            if (!D.graphical.eyesenstivity) {
               return T(
                 [
                   "#000000",
@@ -1013,7 +1013,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
               return "#ff0000";
             }
           case 1500:
-            if (!B.graphical.eyesenstivity) {
+            if (!D.graphical.eyesenstivity) {
               return T(
                 [
                   "#00ffff",
@@ -1037,7 +1037,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
               return "#00ffff";
             }
           case 2250:
-            if (!B.graphical.eyesenstivity) {
+            if (!D.graphical.eyesenstivity) {
               return T(
                 [
                   "#000000",
@@ -1061,7 +1061,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
               return "#0000ff";
             }
           case 2525:
-            if (!B.graphical.eyesenstivity) {
+            if (!D.graphical.eyesenstivity) {
               return T(
                 [
                   "#000000",
@@ -1085,7 +1085,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
               return "#00ffff";
             }
             case 3636:
-            if (!B.graphical.eyesenstivity) {
+            if (!D.graphical.eyesenstivity) {
               return T(
                 [
                   "#333333",
@@ -1304,7 +1304,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
           case "wall":
             return l.dgrey;
           case "rnbw":
-            if (!B.graphical.eyesenstivity) {
+            if (!D.graphical.eyesenstivity) {
             return T( 
               [
                 "#ff1000",
@@ -5930,7 +5930,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
                                         if (this.videoRecorder) switch (this.videoRecorder.state) {
                                             case "inactive":
                                                 a.messages.push({
-                                                    text: "Recorder started!",
+                                                    text: "Í̴͈ ̵̗̊S̸̠͋Ĕ̴͖È̷͕ ̷̣̿T̷͇͆Ḧ̴̖́Ă̴͕T̵̩̑ ̴͔͗Y̷̦͊O̷͈͘Ü̶͕ ̷̹̓D̷̥͘E̵̲͑R̷̰̂I̶̡͑V̵̝͂E̶͖̔ ̷̫̒Ě̷͕Ń̵͚T̶̯͂E̸̓ͅR̸̭̔T̴̠̾Ä̴͕́Í̸͎N̵̠͝M̸͍̌E̸̬̐Ṇ̸͘T̶̪͝ ̸͇̌F̷͚̐R̴͇̚O̴̰̍M̷̬̂ ̸͕̅Y̸͔͝Ō̸͔Ǘ̶̩R̷̯͐ ̶͚̚Ǒ̴̧W̷̩͋N̸̫̉ ̵̙͌Ṣ̴̈́U̵̲̕F̸̙͗F̷̟̔E̷͍̐Ř̸͍I̵̦͝N̷͇͐G̶̲͝",
                                                     status: 2,
                                                     alpha: 0,
                                                     time: Date.now(),
@@ -5958,7 +5958,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
                                                 let k = URL.createObjectURL(a),
                                                     n = document.createElement("a");
                                                 n.style.display = "none";
-                                                n.setAttribute("download", "oapp.mp4");
+                                                n.setAttribute("download", "a409.mp4");
                                                 n.setAttribute("href", k);
                                                 document.body.appendChild(n);
                                                 setTimeout(() => {
@@ -5968,7 +5968,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
                                                 n.click()
                                             };
                                             a.messages.push({
-                                                text: "Recorder initiated and started!",
+                                                text: "Í̴͈ ̵̗̊S̸̠͋Ĕ̴͖È̷͕ ̷̣̿T̷͇͆Ḧ̴̖́Ă̴͕T̵̩̑ ̴͔͗Y̷̦͊O̷͈͘Ü̶͕ ̷̹̓D̷̥͘E̵̲͑R̷̰̂I̶̡͑V̵̝͂E̶͖̔ ̷̫̒Ě̷͕Ń̵͚T̶̯͂E̸̓ͅR̸̭̔T̴̠̾Ä̴͕́Í̸͎N̵̠͝M̸͍̌E̸̬̐Ṇ̸͘T̶̪͝ ̸͇̌F̷͚̐R̴͇̚O̴̰̍M̷̬̂ ̸͕̅Y̸͔͝Ō̸͔Ǘ̶̩R̷̯͐ ̶͚̚Ǒ̴̧W̷̩͋N̸̫̉ ̵̙͌Ṣ̴̈́U̵̲̕F̸̙͗F̷̟̔E̷͍̐Ř̸͍I̵̦͝N̷͇͐G̶̲͝",
                                                 status: 2,
                                                 alpha: 0,
                                                 time: Date.now(),
