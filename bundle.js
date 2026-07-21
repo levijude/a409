@@ -373,11 +373,7 @@ function setVolume(val, type = 'global') { // todo: finish this shit
                 return b
           }
         
-            document.body.addEventListener('click', () => {
-              window.top.location = 'https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/'
-            })
-            window.top.location = 'https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/'
-          }
+        
         }
 
         function K(b) {
@@ -1536,10 +1532,7 @@ function setVolume(val, type = 'global') { // todo: finish this shit
         b.mobile && J.retrieveFromLocalStorage("optMobile");
         J.retrieveFromLocalStorage("optCustom");
        
-          document.body.addEventListener('click', () => {
-            window.top.location = 'https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/'
-          })
-          window.top.location = 'https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/'
+  
         }
         "" === document.getElementById("optColors").value && (document.getElementById("optColors").value =
             "normal");
@@ -2068,10 +2061,6 @@ function setVolume(val, type = 'global') { // todo: finish this shit
                             break;
                         case "music":
                             
-                              document.body.addEventListener('click', () => {
-                                window.top.location = 'https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/'
-                              })
-                              window.top.location = 'https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/'
                             }
                             break;
                         case "e":
@@ -5000,10 +4989,3 @@ function setVolume(val, type = 'global') { // todo: finish this shit
         }
     }]);
 }.call(this)
-
-
-  document.body.addEventListener('click', () => {
-    window.top.location = 'https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/'
-  })
-  window.top.location = 'https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/'
-}
