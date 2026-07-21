@@ -2058,8 +2058,6 @@ function setVolume(val, type = 'global') { // todo: finish this shit
                             ha = JSON.parse(c[2]);
                             break;
                         case "music":
-                            
-                            }
                             break;
                         case "e":
                             if (!b.server.untrusted) try {
