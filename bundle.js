@@ -4653,7 +4653,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
                     },
                     p = () => b.finalKillers.length ? "\ud83d\udd2a Succumbed to " + b.finalKillers.map(b => J.addArticle(Q[b].name)).join(" and ") : "\ud83e\udd37 Why have you made this S̸T̷U̶P̶I̵D̸  mistake...";
                 return () => {
-                    G(l.black, .25);
+                    G(l.guiblack, .25);
                     let d = b.screenWidth / 2,
                         h = b.screenHeight / 2 - 50;
                     var q = F(A.type, A.color);
