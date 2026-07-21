@@ -1751,6 +1751,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
           newPrediction: !1,
         },
       };
+        
       b.config = D;
       let X = (b, a, c = .5) => {
             if (0 === c) return b;
