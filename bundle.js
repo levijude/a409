@@ -3646,7 +3646,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
                                 delta: c,
                                 latency: d
                             });
-                            if (10 > aa.length) setTimeout(() => g.talk("S", Date.now() - M - Y), 75), b.message = `Loading... ${10*aa.length}%`;
+                            if (10 > aa.length) setTimeout(() => g.talk("S", Date.now() - M - Y), 75), b.message = `Loading game (${10*aa.length}%)`;
                             else {
                                 aa.sort((b, a) => b.latency - a.latency);
                                 let a = aa[Math.floor(aa.length / 2)].latency,
@@ -4721,9 +4721,9 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
                     c.length)];
                 let g = c[Math.floor(Math.random() * c.length)];
                 return () => {
-                    G(l.white, .5);
+                    G(l.black, .5);
                     a.draw("Configuring E̷̢̞̬̦̰͓͗̓͋̀̑̿͜͠ͅR̵̦̂̄̽͂R̸̙̬̬̟̝̪͓̗͍̗̻̮̬͊̀̒͋͊̄̆̆̅͊̿̄́̃̽Ǫ̸̧̧̡͙̖̤͙̩̘͔͚̼̬̫̙̂̄̊̈́̋̋͑̾͋̕͘͝R̵̨̢͉̗̲̣̲̘̰̹͍͇͓͉͓̄͛͜...", b.screenWidth / 2, b.screenHeight / 2, 30, l.teal, "center");
-                    e.draw(b.message, b.screenWidth / 2, b.screenHeight / 2 + 30, 15, l.lgreen, "center");
+                    e.draw(b.message, b.screenWidth / 2, b.screenHeight / 2 + 30, 15, l.blue, "center");
                     e.draw(
               "TIP OF THE DAY:",
               b.screenWidth / 2,
@@ -4740,7 +4740,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
               l.guiwhite,
               "center"
             );
-                    if (g.length <= 100) {e.draw(g, b.screenWidth / 2, b.screenHeight / 2 + 75, 15, l.guiwhite, "center")
+                    if (g.length <= 100) {e.draw(g, b.screenWidth / 2, b.screenHeight / 2 + 100, 15, l.grey, "center")
                     } else {
                       let words = g.split(" ")
                         let message = ""
@@ -4751,10 +4751,10 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
                             if (i < words.length - 1) {
                               message = message + ' '
                             } else if (message.length <= 130) {
-                              e.draw(message, b.screenWidth / 2, b.screenHeight / 2 + 75 + (20*line), 15, l.guiwhite, "center")
+                              e.draw(message, b.screenWidth / 2, b.screenHeight / 2 + 100 + (20*line), 15, l.grey, "center")
                             }
                             if (message.length > 130) {
-                              e.draw(message, b.screenWidth / 2, b.screenHeight / 2 + 75 + (20*line), 15, l.guiwhite, "center")
+                              e.draw(message, b.screenWidth / 2, b.screenHeight / 2 + 100 + (20*line), 15, l.grey, "center")
                               line++
                               message = ""
                             }
