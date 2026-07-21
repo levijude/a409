@@ -3161,7 +3161,7 @@ function setVolume(val, type = 'global') { // todo: finish this shit
         })();
         const Ya = (() => {
                 var a = B(),
-                    e = B();
+                    e = B(); 
                 B();
                 var c = [
                     ["Tip: You can view and edit your keybinds in the options menu.", "Tip: You can play on mobile by just going to https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/ on your phone!"],
