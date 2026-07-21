@@ -233,7 +233,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
             return "#FFD300";
           case 36:
             if (!D.graphical.eyesenstivity) {
-              return T(
+              return X(
                 [
                   "#FF1000", // 32
                   "#ff9000", // 33
@@ -257,7 +257,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
             }
           case 37:
             if (!D.graphical.eyesenstivity) {
-              return T(
+              return X(
                 [
                   "#644321",
                   "#cb6f3c",
@@ -287,7 +287,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
             return "#444444";
           case 42:
             if (!D.graphical.eyesenstivity) {
-              return T(
+              return X(
                 [
                   "#000000",
                   "#ffffff",
@@ -633,7 +633,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
             return "#9867c7";
           case 204:
             if (!D.graphical.eyesenstivity) {
-              return T(
+              return X(
                 [
                   "#ff0000",
                   "#bb0000",
@@ -783,7 +783,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
             return "#8e91c2";
           case 268:
             if (!D.graphical.eyesenstivity) {
-              return T(
+              return X(
                 [
                   "#ea00ff",
                   "#39ff14",
@@ -807,7 +807,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
             }
           case 269:
             if (!D.graphical.eyesenstivity) {
-              return T(
+              return X(
                 [
                   "#ffffff",
                   "#ff00ff",
@@ -831,7 +831,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
             }
           case 270:
             if (!D.graphical.eyesenstivity) {
-              return T(
+              return X(
                 [
                   "#0000ff",
                   "#ff0000",
@@ -855,7 +855,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
             }
           case 271:
             if (!D.graphical.eyesenstivity) {
-              return T(
+              return X(
                 [
                   "#ffff00",
                   "#000000",
@@ -966,7 +966,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
             return "#ffde4d";
           case 987:
             if (!D.graphical.eyesenstivity) {
-              return T(
+              return X(
                 [
                   "#ffffff",
                   "#ffff00",
@@ -990,7 +990,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
             }
           case 1125:
             if (!D.graphical.eyesenstivity) {
-              return T(
+              return X(
                 [
                   "#000000",
                   "#000000",
@@ -1014,7 +1014,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
             }
           case 1500:
             if (!D.graphical.eyesenstivity) {
-              return T(
+              return X(
                 [
                   "#00ffff",
                   "#00ffff",
@@ -1038,7 +1038,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
             }
           case 2250:
             if (!D.graphical.eyesenstivity) {
-              return T(
+              return X(
                 [
                   "#000000",
                   "#000000",
@@ -1062,7 +1062,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
             }
           case 2525:
             if (!D.graphical.eyesenstivity) {
-              return T(
+              return X(
                 [
                   "#000000",
                   "#000000",
@@ -1086,7 +1086,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
             }
             case 3636:
             if (!D.graphical.eyesenstivity) {
-              return T(
+              return X(
                 [
                   "#333333",
                   "#333333",
@@ -1305,7 +1305,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
             return l.dgrey;
           case "rnbw":
             if (!D.graphical.eyesenstivity) {
-            return T( 
+            return X( 
               [
                 "#ff1000",
                 "#ff9000",
@@ -1328,7 +1328,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
               return "#ff0000";
             }
           case "7265":
-            return T(
+            return X(
               [
                 "#ffffff",
                 "#fffad1",
