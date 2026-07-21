@@ -1727,38 +1727,38 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
         //    aipDisplayTag.display("arras-io_336x280")
         //}), window.adServiceMode = "aip") : ((adsbygoogle = window.adsbygoogle || []).push({}), window.adServiceMode = "google");// this line occasionally causes an error
         var D = {
-            graphical: {
-                screenshotMode: !1,
-                borderChunk: 6,
-                barChunk: 5,
-                mininumBorderChunk: 3,
-                compensationScale: 1.114,
-                inversedRender: !0,
-                darkBorders: !1,
-                fancyAnimations: !0,
-                colors: "normal",
-                pointy: !0,
-                //shape: !1,
-                fontSizeBoost: 1,
-                shieldbars: !1,
-                neon: !1
-            },
-            gui: {
-                expectedMaxSkillLevel: 9
-            },
-            lag: {
-                memory: 60,
-                newPrediction: !1
-            },
-        };
-        b.config = D;
-        let X = (b, a, c = .5) => {
+        graphical: {
+          screenshotMode: !1,
+          borderChunk: 6,
+          barChunk: 5,
+          mininumBorderChunk: 3,
+          compensationScale: 1.114,
+          inversedRender: !0,
+          darkBorders: !1,
+          fancyAnimations: !0,
+          colors: "normal",
+          pointy: !0,
+          sharp: !1,
+          fontSizeBoost: 1,
+          shieldbars: !1,
+          neon: !1,
+        },
+        gui: {
+          expectedMaxSkillLevel: 8,
+        },
+        lag: {
+          memory: 60,
+          newPrediction: !1,
+        },
+      };
+      b.config = D;
+      let X = (b, a, c = .5) => {
             if (0 === c) return b;
             if (1 === c) return a;
             let d = 1 - c;
-            b = parseInt(b.slice(1), 16);
-            a = parseInt(a.slice(1), 16);
-            return "#" + ((b & 16711680) * d + (a & 16711680) * c & 16711680 |
+        b = parseInt(b.slice(1), 16);
+        a = parseInt(a.slice(1), 16);
+        return "#" + ((b & 16711680) * d + (a & 16711680) * c & 16711680 |
                 (b & 65280) * d + (a & 65280) * c & 65280 | (b & 255) * d + (a & 255) * c & 255).toString(16).padStart(6, "0")
         };
         var Q = [];
