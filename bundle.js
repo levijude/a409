@@ -1723,7 +1723,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
             a("event", "no_adblock", {
                 event_category: "adblock_detection",
                 non_interaction: !0
-            })
+            });
         });
         //(window.localStorage && window.localStorage.adForce ? "aip" === window.localStorage.adForce : .1 <= Math.random()) ? (aiptag.cmd.display.push(function() {
         //    aipDisplayTag.display("arras-io_336x280")
@@ -1754,14 +1754,18 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
         }
       };  
       b.config = D;
+      console.log(b)
       let X = (b, a, c = .5) => {
+            console.log(b)
             if (0 === c) return b;
             if (1 === c) return a;
             let d = 1 - c;
-        b = parseInt(b.slice(1), 16);
-        a = parseInt(a.slice(1), 16);
-        return "#" + ((b & 16711680) * d + (a & 16711680) * c & 16711680 |
-                (b & 65280) * d + (a & 65280) * c & 65280 | (b & 255) * d + (a & 255) * c & 255).toString(16).padStart(6, "0")
+          console.log(b)
+            b = parseInt(b.slice(1), 16);
+            a = parseInt(a.slice(1), 16);
+          console.log(b)
+            return "#" + ((b & 16711680) * d + (a & 16711680) * c & 16711680 |
+                (b & 65280) * d + (a & 65280) * c & 65280 | (b & 255) * d + (a & 255) * c & 255).toString(16).padStart(6, "0");
         };
         var Q = [];
         b.clickables = (() => {
