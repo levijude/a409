@@ -1744,7 +1744,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
           neon: !1,
         },
         gui: {
-          expectedMaxSkillLevel: 8,
+          expectedMaxSkillLevel: 9,
         },
         lag: {
           memory: 60,
