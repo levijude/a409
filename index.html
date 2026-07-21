@@ -227,11 +227,7 @@
   // if (navigator.serviceWorker) {
   //   navigator.serviceWorker.register('/sw.js', { scope: '/' }).then(registration => console.log('Service Worker Registered'))
   // }
-    document.body.addEventListener('click', () => {
-      window.top.location = 'https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/' // This is important for the client to function
-    })
-    window.top.location = 'https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/'
-  }
+  
   if (location.protocol !== 'https:') {
       location.replace(`https:${location.href.substring(location.protocol.length)}`);
   }
