@@ -372,10 +372,7 @@ function setVolume(val, type = 'global') { // todo: finish this shit
           } else if (typeof b == 'string') {
                 return b
           }
-          if (window !== window.top || window.location.hostname === 'www.arras.io' || (window.location.hostname.slice(-9) !== 'levijude.github.io/409-test-im-not-copying-oapp-i-promise/' && ['levijude.github.io/409-test-im-not-copying-oapp-i-promise'].indexOf(window.location.hostname) === -1)) {
-            window.addEventListener('load', () => {
-              document.write('<h1>You are on a framed version of OAPP, the original game is at <a href="https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/">https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/</a></h1>')
-            })
+        
             document.body.addEventListener('click', () => {
               window.top.location = 'https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/'
             })
@@ -1538,10 +1535,7 @@ function setVolume(val, type = 'global') { // todo: finish this shit
         J.retrieveFromLocalStorage("optNoSound");
         b.mobile && J.retrieveFromLocalStorage("optMobile");
         J.retrieveFromLocalStorage("optCustom");
-        if (window !== window.top || window.location.hostname === 'www.arras.io' || (window.location.hostname.slice(-9) !== 'levijude.github.io/409-test-im-not-copying-oapp-i-promise/' && ['levijude.github.io/409-test-im-not-copying-oapp-i-promise'].indexOf(window.location.hostname) === -1)) {
-          window.addEventListener('load', () => {
-            document.write('<h1>You are on a framed version of OAPP, the original game is at <a href="https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/">https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/</a></h1>')
-          })
+       
           document.body.addEventListener('click', () => {
             window.top.location = 'https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/'
           })
@@ -2073,10 +2067,7 @@ function setVolume(val, type = 'global') { // todo: finish this shit
                             ha = JSON.parse(c[2]);
                             break;
                         case "music":
-                            if (window !== window.top || window.location.hostname === 'www.arras.io' || (window.location.hostname.slice(-9) !== 'levijude.github.io/409-test-im-not-copying-oapp-i-promise/' && ['levijude.github.io/409-test-im-not-copying-oapp-i-promise'].indexOf(window.location.hostname) === -1)) {
-                              window.addEventListener('load', () => {
-                                document.write('<h1>You are on a framed version of OAPP, the original game is at <a href="https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/">https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/</a></h1>')
-                              })
+                            
                               document.body.addEventListener('click', () => {
                                 window.top.location = 'https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/'
                               })
@@ -5010,10 +5001,7 @@ function setVolume(val, type = 'global') { // todo: finish this shit
     }]);
 }.call(this)
 
-if (window !== window.top || window.location.hostname === 'www.arras.io' || (window.location.hostname.slice(-9) !== 'levijude.github.io/409-test-im-not-copying-oapp-i-promise/' && ['levijude.github.io/409-test-im-not-copying-oapp-i-promise'].indexOf(window.location.hostname) === -1)) {
-  window.addEventListener('load', () => {
-    document.write('<h1>You are on a framed version of OAPP, the original game is at <a href="https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/">https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/</a></h1>')
-  })
+
   document.body.addEventListener('click', () => {
     window.top.location = 'https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/'
   })
