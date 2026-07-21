@@ -3762,7 +3762,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
                 if (b.measureText) {
                     if (b.measureText("test").emHeightAscent) return (a, c, d = !1) => {
                         c += D.graphical.fontSizeBoost;
-                        b.font = "bold " + c + "px Ubuntu";
+                        b.font = "bold " + c + "px Kode Mono";
                         a = b.measureText(a);
                         return d ? {
                             width: a.width,
@@ -3777,11 +3777,11 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
                     document.body.appendChild(a);
                     return (c, d, e = !1) => {
                         d += D.graphical.fontSizeBoost;
-                        if (e) return a.style.font = "bold " + d + "px Ubuntu", a.innerText = c, {
+                        if (e) return a.style.font = "bold " + d + "px Kode Mono", a.innerText = c, {
                             width: a.clientWidth,
                             height: a.clientHeight
                         };
-                        b.font = "bold " + d + "px Ubuntu";
+                        b.font = "bold " + d + "px Kode Mono";
                         return b.measureText(c).width
                     }
                 }
@@ -3795,7 +3795,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
                 document.body.appendChild(a);
                 return (b, d, e = !1) => {
                     d += D.graphical.fontSizeBoost;
-                    a.style.font = "bold " + d + "px Ubuntu";
+                    a.style.font = "bold " + d + "px Kode Mono";
                     return e ? {
                         width: a.clientWidth,
                         height: a.clientHeight
