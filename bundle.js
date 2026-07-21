@@ -5,7 +5,7 @@ if (localStorage.getItem('data') == null || JSON.parse(localStorage.data)['bidef
   'playtime': 0,
   'kills': 0,
   'deaths': 0,
-  'bosskills': 0,
+  'bosskills': 0, 
   'domwins': 0,
   'domlosses': 0,
   'attackwins': 0,
