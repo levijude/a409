@@ -3986,7 +3986,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
                                     d = h;
                                     u = y + f * (F.offset * Math.cos(F.direction + F.angle + m) + (F.length / 2 - r) * Math.cos(F.angle + m));
                                     r = K + f * (F.offset * Math.sin(F.direction + F.angle + m) + (F.length / 2 - r) * Math.sin(F.angle + m));
-                                    col = (F.color != null) ? F.color : l.grey;
+                                    col = (F.color != null) ? F.color : l.guiwhite;
                                     n(h, X(e(col), U.status.getColor(), U.status.getBlend()));
                                     var Z =
                                         f * (F.length / 2 - (1 === F.aspect ? A[B] : 0)),
