@@ -2447,7 +2447,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
         oa.oninput = () => {
             (oa.value ? H(oa.value) : 1) ? oa.classList.remove("error"): oa.classList.add("error")
         };
-        if (!b.mobile) {
+      /*  if (!b.mobile) {
             let a = {};
             try {
                 "#vi" === location.hash || "#vim" === location.hash ? a = {
@@ -2582,7 +2582,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
                     t ? 1 !== a.key.length || /[0-9of`]/i.test(a.key) || 3 === a.location ? "Backspace" !== a.key && "Delete" !== a.key || n(" ", 32) : n(a.key.toUpperCase(), c) : c !== b.KEY_ENTER && c !== b.KEY_SPAWN || p()
                 }
             }
-        }
+        } */
         document.getElementById("startButton").onclick = () => {
             p()
         };
