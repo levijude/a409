@@ -168,6 +168,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
 
         function e(b) {
           if (typeof b == 'number') {
+              switch (b) {
             case 0:
             return l.teal;
           case 1:
@@ -1113,7 +1114,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
             return "#FF0000";
         }
       }
-
+        }
         function K(b) {
             let d = D.graphical.neon ? l.white : l.black;
             return D.graphical.darkBorders ? d : X(b, d, l.border)
@@ -2474,7 +2475,8 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
                     KEY_REVERSE_TANK: ["Y", 89],
                     KEY_RIGHT: ["L", 76],
                     KEY_SCREENSHOT: ["G", 71],
-                    KEY_UP: ["K", 75]
+                    KEY_UP: ["K", 75],
+                    KEY_ABILITY: 70,
                 } : R.keybindsJSON && (a = JSON.parse(R.keybindsJSON) || {})
             } catch (ma) {}
             let e =
@@ -4660,10 +4662,10 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
                     e.draw("Level " + A.__s.getLevel() + " " + Q[A.type].name, d - 170, h - 30, 24, l.magenta);
                     c.draw("Final score: " + J.formatLargeNumber(Math.round(b.finalScore.get())), d - 170, h + 25, 50, l.teal);
                     g.draw("\u231a Survived for " + J.timeForHumans(Math.round(b.finalLifetime.get())), d - 170, h + 55, 16, l.guiblack); //HERE
-                    n.draw(w(), d - 170, h + 77, 16, l.guiwhite);
+                    n.draw(w(), d - 170, h + 77, 16, l.green);
                     k.draw(p(), d - 170, h + 99, 16, l.guiwhite);
                     q = Math.ceil((b.respawnOn - Date.now()) / 1E3);
-                    f.draw(0 < q ? `You may respawn in ${q} second${1===q?"":"s"}` : "joysticks" === ba.control ? "Tap to respawn!" : "Press enter to respawn!", d, h + 125, 16, l.guiwhite, "center")
+                    f.draw(0 < q ? `You may respawn in ${q} second${1===q?"":"s"}` : "joysticks" === ba.control ? "Tap to return to H̴͍̎Ę̵͐L̸̪̍L̸̩͆" : "Press enter to return to H̴͍̎Ę̵͐L̸̪̍L̸̩͆", d, h + 125, 16, l.red, "center")
                 }
             })();
         window.onbeforeunload = () => b.isInGame && !b.died ? !0 : null;
@@ -4691,70 +4693,50 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
                     e = B(); 
                 B();
                 var c = [
-                    ["Tip: You can view and edit your keybinds in the options menu.", "Tip: You can play on mobile by just going to https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/ on your phone!"],
-                    ["Tip: You can have the shield and health bar be separated by going to the options menu.", "Tip: If arras is having a low frame rate, you can try enabling low graphics in the options menu.", "Tip: You can make traps rounded with the classic trap setting in the options menu.", "Tip: You can create your own private server with the template in the link on the options menu.",
-                        "Tip: You can create your own theme with the custom theme maker in the link on the options menu."
-                    ],
-                    ["Teaming in FFA is frowned upon, but when taken to the extremes, you can be punished.", "Witch hunting is when you continuously target someone and follow them. This is frowned upon, but when taken to the extremes, you can be punished.", "Multiboxing is when you use a script to control multiple tanks at the same time. This is considered CHEATING and will result in a ban."],
-                    [
-                      "Precision Sniper can hit Exploder pipe bombs for a massive explosion.",
-                      "Precision Sniper bullets can be ricocheted off of Marksman coins to turn them into piercing projectiles that can deal massive damage to bosses with the right setup.",
-                      "Die to a yellow destroyer crasher when you see one. Do it.",
-                      "Some bosses drop several Flash Drives upon death. Touching a Flash Drive will unlock an unlockable tank for future use.",
-                      "Demolitionist can punch multiple blocks with 1 punch.",
-                      "Demolitionist can punch Marksman coins to shoot them towards a nearby target, dealing massive damage and shortening the punch cooldown.",
-                      "Demolitionist can punch *any* blocks, not just its own. It can also punch Traps.",
-                      "Traps, Blocks and projectiles ricocheted off of Marksman coins deal extra damage to rammers.",
-                      "Glacier's Frostbite effect not only slows down targets, but also makes them take extra damage.",
-                      "Applying Glacier's Frostbite effect to burning targets can deal massive damage. It doesnt work the other way around however.",
-                      "Adhesive's drones will not explode if killed while preparing to explode.",
-                      "Prions take extra damage while on fire.",
-                      "Extirpator rotates faster with faster reload, so its best to avoid putting too much points into reload to make using it easier.",
-                      "You can take advantage of Monorail's speed while riding across nodes by placing a node near you, a node far ahead and riding them for a short speed boost in the direction you're going.",
-                      "Precision Sniper becomes stronger the more shots you land accurately in a row.",
-                      "Shift can be used as an alternative to Right Clicking.",
-                      "Traps deal extra damage to rammers, and Drones deal extra damage to traps.",
-                      "Shooting a Marksman coin into a bullet will buff the bullet more than if you were to shoot said bullet at a coin, however it will also make it take longer to regenerate the next coin.",
-                      "Regulus has no cap as to how much it can charge its bullets, however charging for a long time will have diminishing returns.",
-                      "Constructivist's mining bullets have a per-hit chance to mine something, meaning the more rocks they bounce off of the more resources they'll mine on average.",
-                      "Shortening your flame as Blowtorch will make it deal more damage.",
-                      "Retreater's thrusters are significantly more powerful than its main gun.",
-                    ],
-                    [
-                      "It is rumoured that one day a grey rectangle from another dimension entered the arena. Nobody knows if thats actually true or not.",
-                      "Helvetea rules over most of the polygons.",
-                      "MD-1, MD-2 and MD-3 are the same entity from different time periods.",
-                      "Mediators are the most technologically advanced polygons.",
-                      "The Gammaccelerator, Hepton and Octancher are from another dimension.",
-                      "There exists a void dimension which is connected to every dimension and is used by several entities to travel between dimensions.",
-                      "Bots were created by the Mediators to spy on tanks.",
-                      "Attack mode takes place in the far future.",
-                      "Tanks and Polygons were at war for most of their existence.",
-                      "The home dimension of the Gammaccelerator, Hepton and Octancher is long gone.",
-                      "Elite Crashers are crashers that have been captured by the mediators and turned into killing machines.",
-                      "The first Tank was created due to an oversized Egg fusing with a Square.",
-                      "The first Tank was able to duplicate and evolve like a Polygon.",
-                      "The first Mediators evolved from a group of triangles that isolated themselves from most other things.",
-                      "Oversized polygons used to be very common before the tanks made most of them go extinct.",
-                      "Alpha and Beta pentagons are the only oversized polygons that weren't driven to extinction by the tanks.",
-                      "Everything in OAPP is mechanical.",
-                      "MD-3 rules over all of the Mediators.",
-                      "Eradicators were created by the Mediators as war machines in an attempt to wipe out the tanks and polygons.",
-                      "Mediators are trained for long periods of time before they can participate in Mediator Raids.",
-                      "The Nest Keeper is an ancient being that protects Beta and Alpha pentagons, and is the reason why they haven't gone extinct.",
-                      "The origins of STR-1 and Nebula are unknown.",
-                      "Bunsen and Instant were created by the tanks to fight off the Gammaccelerator, Hepton and Octancher when they first invaded.",
-                      "The Heptagons accepted Hepton as their commander not long after it, the Gammaccelerator and Octancher invaded.",
-                      "Somewhere in the void exists a highly uninhabitable rogue planet named Fieros with abnormally high amounts of chemicals and elements that are extremely rare elsewhere, with some not even existing naturally outside of it.",
-                    ]
-                ];
+            [
+              "Falcon in Hell Mode is a good option for sniping enemies from far away.",
+              "Repeller's shockwaves are a good option for dealing with large groups of small or weak enemies. However, they do not affect large or tanky enemies.",                                                                                                                                    
+              "Newer players may get stuck on Class Three. If you don't know how to kill them, consider the small dark red areas around the map.",
+              "When using a tank with thruster cannons, upgrading the reload stat will result in much faster movement than upgrading the tank speed stat.",
+              "Swarm drones are not very powerful alone, but a large group of them together can deal tons of damage.",
+              "Every enemy has a method by which it can be countered, however some require you to think creatively. Don't give up!",
+              "Black Rock Shooter is a pretty good anime. You should watch it sometime.",
+              "Mossy Wintergreen on Youtube makes some banger music.",
+              "If you're stuck on a difficult enemy in War Mode, you can simply lure it into a base, killing it instantly. This is risky and doesnt work on some enemies.",
+              "Please report any bugs or issues you find in my discord server, it helps a lot!",
+              "Acceleration is important when dealing with enemies faster than you. If you can't accelerate fast, you likely can't outmaneuver them.",
+              "Your health regenerates faster the more health you have. If your health is very low, it's better to wait for it to regen before fighting another enemy.",
+              "Bullets deal more damage the faster they're moving.",
+              "The Sour Switchblade is one of the most powerful projectiles in the game. Avoid it at all costs.",
+              "YOU WON'T WIN! YOU WON'T WIN! YOU WON'T WIN!",
+              '"meow :3" -Class Thirty-Six, 2025', 
+              "H̶E̸L̷P̷_̶:̶.̴[̶ |̷}̸\̵[̴[̸[̴-̶+̷_̸=̷[̴ =̷-̷[̷\̵\̴ ̷M̴E̷",
+              "You'll be crushed, like a bug in the ground."
+            ],
+          ];
                 c = c[Math.floor(Math.random() *
                     c.length)];
                 let g = c[Math.floor(Math.random() * c.length)];
                 return () => {
                     G(l.white, .5);
-                    a.draw("Connecting...", b.screenWidth / 2, b.screenHeight / 2, 30, l.guiwhite, "center");
+                    a.draw("Configuring E̷̢̞̬̦̰͓͗̓͋̀̑̿͜͠ͅR̵̦̂̄̽͂R̸̙̬̬̟̝̪͓̗͍̗̻̮̬͊̀̒͋͊̄̆̆̅͊̿̄́̃̽Ǫ̸̧̧̡͙̖̤͙̩̘͔͚̼̬̫̙̂̄̊̈́̋̋͑̾͋̕͘͝R̵̨̢͉̗̲̣̲̘̰̹͍͇͓͉͓̄͛͜...", b.screenWidth / 2, b.screenHeight / 2, 30, l.teal, "center");
                     e.draw(b.message, b.screenWidth / 2, b.screenHeight / 2 + 30, 15, l.lgreen, "center");
+                    e.draw(
+              "TIP OF THE DAY:",
+              b.screenWidth / 2,
+              b.screenHeight / 2 + 70,
+              15,
+              l.teal,
+              "center"
+            );
+                    a.draw(
+              "This might take a while! If it takes more than a minute, let me know via Discord (join the server linked in the options menu)",
+              b.screenWidth / 2,
+              b.screenHeight / 2 + 270,
+              10,
+              l.guiwhite,
+              "center"
+            );
                     if (g.length <= 100) {e.draw(g, b.screenWidth / 2, b.screenHeight / 2 + 75, 15, l.guiwhite, "center")
                     } else {
                       let words = g.split(" ")
@@ -4783,7 +4765,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
                     e = B();
                 return () => {
                     G(X(l.red, l.guiblack, .3), .25);
-                    a.draw("\ud83d\udc80 Disconnected \ud83d\udc80", b.screenWidth / 2, b.screenHeight / 2, 30, l.guiwhite, "center");
+                    a.draw("💀E̵̯͖̝̒͘͝R̸̝̺̥͌̇̍R̷̠̜̥̋͐̈́O̶͉̯̮͝R̵̹̆͊̓💀", b.screenWidth / 2, b.screenHeight / 2, 30, l.orange, "center");
                     e.draw(b.message, b.screenWidth /
                         2, b.screenHeight / 2 + 30, 15, l.orange, "center")
                 }
@@ -4922,7 +4904,6 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
             help: {
                 KEY_OVER_RIDE: "R",
                 KEY_LEVEL_UP: "N",
-                KEY_ABILITY: "F",
                 KEY_CHOOSE_1: "Y",
                 KEY_CHOOSE_2: "U",
                 KEY_CHOOSE_3: "I",
@@ -4989,170 +4970,253 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
             showTree: !1,
             server: null,
             codeTable: [{
-                    z: "Private",
-                    local: "Local",
-                    dvi: "DVI", // WHY
-                    glitch: "Glitch", // THE
-                    os: "OpenShift", // FUCK
-                    heroku: "Heroku", // DO
-                    linode: "Linode", // ALL
-                    vultr: "Vultr", // OF
-                    buyvm: "BuyVM", // THESE
-                    extravm: "ExtraVM", // SUCK
-                    hetzner: "Hetzner", // COMPLETE
-                    ovh: "OVH", // GODDAMN
-                    ecan: "ECAN", // FUCKING
-                    digitalocean: "DigitalOcean", // GARBAGE?!?!?!?!?!?!?!?!?
+                     z: "Private",
+            local: "Local",
+            dvi: "DVI",
+            glitch: "      ",
+            os: "OpenShift",
+            heroku: "Heroku",
+            your: "------",
+            linode: "Linode",
+            vultr: "Vultr",
+            buyvm: "BuyVM",
+            extravm: "ExtraVM",
+            hetzner: "Hetzner",
+            ovh: "OVH",
                 }, {
                     unknown: ["Unknown", null],
-                    local: ["Local", null],
-                    virginia: ["US East", -4],
-                    montreal: ["US East", -4],
-                    newyork: ["US East", -4],
-                    oregon: ["US West", -7],
-                    frankfurt: ["Europe", 2],
-                    ireland: ["Europe", 2],
-                    sv: ["US West", -7],
-                    la: ["US West", -7],
-                    germany: ["Europe", 2],
-                    london: ["Europe", 1],
-                    singapore: ["Asia", 8]
+            local: ["Local", null],
+            server: ["------", null],
+            virginia: ["US East", 0],
+            montreal: ["US East", 1],
+            oregon: ["US West", 2],
+            frankfurt: ["", 3],
+            sv: ["02 ---------- ", 4],
+            la: ["04 ---------- ", 5],
+            thai: ["", 6],
+            london: ["03 ---------- ", 7],
+            singapore: ["01 ---------- ", 8],
+            kansas: ["USA", 9],
+            vint: ["US East", 10],
+            falkenstein: ["", 11],
+            california: ["", 12],
+            michigan: ["USA", 13],
+            korea: ["Asia", 14],
                 },
                 [
-                    [{
-                        id: "p",
-                        to: "Private"
-                    }],
-                    [{
-                        id: "e",
-                        dynamic: "word"
-                    }],
-                    [{
-                        id: "w",
-                        dynamic: "words"
-                    }],
-                    [{
-                        id: "o",
-                        to: "Open"
-                    }],
-                    [{
-                        id: "m",
-                        to: "Maze",
-                        delay: !0,
-                        remove: "f"
-                    }],
-                    [{
-                        id: "f",
-                        to: "FFA"
-                    }, {
-                        id: "2",
-                        to: "2 Team",
-                        end: "2TDM"
-                    }, {
-                        id: "3",
-                        to: "3 Team",
-                        end: "3TDM"
-                    }, {
-                        id: "4",
-                        to: "4 Team",
-                        end: "4TDM"
-                    }],
-                    [{
-                        id: "d",
-                        to: "Domination"
-                    }, {
-                        id: "m",
-                        to: "Mothership",
-                        remove: "2"
-                    }, {
-                        id: "a",
-                        to: "Assault",
-                        remove: "2"
-                    }, {
-                        id: "s",
-                        to: "Survival"
-                    }, {
-                        id: "T",
-                        to: "Testing"
-                    }, {
-                        id: "A",
-                        to: "Attack"
-                    }, {
-                        id: "ca",
-                        to: "crasher apocalypse"
-                    }, {
-                        id: "b",
-                        to: "Base Infiltration"
-                    }, /*{
-                        id: "!",
-                        to: "2TDM/Domination"
-                    },  {
-                        id: "@",
-                        to: "Attack/Base Infil."
-                    },*/ ]
-                ]
+            [
+              {
+                id: "p",
+                to: "Private",
+              },
             ],
+            [
+              {
+                id: "e",
+                dynamic: "word",
+              },
+            ],
+            [
+              {
+                id: "w",
+                dynamic: "words",
+              },
+            ],
+            [
+              {
+                id: "o",
+                to: "Open",
+              },
+            ],
+            [
+              {
+                id: "m",
+                to: "Maze",
+                delay: !0,
+                remove: "f",
+              },
+            ],
+            [
+              {
+                id: "f",
+                to: "FFA",
+              },
+              {
+                id: "2",
+                to: "2 Team",
+                end: "CHAOS MODE",
+              },
+              {
+                id: "3",
+                to: "3 Team",
+                end: "HELL MODE",
+              },
+              {
+                id: "4",
+                to: "4 Team",
+                end: "WAR MODE",
+              },
+              {
+                id: "y",
+                to: "60 Team",
+                end: "60-TEAMS MODE",
+              },
+            ],
+            [
+              {
+                id: "d",
+                to: "Domination",
+              },
+              {
+                id: "m",
+                to: "Mothership",
+                remove: "2",
+              },
+              {
+                id: "a",
+                to: "Assault",
+                remove: "2",
+              },
+              {
+                id: "b",
+                to: "Siege",
+              },
+              {
+                id: "8",
+                to: "8TDM",
+                end: "8TDM",
+              },
+              {
+                id: "r",
+                to: "Party",
+              },
+              {
+                id: "t",
+                to: "TEST SERVER",
+              },
+              {
+                id: "q",
+                to: "template server",
+              },
+              {
+                id: "l",
+                to: "",
+              },
+            ],
+        ],
             timezone: (new Date).getTimezoneOffset() / -60,
-            servers: [{
-                    id: "z",
-                    type: "0unk",
-                    code: "z-unknown-pe6server",
-                    at: "private",
-                    untrusted: !0
-                },
-                {
-                    visible: 2,
-                    id: "x",
-                    type: "0unk",
-                    code: "local-local-e9localhost",
-                    at: "localhost:8080",
-                    secure: -1
-                }, {
-                    visible: 0,
-                    id: "testing",
-                    type: "testing",
-                    code: "glitch-la-T",
-                    at: m.glitch("oapp-official-server-template"),
-                    //secure: -1,
-                    prefer: !0
-                }, {
-                    visible: 0,
-                    id: "ffa",
-                    type: "ffa",
-                    code: "digitalocean-newyork-f",
-                    at: m.digitalocean("giga-test-fqe7u")
-                }, {
-                    visible: 0,
-                    id: "2tdm",
-                    type: "2tdm",
-                    code: "glitch-la-2",
-                    at: m.glitch("oapp-server3")
-                }, {
-                    visible: 0,
-                    id: "dom",
-                    type: "domination",
-                    code: "glitch-la-d",
-                    at: m.glitch("oapp-server4")
-                },{
-                    visible: 0,
-                    id: "attack",
-                    type: "attack",
-                    code: "glitch-la-A",
-                    at: m.glitch("oapp-server2")
-                }, {
-                    visible: 0,
-                    id: "bi",
-                    type: "bi",
-                    code: "glitch-la-b",
-                    at: m.glitch("oapp-server5")
-                }/*, {
-                    visible: 2,
-                    id: "maze",
-                    type: "maze",
-                    code: "ecan-unknown-m",
-                    at: "goku.ecansol.com:8080"
-                }*/
-            ].map((a, e) => ({
+            servers: [
+          {
+            visible: 0,
+            id: "01",
+            type: "main",
+            code: "glitch-singapore-3",
+            at: p.glitch("celadon-gumdrop-16bbeb"),
+            prefer: !0,
+            featured: 0, // For Featured Status.
+          },
+          /*     {
+            visible: 0,
+            id: "cm",
+            type: "main",
+            code: "glitch-london-2",
+            at: p.glitch("0987654321---nah---"),
+            prefer: !0
+            // featured: 1, // For Featured Status.
+          },  */
+          {
+            visible: 0,
+            id: "02",
+            type: "main",
+            code: "glitch-sv-4",
+            at: p.glitch("giga-test-fqe7u"),
+            prefer: !0,
+            // featured: 1, // For Featured Status.
+          },
+     /*     {
+            visible: 0,
+            id: "h",
+            type: "main",
+            code: "glitch-london-l",
+            at: p.glitch("arras-io-crazyserverofdeath"),
+            prefer: !0,
+            // featured: 1, // For Featured Status.
+          }, 
+             {
+            visible: 0,
+            id: "60",
+            type: "main",
+            code: "glitch-la-y", 
+            at: p.glitch("60-teams-real"), 
+            prefer: !0
+            // featured: 1, // For Featured Status.
+          }, 
+
+              visible: 0,
+            id: "fa",
+            type: "main",
+            code: "glitch-oregon-f",
+            at: p.glitch("james-arras-ffa"),
+            prefer: !0
+            // featured: 1, // For Featured Status.
+          },
+          {
+            visible: 0,
+            id: "fa",
+            type: "main",
+            code: "glitch-singapore-f",
+            at: p.glitch("james-arras-ffa2"),
+            prefer: !0
+            // featured: 1, // For Featured Status.
+          },
+          {
+            visible: 0,
+            id: "m",
+            type: "main",
+            code: "glitch-michigan-m",
+            at: p.glitch("james-arras-maze"),
+            prefer: !0
+            // featured: 1, // For Featured Status.
+          },
+          {
+            visible: 0,
+            id: "bo",
+            type: "main",
+            code: "glitch-california-b",
+            at: p.glitch("bosses-server"),
+            prefer: !0,
+            // featured: 1, // For Featured Status.
+          },
+          {
+            visible: 0,
+            id: "pa",
+            type: "main",
+            code: "glitch-sv-r",
+            at: p.glitch("arras-party"),
+            prefer: !0,
+            //featured: 1 // For Featured Status.
+          },
+         {  
+           visible: 0,
+            id: "pt",
+            type: "main",
+            code: "glitch-sv-q",
+            at: p.glitch("arras-template"),
+            prefer: !0,
+            //featured: 1 // For Featured Status.
+          } 
+          , 
+         {
+            visible: 0,
+            id: "te",
+            type: "main",
+            code: "glitch-sv-t",
+            at: p.glitch("2048-arras"),
+            prefer: !0,
+            //featured: 1 // For Featured Status.
+          }*/
+        ]
+            .map((a, e) => ({
                 data: a,
                 i: e
             })).sort((a, e) => a.data.type < e.data.type ? -1 : a.i - e.i).map(({
@@ -5177,7 +5241,219 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
             document.getElementById(a).checked = "true" === (u[a + "Checked"] || e.toString());
             return !1
         };
-        m.handleLargeNumber = (a, e = !1) => e && 0 >= a ? "" : 1E3 > a ? a.toFixed(0) + "" : 1E6 > a ? (a / 1E3).toFixed(2) + "k" : 1E9 > a ? (a / 1E6).toFixed(2) + "m" : 1E12 > a ? (a / 1E9).toFixed(2) + "b" : 1E15 > a ? (a / 1E12).toFixed(2) + "t" : 1E18 > a ? (a / 1E15).toFixed(2) + "q" : "\u221e";
+        m.handleLargeNumber = (a, e = !1) =>  
+            e && 0 >= a
+          ? ""
+          : 1e3 > a
+          ? a.toFixed(0) + ""
+          : 1e6 > a
+          ? (a / 1e3).toFixed(2) + "k"
+          : 1e9 > a
+          ? (a / 1e6).toFixed(2) + "m"
+          : 1e12 > a
+          ? (a / 1e9).toFixed(2) + "b"
+          : 1e15 > a
+          ? (a / 1e12).toFixed(2) + "t"
+          : 1e18 > a
+          ? (a / 1e15).toFixed(2) + "q"
+          : 1e21 > a
+          ? (a / 1e18).toFixed(2) + "Q"
+          : 1e24 > a
+          ? (a / 1e21).toFixed(2) + "s"
+          : 1e27 > a
+          ? (a / 1e24).toFixed(2) + "S"
+          : 1e30 > a
+          ? (a / 1e27).toFixed(2) + "o"
+          : 1e33 > a
+          ? (a / 1e30).toFixed(2) + "n"
+          : 1e36 > a
+          ? (a / 1e33).toFixed(2) + "d"
+          : 1e39 > a
+          ? (a / 1e36).toFixed(2) + "ud"
+          : 1e42 > a
+          ? (a / 1e39).toFixed(2) + "dd"
+          : 1e45 > a
+          ? (a / 1e42).toFixed(2) + "td"
+          : 1e48 > a
+          ? (a / 1e45).toFixed(2) + "qd"
+          : 1e51 > a
+          ? (a / 1e48).toFixed(2) + "qud"
+          : 1e54 > a
+          ? (a / 1e51).toFixed(2) + "sd"
+          : 1e57 > a
+          ? (a / 1e54).toFixed(2) + "spd"
+          : 1e60 > a
+          ? (a / 1e57).toFixed(2) + "od"
+          : 1e63 > a
+          ? (a / 1e60).toFixed(2) + "nd"
+          : 1e66 > a
+          ? (a / 1e63).toFixed(2) + "v"
+          : 1e69 > a
+          ? (a / 1e66).toFixed(2) + "uv"
+          : 1e72 > a
+          ? (a / 1e69).toFixed(2) + "dv"
+          : 1e75 > a
+          ? (a / 1e72).toFixed(2) + "tv"
+          : 1e78 > a
+          ? (a / 1e75).toFixed(2) + "qv"
+          : 1e81 > a
+          ? (a / 1e78).toFixed(2) + "quv"
+          : 1e84 > a
+          ? (a / 1e81).toFixed(2) + "sv"
+          : 1e87 > a
+          ? (a / 1e84).toFixed(2) + "spv"
+          : 1e90 > a
+          ? (a / 1e87).toFixed(2) + "ov"
+          : 1e93 > a
+          ? (a / 1e90).toFixed(2) + "nv"
+          : 1e96 > a
+          ? (a / 1e93).toFixed(2) + "tr"
+          : 1e99 > a
+          ? (a / 1e96).toFixed(2) + "utr"
+          : 1e102 > a
+          ? (a / 1e99).toFixed(2) + "dtr"
+          : 1e105 > a
+          ? (a / 1e102).toFixed(2) + "ttr"
+          : 1e108 > a
+          ? (a / 1e105).toFixed(2) + "qtr"
+          : 1e111 > a
+          ? (a / 1e108).toFixed(2) + "qutr"
+          : 1e114 > a
+          ? (a / 1e111).toFixed(2) + "str"
+          : 1e117 > a
+          ? (a / 1e114).toFixed(2) + "sptr"
+          : 1e120 > a
+          ? (a / 1e117).toFixed(2) + "otr"
+          : 1e123 > a
+          ? (a / 1e120).toFixed(2) + "ntr"
+          : 1e126 > a
+          ? (a / 1e123).toFixed(2) + "qu"
+          : 1e129 > a
+          ? (a / 1e126).toFixed(2) + "uqu"
+          : 1e132 > a
+          ? (a / 1e129).toFixed(2) + "dqu"
+          : 1e135 > a
+          ? (a / 1e132).toFixed(2) + "tqu"
+          : 1e138 > a
+          ? (a / 1e135).toFixed(2) + "qqu"
+          : 1e141 > a
+          ? (a / 1e138).toFixed(2) + "ququ"
+          : 1e144 > a
+          ? (a / 1e141).toFixed(2) + "squ"
+          : 1e147 > a
+          ? (a / 1e144).toFixed(2) + "spqu"
+          : 1e150 > a
+          ? (a / 1e147).toFixed(2) + "oqu"
+          : 1e153 > a
+          ? (a / 1e150).toFixed(2) + "nqu"
+          : 1e156 > a
+          ? (a / 1e153).toFixed(2) + "qi"
+          : 1e159 > a
+          ? (a / 1e156).toFixed(2) + "uqi"
+          : 1e162 > a
+          ? (a / 1e159).toFixed(2) + "dqi"
+          : 1e165 > a
+          ? (a / 1e162).toFixed(2) + "tqi"
+          : 1e168 > a
+          ? (a / 1e165).toFixed(2) + "qqi"
+          : 1e171 > a
+          ? (a / 1e168).toFixed(2) + "quqi"
+          : 1e174 > a
+          ? (a / 1e171).toFixed(2) + "sqi"
+          : 1e177 > a
+          ? (a / 1e174).toFixed(2) + "spqi"
+          : 1e180 > a
+          ? (a / 1e177).toFixed(2) + "oqi"
+          : 1e183 > a
+          ? (a / 1e180).toFixed(2) + "nqi"
+          : 1e186 > a
+          ? (a / 1e183).toFixed(2) + "sx"
+          : 1e189 > a
+          ? (a / 1e186).toFixed(2) + "usx"
+          : 1e192 > a
+          ? (a / 1e189).toFixed(2) + "dsx"
+          : 1e195 > a
+          ? (a / 1e192).toFixed(2) + "tsx"
+          : 1e198 > a
+          ? (a / 1e195).toFixed(2) + "qsx"
+          : 1e201 > a
+          ? (a / 1e198).toFixed(2) + "qusx"
+          : 1e204 > a
+          ? (a / 1e201).toFixed(2) + "ssx"
+          : 1e207 > a
+          ? (a / 1e204).toFixed(2) + "spsx"
+          : 1e210 > a
+          ? (a / 1e207).toFixed(2) + "osx"
+          : 1e213 > a
+          ? (a / 1e210).toFixed(2) + "nsx"
+          : 1e216 > a
+          ? (a / 1e213).toFixed(2) + "sp"
+          : 1e219 > a
+          ? (a / 1e216).toFixed(2) + "usp"
+          : 1e222 > a
+          ? (a / 1e219).toFixed(2) + "dsp"
+          : 1e225 > a
+          ? (a / 1e222).toFixed(2) + "tsp"
+          : 1e228 > a
+          ? (a / 1e225).toFixed(2) + "qsp"
+          : 1e231 > a
+          ? (a / 1e228).toFixed(2) + "qusp"
+          : 1e234 > a
+          ? (a / 1e231).toFixed(2) + "ssp"
+          : 1e237 > a
+          ? (a / 1e234).toFixed(2) + "spsp"
+          : 1e240 > a
+          ? (a / 1e237).toFixed(2) + "osp"
+          : 1e243 > a
+          ? (a / 1e240).toFixed(2) + "nsp"
+          : 1e246 > a
+          ? (a / 1e243).toFixed(2) + "oc"
+          : 1e249 > a
+          ? (a / 1e246).toFixed(2) + "uoc"
+          : 1e252 > a
+          ? (a / 1e249).toFixed(2) + "doc"
+          : 1e255 > a
+          ? (a / 1e252).toFixed(2) + "toc"
+          : 1e258 > a
+          ? (a / 1e255).toFixed(2) + "qoc"
+          : 1e261 > a
+          ? (a / 1e258).toFixed(2) + "quoc"
+          : 1e264 > a
+          ? (a / 1e261).toFixed(2) + "soc"
+          : 1e267 > a
+          ? (a / 1e264).toFixed(2) + "spoc"
+          : 1e270 > a
+          ? (a / 1e267).toFixed(2) + "ooc"
+          : 1e273 > a
+          ? (a / 1e270).toFixed(2) + "noc"
+          : 1e276 > a
+          ? (a / 1e273).toFixed(2) + "no"
+          : 1e279 > a
+          ? (a / 1e276).toFixed(2) + "uno"
+          : 1e282 > a
+          ? (a / 1e279).toFixed(2) + "dno"
+          : 1e285 > a
+          ? (a / 1e282).toFixed(2) + "tno"
+          : 1e288 > a
+          ? (a / 1e285).toFixed(2) + "qno"
+          : 1e291 > a
+          ? (a / 1e288).toFixed(2) + "quno"
+          : 1e294 > a
+          ? (a / 1e291).toFixed(2) + "sno"
+          : 1e297 > a
+          ? (a / 1e294).toFixed(2) + "spno"
+          : 1e300 > a
+          ? (a / 1e297).toFixed(2) + "ono"
+          : 1e303 > a
+          ? (a / 1e300).toFixed(2) + "nno"
+          : 1e306 > a
+          ? (a / 1e303).toFixed(2) + "ce"
+          : 1.79e308 > a
+          ? (a / 1e306).toFixed(2) + "uce"
+          : 1e1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 >
+            a
+          ? (a / 1.7976e308).toFixed(2) + "Infinite"
+          : "\u221e";
         m.timeForHumans = a => {
             function e(a, e) {
                 a && (F =
@@ -5190,7 +5466,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
             let n = a % 24;
             a = Math.floor(a / 24);
             let F = "";
-            if (300 < a) return "eternity";
+            if (300 < a) return "FOREVER";
             e(a, "day");
             e(n, "hour");
             e(w, "minute");
@@ -5559,6 +5835,9 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
                         case a.KEY_LEVEL_UP:
                             this.emit("L");
                             break;
+                        case a.KEY_ABILITY:
+                           this.emit("A");
+                            break;
                     }
                     if (!e.ctrlKey && !e.altKey) {
                         if (a.canSkill) {
@@ -5762,7 +6041,10 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
                         a.showDebug = !1;
                         break;
                     case a.KEY_CLASS_TREE:
-                        a.showTree = !1
+                        a.showTree = !1;
+                    case a.KEY_ABILITY:
+              this.emit("A");
+              break;
                 }
                 this.cheating && this.talk("0", -e.keyCode)
             }
@@ -6512,7 +6794,80 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
                 guiblack: "#000000",
                 paletteSize: 10,
                 border: .65
-            }
-        }
-    }]);
-}.call(this)
+            },
+            test: {
+          teal: "#7ADBBC",
+          lgreen: "#B9E87E",
+          orange: "#E7896D",
+          yellow: "#FDF380",
+          lavender: "#B58EFD",
+          pink: "#EF99C3",
+          vlgrey: "#E8EBF7",
+          lgrey: "#AA9F9E",
+          guiwhite: "#FFFFFF",
+          black: "#484848",
+          blue: "#3CA4CB",
+          green: "#8ABC3F",
+          red: "#E03E41",
+          gold: "#EFC74B",
+          purple: "#8D6ADF",
+          magenta: "#CC669C",
+          grey: "#A7A7AF",
+          dgrey: "#726F6F",
+          white: "#DBDBDB",
+          guiblack: "#000000",
+          paletteSize: 10,
+          border: 0.95,
+        },
+        shadow: {
+          teal: "#265B5F",
+          lgreen: "#00BB00",
+          orange: "#802C11",
+          yellow: "#9B870C",
+          lavender: "#734F96",
+          pink: "#600034",
+          vlgrey: "#878787",
+          lgrey: "#555555",
+          guiwhite: "#cfcfcf",
+          black: "#050505",
+          blue: "#152238",
+          green: "#013220",
+          red: "#8B0000",
+          gold: "#5B4628",
+          purple: "#301934",
+          magenta: "#0B008B",
+          grey: "#222222",
+          dgrey: "#101010",
+          white: "#A9A9A9",
+          guiblack: "#000000",
+          paletteSize: 10,
+          border: 0.7,
+        },
+        blackwhite: {
+          teal: "#dbdbdb",
+          lgreen: "#e8e8e8",
+          orange: "#e8e8e8",
+          yellow: "#fcfcfc",
+          lavender: "#fcfcfc",
+          pink: "#f0f0f0",
+          vlgrey: "#f7f7f7",
+          lgrey: "#ababab",
+          guiwhite: "#FFFFFF",
+          black: "#484848",
+          blue: "#cccccc",
+          green: "#bdbdbd",
+          red: "#e0e0e0",
+          gold: "#f0f0f0",
+          purple: "#dedede",
+          magenta: "#cccccc",
+          grey: "#b0b0b0",
+          dgrey: "#737373",
+          white: "#DBDBDB",
+          guiblack: "#000000",
+          paletteSize: 10,
+          border: 0.65,
+        },
+      };
+    },
+  ]);
+}.call(this);
