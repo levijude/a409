@@ -1,3 +1,10 @@
+# Jul. 21, 2026 - Beta 0.01
+
+- THE GAME IS OFFICIALLY BACK.
+- The War Mode server should be fully functional, though it may still have some bugs that need to be fixed. Those bugs will be taken care of in the coming days.
+- Most images and audios have yet to be replaced. They will be replaced soon, and some will likely be getting reworks as part of the overhaul plan.
+- Improved a lot of the code using systems from a different arras clone.
+
 # Jul. 20, 2026 - Beta 0.00
 
 - THE GAME IS RETURNING.
