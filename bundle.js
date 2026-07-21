@@ -15,7 +15,7 @@ let gamerDie = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97c
 let sayso = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/Say%20so%20(Japanese%20version).mp3?v=1737871581843
 let killallhumans = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/KILL%20ALL%20HUMANS.mp3?v=1740282886458"
 let chaos = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/20250303.mp3?v=1741056037776
-let ambience = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/a409_ambience.mp3?v=1741125390303
+let ambience = new Audio("https://levijude.github.io/a409/a409_ambience.mp3"); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/a409_ambience.mp3?v=1741125390303
 let gemsanctuary = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/gemsanctuary.mp3?v=1741218123992
 let chaos2 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/20250305_1.mp3?v=1741219825128
 let egigaab05 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/E-GIGA%20AB05%20Theme.mp3?v=1741416785188
