@@ -4889,7 +4889,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
     }, function(r) {
         const m = {
             openshift: (a, e) => `n-${a}-${e}.7e14.starter-us-west-2.openshiftapps.com`,
-            glitch: a => `${a}.glitch.me`,
+            glitch: a => `${a}.ondigitalocean.app`,
             heroku: a => `${a}.herokuapp.com`,
             digitalocean: a => `${a}.ondigitalocean.app`,
             arras: (a, e = 5E3) => `ip-${a}.arras.io:${e}`,
