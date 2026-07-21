@@ -1,31 +1,26 @@
-if (localStorage.getItem('uid') == null) localStorage.setItem('uid', Date.now().toString(36))
-if (localStorage.getItem('keybindsJSON') == null) localStorage.setItem('keybindsJSON', '{}')
-//if (localStorage.getItem('audioVolume') == null) localStorage.setItem('audioVolume', '0.5')
-if (localStorage.getItem('data') == null || JSON.parse(localStorage.data)['bidefeats'] == null) localStorage.data = JSON.stringify({
-  'playtime': 0,
-  'kills': 0,
-  'deaths': 0,
-  'bosskills': 0, 
-  'domwins': 0,
-  'domlosses': 0,
-  'attackwins': 0,
-  'attacklosses': 0,
-  'biwins': 0,
-  'bidefeats': 0,
-})
-let funnyvariablethatexistsiguess = false // dont set this to true unless you know what you're doing. this doesnt do anything it just clogs up the console with random shit
-/*let currentvolumemult = 1 // no touchy through console pls
-function setVolume(val, type = 'global') { // todo: finish this shit
-  switch (type) {
-    default:
-    case 'global':
-      break
-    case 'music':
-      break
-    case 'sound':
-      break
-  }
-}*/
+let gametime = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/Debris%20%26%20Jonth%20-%20Game%20Time%20%5BNCS%20Release%5D.mp3?v=1690753288628
+let dumbsong = new Audio("");
+let otherdumbshit = new Audio("");
+let funny_guttertank_sound = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/guttertank_spawn_cybergrind.mp3?v=1712198567186
+let breathing = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/breathing-6091.mp3?v=1710382142616
+let r7 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/2024-03-16%2012-15-26%20-%20Copy.mp3?v=1710609786194
+let horrorambience = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/sound-ambience-sonido-ambiente-3-14040.mp3?v=1710806553675
+let project22 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/Project_22.mp3?v=1731120007374
+let elita = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/yt1z.net%20-%20Elita%20-%20Sour%20Switchblade.mp3?v=1737170312114
+let endsound = new Audio("");           //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/My%20Real%20Voice.mp3?v=1737170385301                                                                                                                                                                    
+let crashout = new Audio(''); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/bandicam%202025-01-20%2010-32-12-487.mp3?v=1737391358213
+let warning27 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/27warning.mp3?v=1737510693963
+let dontfearthereaper = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/%C3%A5.mp3?v=1737773505697
+let gamerDie = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/A60KillEffect.mp3?v=1737779345575
+let sayso = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/Say%20so%20(Japanese%20version).mp3?v=1737871581843
+let killallhumans = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/KILL%20ALL%20HUMANS.mp3?v=1740282886458"
+let chaos = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/20250303.mp3?v=1741056037776
+let ambience = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/a409_ambience.mp3?v=1741125390303
+let gemsanctuary = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/gemsanctuary.mp3?v=1741218123992
+let chaos2 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/20250305_1.mp3?v=1741219825128
+let egigaab05 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/E-GIGA%20AB05%20Theme.mp3?v=1741416785188
+let r7_bp = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/Microman%20-%20Rhythm%20Seven%20%5B1995%5D.mp3?v=1741420297196
+let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/strxwberrymilk%20-%20My%20Head%20Hurts.mp3?v=1741575165391
 
 ~ function() {
     'use strict';
@@ -173,208 +168,951 @@ function setVolume(val, type = 'global') { // todo: finish this shit
 
         function e(b) {
           if (typeof b == 'number') {
-            switch (b) {
-                case 0:
-                    return l.teal;
-                case 1:
-                    return l.lgreen;
-                case 2:
-                    return l.orange;
-                case 3:
-                    return l.yellow;
-                case 4:
-                    return l.lavender;
-                case 5:
-                    return l.pink;
-                case 6:
-                    return l.vlgrey;
-                case 7:
-                    return l.lgrey;
-                case 8:
-                    return l.guiwhite;
-                case 9:
-                    return l.black;
-                case 10:
-                    return l.blue;
-                case 11:
-                    return l.green;
-                case 12:
-                    return l.red;
-                case 13:
-                    return l.gold;
-                case 14:
-                    return l.purple;
-                case 15:
-                    return l.magenta;
-                case 16:
-                    return l.grey;
-                case 17:
-                    return l.dgrey;
-                case 18:
-                    return l.white;
-                case 19:
-                    return l.guiblack;
-                case 20:
-                    return 150 > Date.now() % 300 ? l.blue : l.red;
-                case 21:
-                    return 150 > Date.now() % 300 ? l.blue : l.grey;
-                case 22:
-                    return 150 > Date.now() % 300 ? l.grey : l.blue;
-                case 23:
-                    return 150 > Date.now() % 300 ? l.red : l.grey;
-                case 24:
-                    return 150 > Date.now() % 300 ? l.grey : l.red;
-                case 30:
-                    return "#d21fff"; //Purple
-                case 31:
-                    return "#226ef6"; //Saturated Blue
-                case 32:
-                    return "#ff1000"; //Saturated Red
-                case 33:
-                    return "#ff9000"; //Orange
-                case 34:
-                    return "#00e00b"; //Bright Green
-                case 35:
-                    return "#ffd300"; //Dark Yellow
-                case 36:
-                    return "#ae4f00"; //Light Brown
-                case 37:
-                    return "#f6f4c6"; //Pastel Bright Yellow
-                case 38:
-                    return "#e7a807"; //Yellowish Orange
-                case 39:
-                    return "#db4d00"; //Reddish Orange
-                case 40:
-                    return "#4d0000"; //Brown
-                case 41:// Aquamarine
-                    return "#74d2b3"; //Aquamarine
-                case 42:
-                    return "#b6fff4"; //Cyan
-                case 43:
-                    return "#74f6e8"; //Cyan-ish
-                case 44:
-                    return "#00ced1"; //Cool Blue
-                case 45:
-                    return "#f67482"; //Reddish Pink
-                case 46:
-                    return "#ffc0d3"; //Bright pink base
-                case 47:
-                    return "#fed7e9"; //Bright Pink
-                case 48:
-                    return "#fd9bca"; //Pink
-                case 49:
-                    return "#90335d"; //Dark Purple
-                case 50:
-                    return "#9bfdce"; //Bright Green-Blue
-                case 51:
-                    return "#74f6e8"; //Bright Blue-Green
-                case 52:
-                    return "#fd9bca"; //Bright Pink 2: Electric Boogaloo
-                case 53:
-                    return "#ffffff"; //le uncreative color
-                case 54:
-                    return "#ffff99"; //Bright Yellow
-                case 55:
-                    return "#9999ff"; //Bright Blue
-                case 56: // frickery
-                    return X(l.grey, l.red, 1 / 3); // Ugly Purplish Grey
-                case 57:
-                    return "#FF8000"; //Orange 2: Electric Boogaloo
-                case 58:
-                    return 100 > Date.now() % 300 ? l.red : 200 > Date.now() % 300 ? l.green : l.blue;
-                case 59:
-                    return e(59) // Cursed Color (crashes Firefox legit)
-                case 60:
-                    return e(61) // Cursed Color 2:
-                case 61:
-                    return e(60) //  Electric Boogaloo
-                case 62: //Seizure
-                    let random = 0
-                    random = Math.random()
-                    console.log(random)
-                    if (random < 0.1) {
-                      return l.teal
-                    } else {
-                      if (random < 0.2) {
-                        return l.lgreen
-                      } else {
-                        if (random < 0.3) {
-                          return l.orange
-                        } else {
-                          if (random < 0.4) {
-                            return l.yellow
-                          } else {
-                            if (random < 0.5) {
-                              return l.lavender
-                            } else {
-                              if (random < 0.6) {
-                                return l.pink
-                              } else {
-                                if (random < 0.7) {
-                                  return l.vlgrey
-                                } else {
-                                  if (random < 0.8) {
-                                    return l.lgrey
-                                  } else {
-                                    if (random < 0.9) {
-                                      return l.guiwhite
-                                    } else {
-                                      return l.black
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                case 63:
-                    return 300 > Date.now() % 900 ? l.red : 600 > Date.now() % 900 ? l.green : l.blue;
-                case 64: 
-                    return X(l.grey, l.blue, 1 / 3); // Blue Grey
-                case 65:
-                    return 300 > Date.now() % 600 ? '#ae00ff' : '#ff00f2';
-                case 66: //red to orange
-                    return X(l.red, '#FF8000', Date.now() % 300 / 299);
-                case 67:
-                    return 300 > Date.now() % 600 ? '#ff00f2' : '#ae00ff';
-                // colors 68 through 75 are used in flint's animation
-                case 68:
-                    return X(l.dgrey, l.red, 1 / 9); // flint 1
-                case 69:
-                    return X(l.dgrey, l.red, 2 / 9); // flint 2
-                case 70:
-                    return X(l.dgrey, l.red, 3 / 9); // flint 3
-                case 71:
-                    return X(l.dgrey, l.red, 4 / 9); // flint 4
-                case 72:
-                    return X(l.dgrey, l.red, 5 / 9); // flint 5
-                case 73:
-                    return X(l.dgrey, l.red, 6 / 9); // flint 6
-                case 74:
-                    return X(l.dgrey, l.red, 7 / 9); // flint 7
-                case 75:
-                    return X(l.dgrey, l.red, 8 / 9); // flint 8
-                case 76:
-                    return 150 > Date.now() % 300 ? '#00e1ff' : '#0ea0cc';
-                case 77:
-                    return "#86a5bd";
-                case 78:
-                    return "#9c6a25"; //better brown
-                case 79:
-                    return X(l.grey, l.gold, 1 / 3);
-                case 80:
-                    return 100 > Date.now() % 200 ? '#000000' : '#ff0000';
-                default:
-                    return "#ff0000" //oh no, the saturated red has come
+            case 0:
+            return l.teal;
+          case 1:
+            return l.lgreen;
+          case 2:
+            return l.orange;
+          case 3:
+            return l.yellow;
+          case 4:
+            return l.lavender;
+          case 5:
+            return l.pink;
+          case 6:
+            return l.vlgrey;
+          case 7:
+            return l.lgrey;
+          case 8:
+            return l.guiwhite;
+          case 9:
+            return l.black;
+          case 10:
+            return l.blue;
+          case 11:
+            return l.green;
+          case 12:
+            return l.red;
+          case 13:
+            return l.gold;
+          case 14:
+            return l.purple;
+          case 15:
+            return l.magenta;
+          case 16:
+            return l.grey;
+          case 17:
+            return l.dgrey;
+          case 18:
+            return l.white;
+          case 19:
+            return l.guiblack;
+          case 20:
+            return "b57d40";
+          case 21:
+            return "#e78246";
+          case 22:
+            return "#be9895";
+          case 23:
+            return "#ac68bd";
+          case 24:
+            return "#b986a5";
+          case 30:
+            return "#D21FFF";
+          case 31:
+            return "#226EF6";
+          case 32:
+            return "#FF1000";
+          case 33:
+            return "#FF9000";
+          case 34:
+            return "#00E00B";
+          case 35:
+            return "#FFD300";
+          case 36:
+            if (!B.graphical.eyesenstivity) {
+              return T(
+                [
+                  "#FF1000", // 32
+                  "#ff9000", // 33
+                  "#ffd300", // 35
+                  "#00e00b", // 34
+                  "#226ef6", // 31
+                  "#a913cf",
+                ][Math.floor((Date.now() / 200) % 6)],
+                [
+                  "#ff9000",
+                  "#ffd300",
+                  "#00e00b",
+                  "#226ef6",
+                  "#a913cf",
+                  "#FF1000",
+                ][Math.floor((Date.now() / 200) % 6)],
+                (Date.now() / 200) % 1
+              );
+            } else {
+              return "#ff0000";
             }
-          } else if (typeof b == 'string') {
-                return b
-          }
-        
-        
+          case 37:
+            if (!B.graphical.eyesenstivity) {
+              return T(
+                [
+                  "#644321",
+                  "#cb6f3c",
+                  "#444444",
+                  "#ff1000",
+                  "#d21fff",
+                  "#a5b382",
+                ][Math.floor((Date.now() / 200) % 6)],
+                [
+                  "#a5b382",
+                  "#d21fff",
+                  "#ff1000",
+                  "#444444",
+                  "#cb6f3c",
+                  "#644321",
+                ][Math.floor((Date.now() / 200) % 6)],
+                (Date.now() / 200) % 1
+              );
+            } else {
+              return "#444444";
+            }
+          case 39:
+            return "#644321";
+          case 40:
+            return "#CB6F3C";
+          case 41:
+            return "#444444";
+          case 42:
+            if (!B.graphical.eyesenstivity) {
+              return T(
+                [
+                  "#000000",
+                  "#ffffff",
+                  "#ffff00",
+                  "#39ff14",
+                  "#00ffff",
+                  "#ea00ff",
+                ][Math.floor((Date.now() / 30) % 6)],
+                [
+                  "#000000",
+                  "#ffffff",
+                  "#ffff00",
+                  "#39ff14",
+                  "#00ffff",
+                  "#ea00ff",
+                ][Math.floor((Date.now() / 30) % 6)],
+                (Date.now() / 200) % 1
+              );
+            } else {
+              return "#000000";
+            }
+          case 43:
+            return "#f7820c";
+          case 44:
+            return "#fffcf5";
+          case 45:
+            return "#edbb32";
+          case 46:
+            return "#ebd8c5";
+          case 47:
+            return "#736900";
+          case 48:
+            return "#96ffaf";
+          case 49:
+            return "#773fe8";
+          case 50:
+            return "#ff1f44";
+          case 51:
+            return "#fffdcc";
+          case 52:
+            return "#ed9542";
+          case 53:
+            return "#9efb60";
+          case 54:
+            return "#f56e6e";
+          case 55:
+            return "#ed1313";
+          case 56:
+            return "#ffd875";
+          case 57:
+            return "#ffd25e";
+          case 58:
+            return "#ffc83b";
+          case 59:
+            return "#ffc121";
+          case 60:
+            return "#f5b50f";
+          case 61:
+            return "#e699ff";
+          case 62:
+            return "#dd75ff";
+          case 63:
+            return "#d34dff";
+          case 64:
+            return "#cb2bff";
+          case 65:
+            return "#b80ef0";
+          case 66:
+            return "#a7b4eb";
+          case 67:
+            return "#8698e3";
+          case 68:
+            return "#5874e8";
+          case 69:
+            return "#2d51e3";
+          case 70:
+            return "#132dd6";
+          case 71:
+            return "#878787";
+          case 72:
+            return "#787878";
+          case 73:
+            return "#696969";
+          case 74:
+            return "#595959";
+          case 75:
+            return "#4a4a4a";
+          case 76:
+            return "#3b3b3b";
+          case 77:
+            return "#2e2e2e";
+          case 78:
+            return "#1e1e1e";
+          case 79:
+            return "#ff0000";
+          case 80:
+            return "#00ff00";
+          case 81:
+            return "#0000ff";
+          case 82:
+            return "#00ffff";
+          case 83:
+            return "#00e0e0";
+          case 84:
+            return "#00c9c9";
+          case 85:
+            return "#00adad";
+          case 86:
+            return "#009696";
+          case 87:
+            return "#008080";
+          case 88:
+            return "#006666";
+          case 89:
+            return "#660066";
+          case 90:
+            return "#800080";
+          case 91:
+            return "#9e009e";
+          case 92:
+            return "#c700c7";
+          case 93:
+            return "#e600e6";
+          case 94:
+            return "#ff17ff";
+          case 95:
+            return "#ff3aff";
+          case 96:
+            return "#ff59ff";
+          case 97:
+            return "#ff7aff";
+          case 98:
+            return "#ff98ff";
+          case 99:
+            return "#ffb2ff";
+          case 100:
+            return "#ffdeff";
+          case 101:
+            return "#ffffff";
+          case 102:
+            return "#d9ffd9";
+          case 103:
+            return "#a3ffa3";
+          case 104:
+            return "#29ff29";
+          case 105:
+            return "#00ed00";
+          case 106:
+            return "#00c900";
+          case 107:
+            return "#009900";
+          case 108:
+            return "#820000";
+          case 109:
+            return "#9e0000";
+          case 110:
+            return "#db0000";
+          case 111:
+            return "#ff230a";
+          case 112:
+            return "#ff0088";
+          case 113:
+            return "#ea00ff";
+          case 114:
+            return "#9900ff";
+          case 115:
+            return "#ffff00";
+          case 116:
+            return "#ffb300";
+          case 117:
+            return "#2803fc";
+          case 118:
+            return "#0b03fc";
+          case 119:
+            return "#034efc";
+          case 120:
+            return "#03bafc";
+          case 121:
+            return "#03fcce";
+          case 122:
+            return "#03fca5";
+          case 123:
+            return "#03fc62";
+          case 124:
+            return "#22ff00";
+          case 125:
+            return "#ff6600";
+          case 126:
+            return "#ff2600";
+          case 127:
+            return "#de0000";
+          case 128:
+            return "#5c000f";
+          case 129:
+            return "#260006";
+          case 130:
+            return "#467d1e";
+          case 131:
+            return "#53ba07";
+          case 132:
+            return "#45a300";
+          case 133:
+            return "#aaff00"; //37778
+          case 134:
+            return "#f7c30a"; //75557 - 1
+          case 135:
+            return "#f6a707"; //75557 - 2
+          case 136:
+            return "#59d100"; //37778 #'s
+          case 137:
+            return "#f48607";
+          case 138:
+            return "#ef3806";
+          case 139:
+            return "#ee3705";
+          case 140:
+            return "#c30001";
+          case 141:
+            return "#bf2503";
+          case 142:
+            return "#8a0002";
+          case 143:
+            return "#901b03";
+          case 144:
+            return "#5d0002";
+          case 145:
+            return "#3e0303";
+          case 146:
+            return "#342b02";
+          case 147:
+            return "#463703";
+          case 148:
+            return "#053d01";
+          case 149:
+            return "#084d03";
+          case 150:
+            return "#077404";
+          case 151:
+            return "#387b05";
+          case 152:
+            return "#6a6e04";
+          case 153:
+            return "#56b508";
+          case 154:
+            return "#bec30a";
+          case 155:
+            return "#bcc608";
+          case 156:
+            return "#faff0b";
+          case 157:
+            return "#ffff0c";
+          case 158:
+            return "#59ff0a";
+          case 159:
+            return "#17ff09";
+          case 160:
+            return "#15ff09";
+          case 161:
+            return "#13f708";
+          case 162:
+            return "#a1e208";
+          case 163:
+            return "#c6e20a";
+          case 164:
+            return "#ca8e07";
+          case 165:
+            return "#ce9808";
+          case 166:
+            return "#c74a05";
+          case 167:
+            return "#c85307";
+          case 168:
+            return "#e70003";
+          case 169:
+            return "#e70003";
+          case 170:
+            return "#e90029";
+          case 171:
+            return "#e80064";
+          case 172:
+            return "#ea0092";
+          case 173:
+            return "#ec00a1";
+          case 174:
+            return "#ea00e0";
+          case 175:
+            return "#ec00cd";
+          case 176:
+            return "#d900f6";
+          case 177:
+            return "#e300f7";
+          case 178:
+            return "#c900f7";
+          case 179:
+            return "#bf00f6";
+          case 180:
+            return "#a600f7";
+          case 181:
+            return "#8e00f6";
+          case 182:
+            return "#7100f4";
+          case 183:
+            return "#8b01f4";
+          case 184:
+            return "#3d00f2";
+          case 185:
+            return "#6700ff";
+          case 186:
+            return "#0014fe";
+          case 187:
+            return "#bf9706";
+          case 188:
+            return "#b8b8b8";
+          case 189:
+            return "#7579db";
+          case 190:
+            return "#c034e6";
+          case 191:
+            return "#f983a7";
+          case 192:
+            return "#2a2a2a";
+          case 193:
+            return "#b87fc8";
+          case 194:
+            return "#d7e3e3";
+          case 195:
+            return "#f3ad1c";
+          case 196:
+            return "#135dc6";
+          case 197:
+            return "#59e6c0";
+          case 198:
+            return "#53f346";
+          case 199:
+            return "#ff6928";
+          case 200:
+            return "#81b8b4";
+          case 201:
+            return "#7b78de";
+          case 202:
+            return "#71717a";
+          case 203:
+            return "#9867c7";
+          case 204:
+            if (!B.graphical.eyesenstivity) {
+              return T(
+                [
+                  "#ff0000",
+                  "#bb0000",
+                  "#990000",
+                  "#700000",
+                  "#430000",
+                  "#210000",
+                ][Math.floor((Date.now() / 200) % 6)],
+                [
+                  "#000000",
+                  "#210000",
+                  "#500000",
+                  "#800000",
+                  "#aa0000",
+                  "#dd0000",
+                ][Math.floor((Date.now() / 200) % 6)],
+                (Date.now() / 200) % 1
+              );
+            } else {
+              return "#900000";
+            }
+          case 205:
+            return "#f8f5eb";
+          case 206:
+            return "#c09eff";
+          case 207:
+            return "#ff8fce";
+          case 208:
+            return "#f02b32";
+          case 209:
+            return "#3e68e6";
+          case 210:
+            return "#aced5c";
+          case 211:
+            return "#45a33b";
+          case 212:
+            return "#ecf08b";
+          case 213:
+            return "#8a65f7";
+          case 214:
+            return "#592b78";
+          case 215:
+            return "#dbbd72";
+          case 216:
+            return "#c6f3f5";
+          case 217:
+            return "#751d6d";
+          case 218:
+            return "#29ff97";
+          case 219:
+            return "#54b346";
+          case 220:
+            return "#6b220e";
+          case 221:
+            return "#f0a716";
+          case 222:
+            return "#162024";
+          case 223:
+            return "#cf6ba5";
+          case 224:
+            return "#521313";
+          case 225:
+            return "#a81b11";
+          case 226:
+            return "#4c9ca8";
+          case 227:
+            return "#155428";
+          case 228:
+            return "#1f2963";
+          case 229:
+            return "#1f2963";
+          case 230:
+            return "#ab8e46";
+          case 231:
+            return "#4f334a";
+          case 232:
+            return "#fcfcc7";
+          case 233:
+            return "#a5abad";
+          case 234:
+            return "#57b553";
+          case 235:
+            return "#ff584d";
+          case 236:
+            return "#d1a7bd";
+          case 237:
+            return "#b00c2d";
+          case 238:
+            return "#c26100";
+          case 239:
+            return "#73ff40";
+          case 240:
+            return "#b82a7d";
+          case 241:
+            return "#2c522d";
+          case 242:
+            return "#2c522d";
+          case 243:
+            return "#702ba1";
+          case 244:
+            return "#6cd48b";
+          case 245:
+            return "#1f2420";
+          case 246:
+            return "#120fab";
+          case 247:
+            return "#7d0517";
+          case 248:
+            return "#91c3d9";
+          case 249:
+            return "#d49f81";
+          case 250:
+            return "#e36530";
+          case 251:
+            return "#b3475d";
+          case 252:
+            return "#b300ff";
+          case 253:
+            return "#b300ff";
+          case 254:
+            return "#ffd814";
+          case 255:
+            return "#ed771c";
+          case 256:
+            return "#3467e0";
+          case 257:
+            return "#19fcc7";
+          case 258:
+            return "#ffffff";
+          case 259:
+            return "#f55f7b";
+          case 260:
+            return "#59e496";
+          case 261:
+            return "#5f46f3";
+          case 262:
+            return "#f79444";
+          case 263:
+            return "#670f98";
+          case 264:
+            return "#5ac0ff";
+          case 265:
+            return "#7f86cb";
+          case 266:
+            return "#6e7bd4";
+          case 267:
+            return "#8e91c2";
+          case 268:
+            if (!B.graphical.eyesenstivity) {
+              return T(
+                [
+                  "#ea00ff",
+                  "#39ff14",
+                  "#000000",
+                  "#00ffff",
+                  "#ff0000",
+                  "#ffffff",
+                ][Math.floor((Date.now() / 30) % 6)],
+                [
+                  "#ea00ff",
+                  "#39ff14",
+                  "#000000",
+                  "#00ffff",
+                  "#ff0000",
+                  "#ffffff",
+                ][Math.floor((Date.now() / 30) % 6)],
+                (Date.now() / 200) % 1
+              );
+            } else {
+              return "#000000";
+            }
+          case 269:
+            if (!B.graphical.eyesenstivity) {
+              return T(
+                [
+                  "#ffffff",
+                  "#ff00ff",
+                  "#00ffff",
+                  "#ffff00",
+                  "#000000",
+                  "#ff0000",
+                ][Math.floor((Date.now() / 30) % 6)],
+                [
+                  "#ffffff",
+                  "#ff00ff",
+                  "#00ffff",
+                  "#ffff00",
+                  "#000000",
+                  "#ff0000",
+                ][Math.floor((Date.now() / 30) % 6)],
+                (Date.now() / 200) % 1
+              );
+            } else {
+              return "#000000";
+            }
+          case 270:
+            if (!B.graphical.eyesenstivity) {
+              return T(
+                [
+                  "#0000ff",
+                  "#ff0000",
+                  "#00ff00",
+                  "#000000",
+                  "#ffffff",
+                  "#ff00ff",
+                ][Math.floor((Date.now() / 30) % 6)],
+                [
+                  "#0000ff",
+                  "#ff0000",
+                  "#00ff00",
+                  "#000000",
+                  "#ffffff",
+                  "#ff00ff",
+                ][Math.floor((Date.now() / 30) % 6)],
+                (Date.now() / 200) % 1
+              );
+            } else {
+              return "#000000";
+            }
+          case 271:
+            if (!B.graphical.eyesenstivity) {
+              return T(
+                [
+                  "#ffff00",
+                  "#000000",
+                  "#ff00ff",
+                  "#00ffff",
+                  "#0000ff",
+                  "#ffffff",
+                ][Math.floor((Date.now() / 30) % 6)],
+                [
+                  "#ffff00",
+                  "#000000",
+                  "#ff00ff",
+                  "#00ffff",
+                  "#0000ff",
+                  "#ffffff",
+                ][Math.floor((Date.now() / 30) % 6)],
+                (Date.now() / 200) % 1
+              );
+            } else {
+              return "#000000";
+            }
+          case 272:
+            return '#20f4cd';
+          case 273:
+            return '#6576d9';
+          case 274:
+            return '#7f86cb';
+          case 275:
+            return '#9596be';
+          case 345:
+            return '#ff9c98';
+          case 346:
+            return 'J';
+          case 347:
+            return '#71ff37';
+          case 348:
+            return '#bf3f21';
+          case 349:
+            return '#ff1f44';
+          case 350:
+            return '#5b3fe8';
+          case 351:
+            return '#d0579c';
+          case 352:
+            return '#1f018c';
+          case 353:
+            return '#8fff64';
+          case 354:
+            return '#bc73ff';
+          case 355:
+            return '#ff2580';
+          case 356:
+            return '#494c69';
+          case 357:
+            return '#b8927c';
+          case 358:
+            return '#fef9da';
+          case 359:
+            return '#18141a';
+          case 360:
+            return '#ad24c3';
+          case 361:
+            return '#e699ff';
+          case 364:
+            return '#6f00ff';
+          case 365:
+            return '#3d72d2';
+          case 366:
+            return ''; //8cb5ff to 960000
+          case 367:
+            return '#00be52';
+          case 368:
+            return '#ff3000';
+          case 369:
+            return '#e3838e';
+          case 370:
+            return '#09da23';
+          case 371:
+            return '#b9ff96';
+          case 372:
+            return '#0048b0';
+          case 373:
+            return '#399c00';
+          
+          case 500:
+            return "#fc8d1e";
+          case 600:
+            return "#be46fa";
+          case 621:
+            return ''; //5c009a to ff34ff
+          case 622:
+            return ''; //00489a to 5bffcd
+          case 641:
+            return '#ff0000';
+          case 642:
+            return '#0000ff';
+          case 643:
+            return '#9b33ff';
+          case 644:
+            return '#ffffff';
+          case 700:
+            return "#8e8f91";
+          case 741:
+            return '#a94343';
+          case 742:
+            return '#f6e596';
+          case 800:
+            return "#ffde4d";
+          case 987:
+            if (!B.graphical.eyesenstivity) {
+              return T(
+                [
+                  "#ffffff",
+                  "#ffff00",
+                  "#00ffff",
+                  "#c3ff7f",
+                  "#ff00ff",
+                  "#7f7fff",
+                ][Math.floor((Date.now() / 30) % 6)],
+                [
+                  "#ffffff",
+                  "#ffff00",
+                  "#00ffff",
+                  "#c3ff7f",
+                  "#ff00ff",
+                  "#7f7fff",
+                ][Math.floor((Date.now() / 30) % 6)],
+                (Date.now() / 200) % 1
+              );
+            } else {
+              return "#ffffff";
+            }
+          case 1125:
+            if (!B.graphical.eyesenstivity) {
+              return T(
+                [
+                  "#000000",
+                  "#000000",
+                  "#000000",
+                  "#000000",
+                  "#000000",
+                  "#000000",
+                ][Math.floor((Date.now() / 200) % 6)],
+                [
+                  "#000000",
+                  "#000000",
+                  "#000000",
+                  "#000000",
+                  "#000000",
+                  "#ff0000",
+                ][Math.floor((Date.now() / 200) % 6)],
+                (Date.now() / 200) % 1
+              );
+            } else {
+              return "#ff0000";
+            }
+          case 1500:
+            if (!B.graphical.eyesenstivity) {
+              return T(
+                [
+                  "#00ffff",
+                  "#00ffff",
+                  "#00ffff",
+                  "#35ffff",
+                  "#70ffff",
+                  "#a5ffff",
+                ][Math.floor((Date.now() / 200) % 6)],
+                [
+                  "#00ffff",
+                  "#00ffff",
+                  "#00ffff",
+                  "#35ffff",
+                  "#70ffff",
+                  "#a5ffff",
+                ][Math.floor((Date.now() / 200) % 6)],
+                (Date.now() / 200) % 1
+              );
+            } else {
+              return "#00ffff";
+            }
+          case 2250:
+            if (!B.graphical.eyesenstivity) {
+              return T(
+                [
+                  "#000000",
+                  "#000000",
+                  "#000000",
+                  "#000000",
+                  "#000000",
+                  "#000000",
+                ][Math.floor((Date.now() / 200) % 6)],
+                [
+                  "#000000",
+                  "#000000",
+                  "#000000",
+                  "#000000",
+                  "#000000",
+                  "#0000ff",
+                ][Math.floor((Date.now() / 200) % 6)],
+                (Date.now() / 200) % 1
+              );
+            } else {
+              return "#0000ff";
+            }
+          case 2525:
+            if (!B.graphical.eyesenstivity) {
+              return T(
+                [
+                  "#000000",
+                  "#000000",
+                  "#000000",
+                  "#000000",
+                  "#000000",
+                  "#000000",
+                ][Math.floor((Date.now() / 200) % 6)],
+                [
+                  "#000000",
+                  "#000000",
+                  "#000000",
+                  "#000000",
+                  "#000000",
+                  "#00ffff",
+                ][Math.floor((Date.now() / 200) % 6)],
+                (Date.now() / 200) % 1
+              );
+            } else {
+              return "#00ffff";
+            }
+            case 3636:
+            if (!B.graphical.eyesenstivity) {
+              return T(
+                [
+                  "#333333",
+                  "#333333",
+                  "#333333",
+                  "#333333",
+                  "#333333",
+                  "#333333",
+                ][Math.floor((Date.now() / 200) % 6)],
+                [
+                  "#333333",
+                  "#333333",
+                  "#333333",
+                  "#333333",
+                  "#333333",
+                  "#ffffff",
+                ][Math.floor((Date.now() / 200) % 6)],
+                (Date.now() / 200) % 1
+              );
+            } else {
+              return "#00ffff";
+            }
+          case "FFA_RED":
+            return l.red;
+          default:
+            return "#FF0000";
         }
+      }
 
         function K(b) {
             let d = D.graphical.neon ? l.white : l.black;
@@ -384,68 +1122,230 @@ function setVolume(val, type = 'global') { // todo: finish this shit
         function w(b) {
             switch (b) {
                 case "bas1":
-                case "bap1":
-                case "dom1":
-                case "dbc1":
-                case "mbc1":
-                    return l.blue;
-                case "bas2":
-                case "bap2":
-                case "dom2":
-                case "dbc2":
-                case "mbc2":
-                    return l.green;
-                case "bas3":
-                case "bap3":
-                case "dom3":
-                case "dbc3":
-                case "mbc3":
-                    return l.red;
-                case "bas4":
-                case "bap4":
-                case "dom4":
-                case "dbc4":
-                case "mbc4":
-                    return l.pink;
-                case "domx":
-                case "dom0":
-                case "dbc0":
-                case "mbc0":
-                    return l.yellow;
-                case "port":
-                    return g.globalAlpha = 1, l.black;
-                case "edge":
-                    return X(l.white, l.guiblack, 1 / 3);
-                case "dor1":
-                case "edom":
-                case "domi":
-                    return l.vlgrey;
-                //case "nest":
-                //    return l.lavender; cant see where crasher spawns
-                case "crsh":
-                case "hill":
-                    return l.orange;
-                case "wter":
-                    return '#00d0ff'
-                case "bi00":
-                case "bi03":
-                case "bi04":
-                case "bi05":
-                    return '#4d535e'
-                case "bi01":
-                    return '#8fa1c2'
-                case "bi02":
-                    return '#4a0000'
-                case "pmp1":
-                    return X(l.white, l.blue, 1 / 3);
-                case "pmp2":
-                    return X(l.white, l.green, 1 / 3);
-                case "icet":
-                    return '#99d7e5';
-                case "iceh":
-                    return '#627aa8';
-                default:
-                    return l.white
+          case "bap1":
+          case "dom1":
+          case "dbc1":
+          case "mbc1":
+            return l.blue;
+          case "dead":
+            return l.guiblack;
+          case "fake":
+            return "#202020";
+          case "brdr":
+            return "#606060";
+          case "nfke":
+            return l.white;
+          case "bas9":
+            return "#ff8fce";
+          case "bas10":
+            return "#f02b32";
+          case "bas11":
+            return "#3e68e6";
+          case "bas12":
+            return "#aced5c";
+          case "bas13":
+            return "#45a33b";
+          case "bas14":
+            return "#ecf08b";
+          case "bas15":
+            return "#8a65f7";
+          case "bas16":
+            return "#592b78";
+          case "bas17":
+            return "#dbbd72";
+          case "bas18":
+            return "#c6f3f5";
+          case "bas19":
+            return "#751d6d";
+          case "bas20":
+            return "#29ff97";
+          case "bas21":
+            return "#54b346";
+          case "bas22":
+            return "#6b220e";
+          case "bas23":
+            return "#f0a716";
+          case "bas24":
+            return "#162024";
+          case "bas25":
+            return "#cf6ba5";
+          case "bas26":
+            return "#521313";
+          case "bas27":
+            return "#a81b11";
+          case "bas28":
+            return "#4c9ca8";
+          case "bas29":
+            return "#155428";
+          case "bas30":
+            return "#1f2963";
+          case "bas31":
+            return "#aac961";
+          case "bas32":
+            return "#ab8e46";
+          case "bas33":
+            return "#4f334a";
+          case "bas34":
+            return "#fcfcc7";
+          case "bas35":
+            return "#a5abad";
+          case "bas36":
+            return "#57b553";
+          case "bas37":
+            return "#ff584d";
+          case "bas38":
+            return "#d1a7bd";
+          case "bas39":
+            return "#b00c2d";
+          case "bas40":
+            return "#c26100";
+          case "bas41":
+            return "#73ff40";
+          case "bas42":
+            return "#b82a7d";
+          case "bas43":
+            return "#2c522d";
+          case "bas44":
+            return "#914b14";
+          case "bas45":
+            return "#702ba1";
+          case "bas46":
+            return "#6cd48b";
+          case "bas47":
+            return "#1f2420";
+          case "bas48":
+            return "#120fab";
+          case "bas49":
+            return "#7d0517";
+          case "bas50":
+            return "#91c3d9";
+          case "bas51":
+            return "#d49f81";
+          case "bas52":
+            return "#e36530";
+          case "bas53":
+            return "#b3475d";
+          case "bas54":
+            return "#b300ff";
+          case "bas55":
+            return "#40ff19";
+          case "bas56":
+            return "#ffd814";
+          case "bas57":
+            return "#ed771c";
+          case "bas58":
+            return "#3467e0";
+          case "bas59":
+            return "#19fcc7";
+          case "bas60":
+            return "#ffffff";
+          case "bas2":
+          case "bap2":
+          case "dom2":
+          case "dbc2":
+          case "mbc2":
+            return l.green;
+          case "bas3":
+          case "bap3":
+          case "dom3":
+          case "dbc3":
+          case "mbc3":
+            return l.red;
+          case "bas4":
+          case "bap4":
+          case "dom4":
+          case "dbc4":
+          case "mbc4":
+            return l.pink;
+          case "domx":
+          case "dom0":
+          case "dbc0":
+          case "mbc0":
+            return l.yellow;
+          case "bas6":
+            return "#be46fa";
+          case "port":
+            return (g.globalAlpha = 1), l.black;
+          case "edge":
+            return T(l.white, l.guiblack, 1 / 3);
+          case "dor1":
+            return l.vl;
+          case "nest":
+            return l.lavender;
+          case "teal":
+            return l.teal;
+          case "2048":
+            return l.guiwhite;
+          case "mgnt":
+            return l.magenta;
+          case "evt1":
+            return l.orange;
+          case "evt2":
+            return l.yellow;
+          case "bas7":
+            return "#8e8f91";
+          case "bas8":
+            return "#ffde4d";
+          case "bas5":
+            return "#fc8d1e";
+          case "spw1":
+          case "spw2":
+          case "whte":
+            return l.guiwhite;
+          case "other":
+            return l.vlgrey;
+          case "area":
+            return l.red;
+          case "zone":
+            return "#900000";
+          case "wall":
+            return l.dgrey;
+          case "rnbw":
+            if (!B.graphical.eyesenstivity) {
+            return T( 
+              [
+                "#FF1000",
+                "#ff9000",
+                "#ffd300",
+                "#00e00b",
+                "#226ef6",
+                "#a913cf",
+              ][Math.floor((Date.now() / 200) % 6)],
+              [
+                "#ff9000",
+                "#ffd300",
+                "#00e00b",
+                "#226ef6",
+                "#a913cf",
+                "#FF1000",
+              ][Math.floor((Date.now() / 200) % 6)], 
+              (Date.now() / 200) % 1,
+          
+            ); } else {
+              return "#ff0000";
+            }
+          case "7265":
+            return T(
+              [
+                "#ffffff",
+                "#fffad1",
+                "#ffd18a",
+                "#f69044",
+                "#ff7c58",
+                "#fe5236",
+              ][Math.floor((Date.now() / 200) % 6)],
+              [
+                "#ffe999",
+                "#ffe174",
+                "#ffd950",
+                "#ffd333",
+                "#ffc800",
+                "#dd8ee3",
+              ][Math.floor((Date.now() / 200) % 6)],
+              (Date.now() / 200) % 1
+            );
+          default:
+            return l.white
             }
         }
 
@@ -850,10 +1750,6 @@ function setVolume(val, type = 'global') { // todo: finish this shit
                 memory: 60,
                 newPrediction: !1
             },
-            audio: {
-                noMusic: false,
-                noSound: false
-            }
         };
         b.config = D;
         let X = (b, a, c = .5) => {
@@ -1087,59 +1983,68 @@ function setVolume(val, type = 'global') { // todo: finish this shit
                             return "Body Damage;Max Health;Bullet Speed;Bullet Health;Bullet Penetration;Bullet Damage;Reload;Movement Speed;Shield Regeneration;Shield Capacity".split(";")
                     }
                 },
-                skills: [{
-                        amount: 0,
-                        color: "purple",
-                        cap: 1,
-                        softcap: 1
-                    }, {
-                        amount: 0,
-                        color: "pink",
-                        cap: 1,
-                        softcap: 1
-                    }, {
-                        amount: 0,
-                        color: "blue",
-                        cap: 1,
-                        softcap: 1
-                    }, {
-                        amount: 0,
-                        color: "lgreen",
-                        cap: 1,
-                        softcap: 1
-                    }, {
-                        amount: 0,
-                        color: "red",
-                        cap: 1,
-                        softcap: 1
-                    }, {
-                        amount: 0,
-                        color: "yellow",
-                        cap: 1,
-                        softcap: 1
-                    }, {
-                        amount: 0,
-                        color: "green",
-                        cap: 1,
-                        softcap: 1
-                    }, {
-                        amount: 0,
-                        color: "teal",
-                        cap: 1,
-                        softcap: 1
-                    },
-                    {
-                        amount: 0,
-                        color: "gold",
-                        cap: 1,
-                        softcap: 1
-                    }, {
-                        amount: 0,
-                        color: "orange",
-                        cap: 1,
-                        softcap: 1
-                    }
-                ],
+                skills: [
+            {
+              amount: 0,
+              color: "pink",
+              cap: 1,
+              softcap: 1,
+            },
+            {
+              amount: 0,
+              color: "purple",
+              cap: 1,
+              softcap: 1,
+            },
+            {
+              amount: 0,
+              color: "blue",
+              cap: 1,
+              softcap: 1,
+            },
+            {
+              amount: 0,
+              color: "teal",
+              cap: 1,
+              softcap: 1,
+            },
+            {
+              amount: 0,
+              color: "green",
+              cap: 1,
+              softcap: 1,
+            },
+            {
+              amount: 0,
+              color: "lgreen",
+              cap: 1,
+              softcap: 1,
+            },
+            {
+              amount: 0,
+              color: "yellow",
+              cap: 1,
+              softcap: 1,
+            },
+            {
+              amount: 0,
+              color: "gold",
+              cap: 1,
+              softcap: 1,
+            },
+            {
+              amount: 0,
+              color: "orange",
+              cap: 1,
+              softcap: 1,
+            },
+            {
+              amount: 0,
+              color: "red",
+              cap: 1,
+              softcap: 1,
+            },
+          ],
                 points: 0,
                 upgrades: [],
                 playerid: -1,
@@ -1487,7 +2392,7 @@ function setVolume(val, type = 'global') { // todo: finish this shit
                     }
                 }
             };
-        fetch("changelog.md", {
+        fetch("CHANGELOG.md", {
             cache: "no-cache"
         }).then(b => b.text()).then(b => {
             let a = [];
@@ -1517,20 +2422,21 @@ function setVolume(val, type = 'global') { // todo: finish this shit
             }
             return t
         })();
-        J.retrieveFromLocalStorage("playerNameInput");
-        J.retrieveFromLocalStorage("optScreenshotMode");
-        J.retrieveFromLocalStorage("optShield");
-        J.retrieveFromLocalStorage("optFancy");
-        J.retrieveFromLocalStorage("optColors");
-        J.retrieveFromLocalStorage("optNoPointy");
-        //J.retrieveFromLocalStorage("optPointy");
-        J.retrieveFromLocalStorage("optBorders");
-        J.retrieveFromLocalStorage("optAutoLevel", b.mobile);
-        J.retrieveFromLocalStorage("optPrediction");
-        J.retrieveFromLocalStorage("optNoMusic");
-        J.retrieveFromLocalStorage("optNoSound");
-        b.mobile && J.retrieveFromLocalStorage("optMobile");
-        J.retrieveFromLocalStorage("optCustom");
+
+      J.retrieveFromLocalStorage("playerNameInput");
+      //    J.retrieveFromLocalStorage("playerKeyInput");
+      J.retrieveFromLocalStorage("optScreenshotMode");
+      //      J.retrieveFromLocalStorage("optShield");
+      J.retrieveFromLocalStorage("optFancy");
+      J.retrieveFromLocalStorage("optColors");
+      //     J.retrieveFromLocalStorage("optNoPointy");
+     J.retrieveFromLocalStorage("optBorders");
+      //    J.retrieveFromLocalStorage("optAutoLevel", b.mobile);
+      //      J.retrieveFromLocalStorage("optPrediction");
+      J.retrieveFromLocalStorage("optPointy");
+      J.retrieveFromLocalStorage("optNoFlashy");
+      b.mobile && J.retrieveFromLocalStorage("optMobile");
+      J.retrieveFromLocalStorage("optCustom");
       
         "" === document.getElementById("optColors").value && (document.getElementById("optColors").value =
             "normal");
@@ -2057,8 +2963,657 @@ function setVolume(val, type = 'global') { // todo: finish this shit
                             b.gameHeight = c[1];
                             ha = JSON.parse(c[2]);
                             break;
-                        case "music":
-                            break;
+                        case "music1":
+                gametime.play();
+                break;
+              case "music2":
+                dumbsong.play();
+                break;
+              case "music3":
+                otherdumbshit.play();
+                break;
+              case "breathing":
+                breathing.play();
+                break;
+              case "funny_guttertank_sound":
+                funny_guttertank_sound.play();
+                break;
+              case "horrorambience":
+                horrorambience.play();
+                break;
+              case "project22":
+                project22.play();
+                break;
+              case "elita":
+                elita.play();
+                elita.loop = true;
+                break;
+              case "endsound":
+                elita.pause();
+                elita.currentTime = 0;
+                endsound.play();
+                break;
+              case "crashout":
+                crashout.play();
+                break;
+              case "27warn":
+                warning27.play();
+                break;
+              case "r7":
+                r7.play();
+                break;
+              case "dtfr":
+                dontfearthereaper.play();
+                dontfearthereaper.loop = true;
+                break;
+              case "gamerDie": 
+                gamerDie.play();
+                break;
+              case "sayso":
+                sayso.play();
+                sayso.loop = true;
+                break;
+              case "killallhumans":
+                killallhumans.play();
+                killallhumans.loop = true;
+                break;
+              case "chaos":
+                chaos.play();
+                chaos.loop = true;
+                break;
+              case "chaos2":
+                chaos2.play();
+                break;
+              case "gemsanctuary":
+                gemsanctuary.play();
+                gemsanctuary.loop = true;
+                break;
+              case "egigaab05":
+                egigaab05.play();
+                egigaab05.loop = true;
+                break;
+              case "r7_bp":
+                r7_bp.play();
+                r7_bp.loop = true;
+                break;
+              case "c14":
+                c14.play();
+                c14.loop = true;
+                break;
+              case "ambience":
+                ambience.play();
+                ambience.loop = true;
+                break;
+              case "ambienceStop":
+                ambience.pause();
+                ambience.currentTime = 0;
+                break;
+              case "stopAllMusics":
+                gametime.pause();
+                gametime.currentTime = 0;
+                dontfearthereaper.pause();
+                dontfearthereaper.currentTime = 0;
+                sayso.pause();
+                sayso.currentTime = 0;
+                killallhumans.pause();
+                killallhumans.currentTime = 0;
+                chaos.pause();
+                chaos.currentTime = 0;
+                gemsanctuary.pause();
+                gemsanctuary.currentTime = 0;
+                egigaab05.pause();
+                egigaab05.currentTime = 0;
+                r7_bp.pause();
+                r7_bp.currentTime = 0;
+                c14.pause();
+                c14.currentTime = 0;
+                break;
+              case "wrath":
+                document.getElementById("j").style.opacity = 1;
+                document.getElementById("j").style.zIndex = 100;
+                setTimeout(function() {  
+                document.getElementById("j").style.opacity = 0.98;
+                }, 50); 
+                setTimeout(function() {  
+                document.getElementById("j").style.opacity = 0.95;
+                }, 100);   
+                setTimeout(function() {  
+                document.getElementById("j").style.opacity = 0.92;
+                }, 150);   
+                setTimeout(function() {  
+                document.getElementById("j").style.opacity = 0.89;
+                }, 200);   
+                setTimeout(function() {  
+                document.getElementById("j").style.opacity = 0.86;
+                }, 250);   
+                setTimeout(function() {  
+                document.getElementById("j").style.opacity = 0.83;
+                }, 300);   
+                setTimeout(function() {  
+                document.getElementById("j").style.opacity = 0.8;
+                }, 350);   
+                setTimeout(function() {  
+                document.getElementById("j").style.opacity = 0.77;
+                }, 400);   
+                setTimeout(function() {  
+                document.getElementById("j").style.opacity = 0.74;
+                }, 450);   
+                setTimeout(function() {  
+                document.getElementById("j").style.opacity = 0.71;
+                }, 500);   
+                setTimeout(function() {  
+                document.getElementById("j").style.opacity = 0.68;
+                }, 550);   
+                setTimeout(function() {  
+                document.getElementById("j").style.opacity = 0.65;
+                }, 600);   
+                setTimeout(function() {  
+                document.getElementById("j").style.opacity = 0.62;
+                }, 650);   
+                setTimeout(function() {  
+                document.getElementById("j").style.opacity = 0.59;
+                }, 700);   
+                setTimeout(function() {  
+                document.getElementById("j").style.opacity = 0;
+                document.getElementById("j").style.zIndex = 0;
+                }, 900);   
+                break;
+              case "chaos1":
+                document.getElementById("c1").style.opacity = 1;
+                document.getElementById("c1").style.zIndex = 100;
+                setTimeout(function() {  
+                document.getElementById("c1").style.opacity = 0;
+                document.getElementById("c1").style.zIndex = 0;
+                }, 45); 
+                setTimeout(function() {  
+                document.getElementById("c2").style.opacity = 1;
+                document.getElementById("c2").style.zIndex = 100;
+                }, 45); 
+                setTimeout(function() {  
+                document.getElementById("c2").style.opacity = 0;
+                document.getElementById("c2").style.zIndex = 0;
+                }, 90); 
+                setTimeout(function() {  
+                document.getElementById("c3").style.opacity = 1;
+                document.getElementById("c3").style.zIndex = 100;
+                }, 90); 
+                setTimeout(function() {  
+                document.getElementById("c3").style.opacity = 0;
+                document.getElementById("c3").style.zIndex = 0;
+                }, 135); 
+                setTimeout(function() {  
+                document.getElementById("c4").style.opacity = 1;
+                document.getElementById("c4").style.zIndex = 100;
+                document.getElementById("helpme").style.opacity = 1;
+                document.getElementById("helpme").style.zIndex = 101;
+                document.getElementById("helpme2").style.opacity = 1;
+                document.getElementById("helpme2").style.zIndex = 101;
+                }, 135); 
+                setTimeout(function() {  
+                document.getElementById("c4").style.opacity = 0;
+                document.getElementById("c4").style.zIndex = 0;
+                document.getElementById("helpme").style.opacity = 0;
+                document.getElementById("helpme").style.zIndex = 0;
+                document.getElementById("helpme2").style.opacity = 0;
+                document.getElementById("helpme2").style.zIndex = 0;
+                }, 180); 
+                setTimeout(function() {  
+                document.getElementById("c5").style.opacity = 1;
+                document.getElementById("c5").style.zIndex = 100;
+                }, 180); 
+                setTimeout(function() {  
+                document.getElementById("c5").style.opacity = 0;
+                document.getElementById("c5").style.zIndex = 0;
+                }, 225); 
+                setTimeout(function() {  
+                document.getElementById("c6").style.opacity = 1;
+                document.getElementById("c6").style.zIndex = 100;
+                document.getElementById("helpme3").style.opacity = 1;
+                document.getElementById("helpme3").style.zIndex = 101;
+                document.getElementById("helpme4").style.opacity = 1;
+                document.getElementById("helpme4").style.zIndex = 101;
+                }, 225); 
+                setTimeout(function() {  
+                document.getElementById("c6").style.opacity = 0;
+                document.getElementById("c6").style.zIndex = 0;
+                document.getElementById("helpme3").style.opacity = 0;
+                document.getElementById("helpme3").style.zIndex = 0;
+                document.getElementById("helpme4").style.opacity = 0;
+                document.getElementById("helpme4").style.zIndex = 0;
+                }, 270); 
+                setTimeout(function() {
+                document.getElementById("helpme5").style.opacity = 1;
+                document.getElementById("helpme5").style.zIndex = 100;
+                document.getElementById("helpme6").style.opacity = 1;
+                document.getElementById("helpme6").style.zIndex = 100;
+                }, 270); 
+                setTimeout(function() {
+                document.getElementById("helpme5").style.opacity = 0;
+                document.getElementById("helpme5").style.zIndex = 0;
+                document.getElementById("helpme6").style.opacity = 0;
+                document.getElementById("helpme6").style.zIndex = 0;
+                }, 315); 
+                setTimeout(function() {
+                document.getElementById("helpme7").style.opacity = 1;
+                document.getElementById("helpme7").style.zIndex = 100;
+                document.getElementById("helpme8").style.opacity = 1;
+                document.getElementById("helpme8").style.zIndex = 100;
+                document.getElementById("c2").style.opacity = 1;
+                document.getElementById("c2").style.zIndex = 100;
+                }, 315); 
+                setTimeout(function() {
+                document.getElementById("helpme7").style.opacity = 0;
+                document.getElementById("helpme7").style.zIndex = 0;
+                document.getElementById("helpme8").style.opacity = 0;
+                document.getElementById("helpme8").style.zIndex = 0;
+                document.getElementById("c2").style.opacity = 0;
+                document.getElementById("c2").style.zIndex = 0;
+                }, 360); 
+                setTimeout(function() {
+                document.getElementById("helpme9").style.opacity = 1;
+                document.getElementById("helpme9").style.zIndex = 100;
+                document.getElementById("helpme0").style.opacity = 1;
+                document.getElementById("helpme0").style.zIndex = 100;
+                }, 360); 
+                setTimeout(function() {
+                document.getElementById("helpme9").style.opacity = 0;
+                document.getElementById("helpme9").style.zIndex = 0;
+                document.getElementById("helpme0").style.opacity = 0;
+                document.getElementById("helpme0").style.zIndex = 0;
+                }, 409); 
+                break;
+              case "chaos-1":
+                document.getElementById("c2").style.opacity = 1;
+                document.getElementById("c2").style.zIndex = 100;
+                document.getElementById("chaosrulesall").style.opacity = 1;
+                document.getElementById("chaosrulesall").style.zIndex = 101;
+                document.getElementById("chaosrulesall2").style.opacity = 1;
+                document.getElementById("chaosrulesall2").style.zIndex = 101;
+                document.getElementById("chaosrulesall3").style.opacity = 1;
+                document.getElementById("chaosrulesall3").style.zIndex = 101;
+                document.getElementById("chaosrulesall4").style.opacity = 1;
+                document.getElementById("chaosrulesall4").style.zIndex = 101;
+                document.getElementById("chaosrulesall5").style.opacity = 1;
+                document.getElementById("chaosrulesall5").style.zIndex = 101;
+                setTimeout(function() {  
+                document.getElementById("c2").style.opacity = 0;
+                document.getElementById("c2").style.zIndex = 0;
+                document.getElementById("chaosrulesall").style.opacity = 0;
+                document.getElementById("chaosrulesall").style.zIndex = 0;
+                document.getElementById("chaosrulesall2").style.opacity = 0;
+                document.getElementById("chaosrulesall2").style.zIndex = 0;
+                document.getElementById("chaosrulesall3").style.opacity = 0;
+                document.getElementById("chaosrulesall3").style.zIndex = 0;
+                document.getElementById("chaosrulesall4").style.opacity = 0;
+                document.getElementById("chaosrulesall4").style.zIndex = 0;
+                document.getElementById("chaosrulesall5").style.opacity = 0;
+                document.getElementById("chaosrulesall5").style.zIndex = 0;
+                }, 60); 
+                setTimeout(function() {  
+                document.getElementById("c3").style.opacity = 1;
+                document.getElementById("c3").style.zIndex = 100;
+                document.getElementById("chaosrulesall6").style.opacity = 1;
+                document.getElementById("chaosrulesall6").style.zIndex = 101;
+                document.getElementById("chaosrulesall7").style.opacity = 1;
+                document.getElementById("chaosrulesall7").style.zIndex = 101;
+                document.getElementById("chaosrulesall8").style.opacity = 1;
+                document.getElementById("chaosrulesall8").style.zIndex = 101;
+                document.getElementById("chaosrulesall9").style.opacity = 1;
+                document.getElementById("chaosrulesall9").style.zIndex = 101;
+                document.getElementById("chaosrulesall0").style.opacity = 1;
+                document.getElementById("chaosrulesall0").style.zIndex = 101;
+                }, 60); 
+                setTimeout(function() {  
+                document.getElementById("c3").style.opacity = 0;
+                document.getElementById("c3").style.zIndex = 0;
+                document.getElementById("chaosrulesall6").style.opacity = 0;
+                document.getElementById("chaosrulesall6").style.zIndex = 0;
+                document.getElementById("chaosrulesall7").style.opacity = 0;
+                document.getElementById("chaosrulesall7").style.zIndex = 0;
+                document.getElementById("chaosrulesall8").style.opacity = 0;
+                document.getElementById("chaosrulesall8").style.zIndex = 0;
+                document.getElementById("chaosrulesall9").style.opacity = 0;
+                document.getElementById("chaosrulesall9").style.zIndex = 0;
+                document.getElementById("chaosrulesall0").style.opacity = 0;
+                document.getElementById("chaosrulesall0").style.zIndex = 0;
+                }, 120); 
+                setTimeout(function() {
+                document.getElementById("c2").style.opacity = 1;
+                document.getElementById("c2").style.zIndex = 100;
+                document.getElementById("chaosrulesall").style.opacity = 1;
+                document.getElementById("chaosrulesall").style.zIndex = 101;
+                document.getElementById("chaosrulesall2").style.opacity = 1;
+                document.getElementById("chaosrulesall2").style.zIndex = 101;
+                document.getElementById("chaosrulesall3").style.opacity = 1;
+                document.getElementById("chaosrulesall3").style.zIndex = 101;
+                document.getElementById("chaosrulesall4").style.opacity = 1;
+                document.getElementById("chaosrulesall4").style.zIndex = 101;
+                document.getElementById("chaosrulesall5").style.opacity = 1;
+                document.getElementById("chaosrulesall5").style.zIndex = 101;
+                }, 120);
+                setTimeout(function() {  
+                document.getElementById("c2").style.opacity = 0;
+                document.getElementById("c2").style.zIndex = 0;
+                document.getElementById("chaosrulesall").style.opacity = 0;
+                document.getElementById("chaosrulesall").style.zIndex = 0;
+                document.getElementById("chaosrulesall2").style.opacity = 0;
+                document.getElementById("chaosrulesall2").style.zIndex = 0;
+                document.getElementById("chaosrulesall3").style.opacity = 0;
+                document.getElementById("chaosrulesall3").style.zIndex = 0;
+                document.getElementById("chaosrulesall4").style.opacity = 0;
+                document.getElementById("chaosrulesall4").style.zIndex = 0;
+                document.getElementById("chaosrulesall5").style.opacity = 0;
+                document.getElementById("chaosrulesall5").style.zIndex = 0;
+                }, 180); 
+                setTimeout(function() {  
+                document.getElementById("c3").style.opacity = 1;
+                document.getElementById("c3").style.zIndex = 100;
+                document.getElementById("chaosrulesall6").style.opacity = 1;
+                document.getElementById("chaosrulesall6").style.zIndex = 101;
+                document.getElementById("chaosrulesall7").style.opacity = 1;
+                document.getElementById("chaosrulesall7").style.zIndex = 101;
+                document.getElementById("chaosrulesall8").style.opacity = 1;
+                document.getElementById("chaosrulesall8").style.zIndex = 101;
+                document.getElementById("chaosrulesall9").style.opacity = 1;
+                document.getElementById("chaosrulesall9").style.zIndex = 101;
+                document.getElementById("chaosrulesall0").style.opacity = 1;
+                document.getElementById("chaosrulesall0").style.zIndex = 101;
+                }, 180); 
+                setTimeout(function() {  
+                document.getElementById("c3").style.opacity = 0;
+                document.getElementById("c3").style.zIndex = 0;
+                document.getElementById("chaosrulesall6").style.opacity = 0;
+                document.getElementById("chaosrulesall6").style.zIndex = 0;
+                document.getElementById("chaosrulesall7").style.opacity = 0;
+                document.getElementById("chaosrulesall7").style.zIndex = 0;
+                document.getElementById("chaosrulesall8").style.opacity = 0;
+                document.getElementById("chaosrulesall8").style.zIndex = 0;
+                document.getElementById("chaosrulesall9").style.opacity = 0;
+                document.getElementById("chaosrulesall9").style.zIndex = 0;
+                document.getElementById("chaosrulesall0").style.opacity = 0;
+                document.getElementById("chaosrulesall0").style.zIndex = 0;
+                }, 240);
+                setTimeout(function() {
+                document.getElementById("c2").style.opacity = 1;
+                document.getElementById("c2").style.zIndex = 100;
+                document.getElementById("chaosrulesall").style.opacity = 1;
+                document.getElementById("chaosrulesall").style.zIndex = 101;
+                document.getElementById("chaosrulesall2").style.opacity = 1;
+                document.getElementById("chaosrulesall2").style.zIndex = 101;
+                document.getElementById("chaosrulesall3").style.opacity = 1;
+                document.getElementById("chaosrulesall3").style.zIndex = 101;
+                document.getElementById("chaosrulesall4").style.opacity = 1;
+                document.getElementById("chaosrulesall4").style.zIndex = 101;
+                document.getElementById("chaosrulesall5").style.opacity = 1;
+                document.getElementById("chaosrulesall5").style.zIndex = 101;
+                }, 240);
+                setTimeout(function() {  
+                document.getElementById("c2").style.opacity = 0;
+                document.getElementById("c2").style.zIndex = 0;
+                document.getElementById("chaosrulesall").style.opacity = 0;
+                document.getElementById("chaosrulesall").style.zIndex = 0;
+                document.getElementById("chaosrulesall2").style.opacity = 0;
+                document.getElementById("chaosrulesall2").style.zIndex = 0;
+                document.getElementById("chaosrulesall3").style.opacity = 0;
+                document.getElementById("chaosrulesall3").style.zIndex = 0;
+                document.getElementById("chaosrulesall4").style.opacity = 0;
+                document.getElementById("chaosrulesall4").style.zIndex = 0;
+                document.getElementById("chaosrulesall5").style.opacity = 0;
+                document.getElementById("chaosrulesall5").style.zIndex = 0;
+                }, 300); 
+                setTimeout(function() {  
+                document.getElementById("c3").style.opacity = 1;
+                document.getElementById("c3").style.zIndex = 100;
+                document.getElementById("chaosrulesall6").style.opacity = 1;
+                document.getElementById("chaosrulesall6").style.zIndex = 101;
+                document.getElementById("chaosrulesall7").style.opacity = 1;
+                document.getElementById("chaosrulesall7").style.zIndex = 101;
+                document.getElementById("chaosrulesall8").style.opacity = 1;
+                document.getElementById("chaosrulesall8").style.zIndex = 101;
+                document.getElementById("chaosrulesall9").style.opacity = 1;
+                document.getElementById("chaosrulesall9").style.zIndex = 101;
+                document.getElementById("chaosrulesall0").style.opacity = 1;
+                document.getElementById("chaosrulesall0").style.zIndex = 101;
+                }, 300); 
+                setTimeout(function() {  
+                document.getElementById("c3").style.opacity = 0;
+                document.getElementById("c3").style.zIndex = 0;
+                document.getElementById("chaosrulesall6").style.opacity = 0;
+                document.getElementById("chaosrulesall6").style.zIndex = 0;
+                document.getElementById("chaosrulesall7").style.opacity = 0;
+                document.getElementById("chaosrulesall7").style.zIndex = 0;
+                document.getElementById("chaosrulesall8").style.opacity = 0;
+                document.getElementById("chaosrulesall8").style.zIndex = 0;
+                document.getElementById("chaosrulesall9").style.opacity = 0;
+                document.getElementById("chaosrulesall9").style.zIndex = 0;
+                document.getElementById("chaosrulesall0").style.opacity = 0;
+                document.getElementById("chaosrulesall0").style.zIndex = 0;
+                }, 360);
+                setTimeout(function() {
+                document.getElementById("c2").style.opacity = 1;
+                document.getElementById("c2").style.zIndex = 100;
+                document.getElementById("chaosrulesall").style.opacity = 1;
+                document.getElementById("chaosrulesall").style.zIndex = 101;
+                document.getElementById("chaosrulesall2").style.opacity = 1;
+                document.getElementById("chaosrulesall2").style.zIndex = 101;
+                document.getElementById("chaosrulesall3").style.opacity = 1;
+                document.getElementById("chaosrulesall3").style.zIndex = 101;
+                document.getElementById("chaosrulesall4").style.opacity = 1;
+                document.getElementById("chaosrulesall4").style.zIndex = 101;
+                document.getElementById("chaosrulesall5").style.opacity = 1;
+                document.getElementById("chaosrulesall5").style.zIndex = 101;
+                }, 360);
+                setTimeout(function() {  
+                document.getElementById("c2").style.opacity = 0;
+                document.getElementById("c2").style.zIndex = 0;
+                document.getElementById("chaosrulesall").style.opacity = 0;
+                document.getElementById("chaosrulesall").style.zIndex = 0;
+                document.getElementById("chaosrulesall2").style.opacity = 0;
+                document.getElementById("chaosrulesall2").style.zIndex = 0;
+                document.getElementById("chaosrulesall3").style.opacity = 0;
+                document.getElementById("chaosrulesall3").style.zIndex = 0;
+                document.getElementById("chaosrulesall4").style.opacity = 0;
+                document.getElementById("chaosrulesall4").style.zIndex = 0;
+                document.getElementById("chaosrulesall5").style.opacity = 0;
+                document.getElementById("chaosrulesall5").style.zIndex = 0;
+                }, 420); 
+                setTimeout(function() {  
+                document.getElementById("c3").style.opacity = 1;
+                document.getElementById("c3").style.zIndex = 100;
+                document.getElementById("chaosrulesall6").style.opacity = 1;
+                document.getElementById("chaosrulesall6").style.zIndex = 101;
+                document.getElementById("chaosrulesall7").style.opacity = 1;
+                document.getElementById("chaosrulesall7").style.zIndex = 101;
+                document.getElementById("chaosrulesall8").style.opacity = 1;
+                document.getElementById("chaosrulesall8").style.zIndex = 101;
+                document.getElementById("chaosrulesall9").style.opacity = 1;
+                document.getElementById("chaosrulesall9").style.zIndex = 101;
+                document.getElementById("chaosrulesall0").style.opacity = 1;
+                document.getElementById("chaosrulesall0").style.zIndex = 101;
+                }, 420); 
+                setTimeout(function() {  
+                document.getElementById("c3").style.opacity = 0;
+                document.getElementById("c3").style.zIndex = 0;
+                document.getElementById("chaosrulesall6").style.opacity = 0;
+                document.getElementById("chaosrulesall6").style.zIndex = 0;
+                document.getElementById("chaosrulesall7").style.opacity = 0;
+                document.getElementById("chaosrulesall7").style.zIndex = 0;
+                document.getElementById("chaosrulesall8").style.opacity = 0;
+                document.getElementById("chaosrulesall8").style.zIndex = 0;
+                document.getElementById("chaosrulesall9").style.opacity = 0;
+                document.getElementById("chaosrulesall9").style.zIndex = 0;
+                document.getElementById("chaosrulesall0").style.opacity = 0;
+                document.getElementById("chaosrulesall0").style.zIndex = 0;
+                }, 480);
+                setTimeout(function() {
+                document.getElementById("c2").style.opacity = 1;
+                document.getElementById("c2").style.zIndex = 100;
+                document.getElementById("chaosrulesall").style.opacity = 1;
+                document.getElementById("chaosrulesall").style.zIndex = 101;
+                document.getElementById("chaosrulesall2").style.opacity = 1;
+                document.getElementById("chaosrulesall2").style.zIndex = 101;
+                document.getElementById("chaosrulesall3").style.opacity = 1;
+                document.getElementById("chaosrulesall3").style.zIndex = 101;
+                document.getElementById("chaosrulesall4").style.opacity = 1;
+                document.getElementById("chaosrulesall4").style.zIndex = 101;
+                document.getElementById("chaosrulesall5").style.opacity = 1;
+                document.getElementById("chaosrulesall5").style.zIndex = 101;
+                }, 480);
+                setTimeout(function() {  
+                document.getElementById("c2").style.opacity = 0;
+                document.getElementById("c2").style.zIndex = 0;
+                document.getElementById("chaosrulesall").style.opacity = 0;
+                document.getElementById("chaosrulesall").style.zIndex = 0;
+                document.getElementById("chaosrulesall2").style.opacity = 0;
+                document.getElementById("chaosrulesall2").style.zIndex = 0;
+                document.getElementById("chaosrulesall3").style.opacity = 0;
+                document.getElementById("chaosrulesall3").style.zIndex = 0;
+                document.getElementById("chaosrulesall4").style.opacity = 0;
+                document.getElementById("chaosrulesall4").style.zIndex = 0;
+                document.getElementById("chaosrulesall5").style.opacity = 0;
+                document.getElementById("chaosrulesall5").style.zIndex = 0;
+                }, 540); 
+                setTimeout(function() {  
+                document.getElementById("c3").style.opacity = 1;
+                document.getElementById("c3").style.zIndex = 100;
+                document.getElementById("chaosrulesall6").style.opacity = 1;
+                document.getElementById("chaosrulesall6").style.zIndex = 101;
+                document.getElementById("chaosrulesall7").style.opacity = 1;
+                document.getElementById("chaosrulesall7").style.zIndex = 101;
+                document.getElementById("chaosrulesall8").style.opacity = 1;
+                document.getElementById("chaosrulesall8").style.zIndex = 101;
+                document.getElementById("chaosrulesall9").style.opacity = 1;
+                document.getElementById("chaosrulesall9").style.zIndex = 101;
+                document.getElementById("chaosrulesall0").style.opacity = 1;
+                document.getElementById("chaosrulesall0").style.zIndex = 101;
+                }, 540); 
+                setTimeout(function() {  
+                document.getElementById("c3").style.opacity = 0;
+                document.getElementById("c3").style.zIndex = 0;
+                document.getElementById("chaosrulesall6").style.opacity = 0;
+                document.getElementById("chaosrulesall6").style.zIndex = 0;
+                document.getElementById("chaosrulesall7").style.opacity = 0;
+                document.getElementById("chaosrulesall7").style.zIndex = 0;
+                document.getElementById("chaosrulesall8").style.opacity = 0;
+                document.getElementById("chaosrulesall8").style.zIndex = 0;
+                document.getElementById("chaosrulesall9").style.opacity = 0;
+                document.getElementById("chaosrulesall9").style.zIndex = 0;
+                document.getElementById("chaosrulesall0").style.opacity = 0;
+                document.getElementById("chaosrulesall0").style.zIndex = 0;
+                }, 600);
+                setTimeout(function() {
+                document.getElementById("c2").style.opacity = 1;
+                document.getElementById("c2").style.zIndex = 100;
+                document.getElementById("chaosrulesall").style.opacity = 1;
+                document.getElementById("chaosrulesall").style.zIndex = 101;
+                document.getElementById("chaosrulesall2").style.opacity = 1;
+                document.getElementById("chaosrulesall2").style.zIndex = 101;
+                document.getElementById("chaosrulesall3").style.opacity = 1;
+                document.getElementById("chaosrulesall3").style.zIndex = 101;
+                document.getElementById("chaosrulesall4").style.opacity = 1;
+                document.getElementById("chaosrulesall4").style.zIndex = 101;
+                document.getElementById("chaosrulesall5").style.opacity = 1;
+                document.getElementById("chaosrulesall5").style.zIndex = 101;
+                }, 600);
+                setTimeout(function() {  
+                document.getElementById("c2").style.opacity = 0;
+                document.getElementById("c2").style.zIndex = 0;
+                document.getElementById("chaosrulesall").style.opacity = 0;
+                document.getElementById("chaosrulesall").style.zIndex = 0;
+                document.getElementById("chaosrulesall2").style.opacity = 0;
+                document.getElementById("chaosrulesall2").style.zIndex = 0;
+                document.getElementById("chaosrulesall3").style.opacity = 0;
+                document.getElementById("chaosrulesall3").style.zIndex = 0;
+                document.getElementById("chaosrulesall4").style.opacity = 0;
+                document.getElementById("chaosrulesall4").style.zIndex = 0;
+                document.getElementById("chaosrulesall5").style.opacity = 0;
+                document.getElementById("chaosrulesall5").style.zIndex = 0;
+                }, 660); 
+                setTimeout(function() {  
+                document.getElementById("c3").style.opacity = 1;
+                document.getElementById("c3").style.zIndex = 100;
+                document.getElementById("chaosrulesall6").style.opacity = 1;
+                document.getElementById("chaosrulesall6").style.zIndex = 101;
+                document.getElementById("chaosrulesall7").style.opacity = 1;
+                document.getElementById("chaosrulesall7").style.zIndex = 101;
+                document.getElementById("chaosrulesall8").style.opacity = 1;
+                document.getElementById("chaosrulesall8").style.zIndex = 101;
+                document.getElementById("chaosrulesall9").style.opacity = 1;
+                document.getElementById("chaosrulesall9").style.zIndex = 101;
+                document.getElementById("chaosrulesall0").style.opacity = 1;
+                document.getElementById("chaosrulesall0").style.zIndex = 101;
+                }, 660); 
+                setTimeout(function() {  
+                document.getElementById("c3").style.opacity = 0;
+                document.getElementById("c3").style.zIndex = 0;
+                document.getElementById("chaosrulesall6").style.opacity = 0;
+                document.getElementById("chaosrulesall6").style.zIndex = 0;
+                document.getElementById("chaosrulesall7").style.opacity = 0;
+                document.getElementById("chaosrulesall7").style.zIndex = 0;
+                document.getElementById("chaosrulesall8").style.opacity = 0;
+                document.getElementById("chaosrulesall8").style.zIndex = 0;
+                document.getElementById("chaosrulesall9").style.opacity = 0;
+                document.getElementById("chaosrulesall9").style.zIndex = 0;
+                document.getElementById("chaosrulesall0").style.opacity = 0;
+                document.getElementById("chaosrulesall0").style.zIndex = 0;
+                }, 720);
+                setTimeout(function() {
+                document.getElementById("c2").style.opacity = 1;
+                document.getElementById("c2").style.zIndex = 100;
+                document.getElementById("chaosrulesall").style.opacity = 1;
+                document.getElementById("chaosrulesall").style.zIndex = 101;
+                document.getElementById("chaosrulesall2").style.opacity = 1;
+                document.getElementById("chaosrulesall2").style.zIndex = 101;
+                document.getElementById("chaosrulesall3").style.opacity = 1;
+                document.getElementById("chaosrulesall3").style.zIndex = 101;
+                document.getElementById("chaosrulesall4").style.opacity = 1;
+                document.getElementById("chaosrulesall4").style.zIndex = 101;
+                document.getElementById("chaosrulesall5").style.opacity = 1;
+                document.getElementById("chaosrulesall5").style.zIndex = 101;
+                }, 720);
+                setTimeout(function() {  
+                document.getElementById("c2").style.opacity = 0;
+                document.getElementById("c2").style.zIndex = 0;
+                document.getElementById("chaosrulesall").style.opacity = 0;
+                document.getElementById("chaosrulesall").style.zIndex = 0;
+                document.getElementById("chaosrulesall2").style.opacity = 0;
+                document.getElementById("chaosrulesall2").style.zIndex = 0;
+                document.getElementById("chaosrulesall3").style.opacity = 0;
+                document.getElementById("chaosrulesall3").style.zIndex = 0;
+                document.getElementById("chaosrulesall4").style.opacity = 0;
+                document.getElementById("chaosrulesall4").style.zIndex = 0;
+                document.getElementById("chaosrulesall5").style.opacity = 0;
+                document.getElementById("chaosrulesall5").style.zIndex = 0;
+                }, 780); 
+                setTimeout(function() {  
+                document.getElementById("c3").style.opacity = 1;
+                document.getElementById("c3").style.zIndex = 100;
+                document.getElementById("chaosrulesall6").style.opacity = 1;
+                document.getElementById("chaosrulesall6").style.zIndex = 101;
+                document.getElementById("chaosrulesall7").style.opacity = 1;
+                document.getElementById("chaosrulesall7").style.zIndex = 101;
+                document.getElementById("chaosrulesall8").style.opacity = 1;
+                document.getElementById("chaosrulesall8").style.zIndex = 101;
+                document.getElementById("chaosrulesall9").style.opacity = 1;
+                document.getElementById("chaosrulesall9").style.zIndex = 101;
+                document.getElementById("chaosrulesall0").style.opacity = 1;
+                document.getElementById("chaosrulesall0").style.zIndex = 101;
+                }, 780); 
+                setTimeout(function() {  
+                document.getElementById("c3").style.opacity = 0;
+                document.getElementById("c3").style.zIndex = 0;
+                document.getElementById("chaosrulesall6").style.opacity = 0;
+                document.getElementById("chaosrulesall6").style.zIndex = 0;
+                document.getElementById("chaosrulesall7").style.opacity = 0;
+                document.getElementById("chaosrulesall7").style.zIndex = 0;
+                document.getElementById("chaosrulesall8").style.opacity = 0;
+                document.getElementById("chaosrulesall8").style.zIndex = 0;
+                document.getElementById("chaosrulesall9").style.opacity = 0;
+                document.getElementById("chaosrulesall9").style.zIndex = 0;
+                document.getElementById("chaosrulesall0").style.opacity = 0;
+                document.getElementById("chaosrulesall0").style.zIndex = 0;
+                }, 840);
+                break;
                         case "e":
                             if (!b.server.untrusted) try {
                                 (new Function("$", c[0]))(function(b) {
@@ -2096,27 +3651,6 @@ function setVolume(val, type = 'global') { // todo: finish this shit
                                 b.gameStart = !0;
                                 b.message = "";
                             }
-                            break;
-                        case "abcd":
-                            g.talk("dcba", window.location.hostname, localStorage.getItem('uid'));
-                            break;
-                        case "deeta":
-                            let data = JSON.parse(localStorage.data)
-                            if (data[c[0]] != null) data[c[0]] += c[1]
-                            localStorage.data = JSON.stringify(data)
-                            break;
-                        case "getUnlocks":
-                            g.talk("receiveUnlocks", localStorage.unlocks, localStorage.achiev, localStorage.keybindsJSON);
-                            break;
-                        case "unlockTank":
-                            let unlocks = JSON.parse(localStorage.unlocks)
-                            unlocks.push(c[0])
-                            localStorage.unlocks = JSON.stringify(unlocks)
-                            break;
-                        case "addAchievement":
-                            let achiev = JSON.parse(localStorage.achiev)
-                            achiev.push(c[0])
-                            localStorage.achiev = JSON.stringify(achiev)
                             break;
                         case "m":
                             let extratime = 0
@@ -2181,12 +3715,12 @@ function setVolume(val, type = 'global') { // todo: finish this shit
                     ca.logEvent("disconnect");
                     g.open = !1;
                     b.disconnected = !0;
-                    b.isInGame && (b.isInGame = !1, b.died || b.message || (b.message = "Socket closed. If you disconnected, respawn now to regain your score."));
+                    b.isInGame && (b.isInGame = !1, b.died || b.message || (b.message = "Socket closed! The server is probably being updated, or something just went wrong. Try refreshing."));
                     console.warn("WebSocket closed: ", a)
                 };
                 g.onerror = function(a) {
                     console.warn("WebSocket error", a);
-                    b.message || (b.message = "Socket error. Maybe another server will work.");
+                    b.message || (b.message = "Socket error! The game is most likely broken - try again later.");
                     b.isInGame = !1
                 };
                 return g
@@ -2325,7 +3859,7 @@ function setVolume(val, type = 'global') { // todo: finish this shit
                                 }
                                 e = a.canvas.height / 2;
                                 a.lineWidth = c;
-                                a.font = "bold " + n + "px Ubuntu";
+                                a.font = "bold " + n + "px Kode Mono";
                                 a.textAlign = t;
                                 a.textBaseline = "middle";
                                 a.strokeStyle = l.black;
@@ -2828,7 +4362,7 @@ function setVolume(val, type = 'global') { // todo: finish this shit
                                 } of a) E = b.screenWidth / 2 + (c - x.width / 2) * k + 2, P = b.screenHeight / 2 + (d - x.height / 2) * k + 2, g.globalAlpha = 1, g.fillStyle = e(f + 10), I(E, P, C, C), g.globalAlpha = .2, g.fillStyle = e(f), I(E, P, C, .6 * C), g.fillStyle = l.black, I(E, P + .6 * C, C, .4 * C), g.globalAlpha = 1, W = -Math.PI / 4, pa = F(h, A.color), V = Q[h].position, ma = .8 * C / V.axis, ja(E + .5 * C - ma * V.middle.x * Math.cos(W), P + .5 * C - ma * V.middle.x * Math.sin(W), pa, .5, 1, ma / pa.size * 2, W, !0), g.strokeStyle = l.black, g.lineWidth = 2, I(E, P, C, C, !0)
                         } while (0);
                         b.mobile && "joysticks" === ba.control &&
-                            (x = Math.min(.6 * b.screenWidth, .12 * b.screenHeight), g.globalAlpha = .3, g.fillStyle = "#ffffff", g.beginPath(), g.arc(1 * b.screenWidth / 6, 2 * b.screenHeight / 3, x, 0, 2 * Math.PI), g.arc(5 * b.screenWidth / 6, 2 * b.screenHeight / 3, x, 0, 2 * Math.PI), g.fill());
+                            (x = Math.min(.6 * b.screenWidth, .12 * b.screenHeight), g.globalAlpha = .3, g.fillStyle = "#345678", g.beginPath(), g.arc(1 * b.screenWidth / 6, 2 * b.screenHeight / 3, x, 0, 2 * Math.PI), g.arc(5 * b.screenWidth / 6, 2 * b.screenHeight / 3, x, 0, 2 * Math.PI), g.fill());
                         b.mobile && M(1.4);
                         x = b.screenWidth / 2;
                         k = 20;
@@ -2873,7 +4407,7 @@ function setVolume(val, type = 'global') { // todo: finish this shit
                                     U[n - 1].draw(q, Math.round(e + c / 2) + .5, f + 7.5, 10, p, "center", !0);
                                     K[n - 1].draw("[" + n % 10 + "]", Math.round(e + c - 3.75) - 1.5, f + 7.5, 10, p, "right", !0);
                                     p === l.guiwhite && b.clickables.stat.place(n - 1, e * h, f * h, c * h, 15 * h);
-                                    w && r[n - 1].draw(p === t ? "MAX" : "+" + w, Math.round(e + c + 4) + .5, f + 7.5, 10, t, "left", !0);
+                                    w && r[n - 1].draw(p === t ? "Ń̶͔͕͖͗̕Ǫ̵̠̖̭̜̈̉ ̵̭̺̓̍̋͛M̵̧̨̈́̎͛̽̕O̴͖̿̅̾͘R̷̨͓̎̈͠Ȅ̴̫̼̽͐" : "+" + w, Math.round(e + c + 4) + .5, f + 7.5, 10, t, "left", !0);
                                     f -= 19
                                 }
                             });
@@ -2933,8 +4467,8 @@ function setVolume(val, type = 'global') { // todo: finish this shit
                         P = Math.sqrt(z.vx * z.vx + z.vy * z.vy);
                         b.showDebug && (I(x, k - 40, 200, 30), p.addValue(d), p.draw(x, k - 40, 200, 30), f.addValue(P), f.draw(x, k - 40, 200, 30), u.addValue(N.rendergap), u.draw(x, k - 40, 200, 30), m.addValue(E),
                             m.draw(x, k - 40, 200, 30), C -= 40);
-                        D.graphical.screenshotMode ? da[6].draw("WHYAREYOUPLAYINGTHIS", x + 200, C - 2, 15, l.guiwhite, "right") : (b.showDebug ? (da[6].draw("WHYAREYOUPLAYINGTHIS", x + 200, C - 84 - 2, 15, l.guiwhite, "right"), k = f.getPeriodicAverage(), da[5].draw("Tank Speed: " + P.toFixed(2) + " gu/s" + (k && .005 <= k ? ` (${k.toFixed(2)} gu/s)` : ""), x + 200, C - 70, 10, l.guiwhite, "right"), da[4].draw("Prediction: " + d.toFixed(3), x + 200, C - 56, 10, l.guiwhite, "right"), da[3].draw("Update Rate: " + N.updatetime + "Hz", x + 200, C - 42, 10, l.guiwhite, "right")) : da[6].draw("OAPP",
-                            x + 200, C - 42 - 2, 15, l.guiwhite, "right"), da[2].draw("Client Speed: " + N.rendertime + " FPS", x + 200, C - 28, 10, 10 < N.rendertime ? l.guiwhite : l.orange, "right"), da[1].draw("Server Speed: " + (100 * A.fps).toFixed(2) + "%", x + 200, C - 14, 10, 1 === A.fps ? l.guiwhite : l.orange, "right"), da[0].draw(E.toFixed(1) + " ms  " + b.server.code + " :" + b.server.type + ":", x + 200, C, 10, l.guiwhite, "right"));
+                        D.graphical.screenshotMode ? da[6].draw("Ă̷̙̲̻̌R̴̨͙̠̮͕̓Ṟ̴̭͙̘̣͝A̶͚̝̻̮̒͒̓̓̈́Ŝ̶͈̩̰̭̅_̵̢̣̯̜̃̌́̓͘4̸̛̹̱͗̑̀͛0̷͙̬͑̽̀̎9̶̖͚͛́̇̚", x + 200, C - 2, 15, l.guiwhite, "right") : (b.showDebug ? (da[6].draw("Ă̷̙̲̻̌R̴̨͙̠̮͕̓Ṟ̴̭͙̘̣͝A̶͚̝̻̮̒͒̓̓̈́Ŝ̶͈̩̰̭̅_̵̢̣̯̜̃̌́̓͘4̸̛̹̱͗̑̀͛0̷͙̬͑̽̀̎9̶̖͚͛́̇̚", x + 200, C - 84 - 2, 15, "#ff00ff", "right"), k = f.getPeriodicAverage(), da[5].draw("Tank Speed: " + P.toFixed(2) + " gu/s" + (k && .005 <= k ? ` (${k.toFixed(2)} gu/s)` : ""), x + 200, C - 70, 10, l.guiwhite, "right"), da[4].draw("Prediction: " + d.toFixed(3), x + 200, C - 56, 10, l.guiwhite, "right"), da[3].draw("Update Rate: " + N.updatetime + "Hz", x + 200, C - 42, 10, l.guiwhite, "right")) : da[6].draw("Ă̷̙̲̻̌R̴̨͙̠̮͕̓Ṟ̴̭͙̘̣͝A̶͚̝̻̮̒͒̓̓̈́Ŝ̶͈̩̰̭̅_̵̢̣̯̜̃̌́̓͘4̸̛̹̱͗̑̀͛0̷͙̬͑̽̀̎9̶̖͚͛́̇̚",
+                            x + 200, C - 42 - 2, 15, "#ff00ff", "right"), da[2].draw("Client Speed: " + N.rendertime + " FPS", x + 200, C - 28, 10, 10 < N.rendertime ? l.guiwhite : l.orange, "right"), da[1].draw("Server Speed: " + (100 * A.fps).toFixed(2) + "%", x + 200, C - 14, 10, 1 === A.fps ? l.guiwhite : l.orange, "right"), da[0].draw(E.toFixed(1) + " ms  " + b.server.code + " :" + b.server.type + ":", x + 200, C, 10, l.guiwhite, "right"));
                         b.mobile && M(1.25);
                         b.mobile && M(1.4);
                         if (!D.graphical.screenshotMode) {
@@ -2942,7 +4476,7 @@ function setVolume(val, type = 'global') { // todo: finish this shit
                               C = S.data[k], O(d, d + 200, x + 7, 11 + D.graphical.barChunk, l.black),
                                 O(d, d + 200, x + 7, 11, l.grey),
                                 O(d, d + 200 * Math.min(1, C.score / T), x + 7, 10.5, C.barColor);
-                                if (C.name != 'hjsduhjdshjkbduhjkcfhdjb') na[k].draw(C.label + ": " + J.handleLargeNumber(Math.round(C.score)), d + 100, x + 7, 9, l.guiwhite, "center", !0),
+                                if (C.name != 'LetDownAndHangingAround') na[k].draw(C.label + ": " + J.handleLargeNumber(Math.round(C.score)), d + 100, x + 7, 9, l.guiwhite, "center", !0),
                                 E = 14 / C.position.axis, ja(d - 21 - E * C.position.middle.x * .707, x + 7 + E * C.position.middle.x *.707, C.image, 1 / E, 1, E * E / C.image.size, -Math.PI / 4, !0),
                                 x += 18;
                             }
@@ -2963,7 +4497,6 @@ function setVolume(val, type = 'global') { // todo: finish this shit
                                 let upgradeMockupSize = 0.9
                                 let upgradeNameSize = 7.5
                                 let upgradeBoxSize = 0.9
-                                if (funnyvariablethatexistsiguess) console.log('---------------------')
                                 A.upgrades.forEach(d => {
                                     f > w && (w = f);
                                     k = c;
@@ -2975,7 +4508,6 @@ function setVolume(val, type = 'global') { // todo: finish this shit
                                         t = X(t, e(b + 10));
                                         p = X(p, e(b))
                                     }
-                                    if (funnyvariablethatexistsiguess) console.log('t = ' + t + ', p = ' + p + ', q = ' + q + ', initial t = ' + ((q < 9) ? (q % 9 + 10) : (((q + Math.floor(q / 9)) % 9)+10)) + ', initial p = ' + ((q < 9) ? (q % 9) : ((q + Math.floor(q / 9)) % 9)))
                                     g.globalAlpha = .5; // if you see this dont mind me im just trying to figure out how the fuck upgrade box colors work i actually have no damn clue
                                     g.fillStyle = t;
                                     I(c*upgradeBoxSize, f*upgradeBoxSize, 100 * upgradeBoxSize, 100 * upgradeBoxSize);
@@ -2999,7 +4531,6 @@ function setVolume(val, type = 'global') { // todo: finish this shit
                                     q++;
                                     0 !== q % 7 || b.mobile ? c += 114 * a : (c = n, f += 114)
                                 });
-                                if (funnyvariablethatexistsiguess) console.log('---------------------')
                                 /*A.upgrades.forEach(d => {
                                     f > w && (w = f);
                                     k = c;
@@ -3035,12 +4566,12 @@ function setVolume(val, type = 'global') { // todo: finish this shit
                                     q++;
                                     0 !== q % 6 || b.mobile ? c += 114 * a : (c = n, f += 114)
                                 });*/
-                                d = Aa("Don't Upgrade", 11*upgradeBoxSize) + 10;
+                                d = Aa("IGNORE", 11*upgradeBoxSize) + 10;
                                 S = (k + 100 + 14 + n - 15) / 2;
                                 T = w + 100 + 14;
                                 O((S*upgradeBoxSize) - d / 2, (S*upgradeBoxSize) + d / 2, (T*upgradeBoxSize) + 7, (14*upgradeBoxSize) + D.graphical.barChunk, l.black);
                                 O((S*upgradeBoxSize) - d / 2, (S*upgradeBoxSize) + d / 2, (T*upgradeBoxSize) + 7, 14*upgradeBoxSize, l.white);
-                                ra.draw("Don't Upgrade", S*upgradeBoxSize, (T*upgradeBoxSize) + 7, upgradeNameSize*(12/9.5), l.guiwhite, "center", !0);
+                                ra.draw("IGNORE", S*upgradeBoxSize, (T*upgradeBoxSize) + 7, upgradeNameSize*(12/9.5), l.guiwhite, "center", !0);
                                 b.clickables.skipUpgrades.place(0, ((S - d / 2)*upgradeBoxSize) * h, (T*upgradeBoxSize) * h, d * h, 14 * h)
                             } else b.clickables.upgrade.hide(), b.clickables.skipUpgrades.hide()
                         }
@@ -3108,14 +4639,14 @@ function setVolume(val, type = 'global') { // todo: finish this shit
                         var c = a[0] + .5 * a[1] + 3 * a[2];
                         let d = (0 === c ? "\ud83c\udf3c" : 4 > c ? "\ud83c\udfaf" : 8 > c ? "\ud83d\udca5" : 15 > c ? "\ud83d\udca2" : 25 > c ? "\ud83d\udd25" : 50 > c ? "\ud83d\udca3" : 75 > c ? "\ud83d\udc7a" : 100 > c ? "\ud83c\udf36\ufe0f" :
                             "\ud83d\udcaf") + " ";
-                        if (0 === c) return d + "A true pacifist";
+                        if (0 === c) return d + "A true COWARD...";
                         c = [];
                         a[0] && c.push(a[0] + " kills");
                         a[1] && c.push(a[1] + " assists");
                         a[2] && c.push(a[2] + " visitors defeated");
                         return d + c.join(" and ")
                     },
-                    p = () => b.finalKillers.length ? "\ud83d\udd2a Succumbed to " + b.finalKillers.map(b => J.addArticle(Q[b].name)).join(" and ") : "\ud83e\udd37 Well that was kinda dumb huh";
+                    p = () => b.finalKillers.length ? "\ud83d\udd2a Succumbed to " + b.finalKillers.map(b => J.addArticle(Q[b].name)).join(" and ") : "\ud83e\udd37 Why have you made this S̸T̷U̶P̶I̵D̸  mistake...";
                 return () => {
                     G(l.black, .25);
                     let d = b.screenWidth / 2,
@@ -3125,10 +4656,10 @@ function setVolume(val, type = 'global') { // todo: finish this shit
                         m = 140 / t.axis;
                     ja(b.screenWidth / 2 - m * t.middle.x *
                         .707 - 190 - 70, b.screenHeight / 2 - 35 + m * t.middle.x * .707 - 10, q, 1.5, 1, .5 * m / q.realSize, -Math.PI / 4, !0);
-                    a.draw("lol you died", d, h - 80, 8, l.guiwhite, "center");
-                    e.draw("Level " + A.__s.getLevel() + " " + Q[A.type].name, d - 170, h - 30, 24, l.guiwhite);
-                    c.draw("Final score: " + J.formatLargeNumber(Math.round(b.finalScore.get())), d - 170, h + 25, 50, l.guiwhite);
-                    g.draw("\u231a Survived for " + J.timeForHumans(Math.round(b.finalLifetime.get())), d - 170, h + 55, 16, l.guiwhite);
+                    a.draw("5̵̭͖̜̗̓̋8̵͓̞̝͚̬̼̝̝̹͒͋̇͊͋́̉́͋͒̚͝͝͝ͅͅ4̴̡̧͖̭̞͕̰͚̫̟͉̟̮̭̲̻͓̻͔͇̭̣̳̙̼̳͊͂̏̋̈́̃9̴̡̛̪̪͚̜͍͎̖̥̲̹͔̺̬̀̊̾̑͂́͋̋́͋́̿͊̎̄̈́̆̔̈́̾̈̋̀̋̚̚͘͝0̵̨̡̧̧̡̢̧̮̮̗̭͉͉̬̥̖̙͎̤̪͕̱́͆̅͆̈̂̓͊̐͒̋͘͘͝ͅ8̴̠͑̀̈̾̾̔̓̀̋̈́́͂̈́̾̓̈́̐̚̕͠͝2̶̡̡̻̮̗͍͔̺̱͙̋̉͗̐̑̒͑̚0̶̛͙̳̝̜̼̖̯̦̤͇̝͉̲̼̑̅̌̽͛͆̍̀̓̅͌̃̂͛̉̎̅̽͂͛͊̌̏̚͘͘͜4̷̢̡̼̪̣̥̞̬̺̹̼̟͎̻̯͓̀̿̍̃̈́͒̈́̏̇͒͐̑̽̑̓̿̊̏̋̀̊̽̆̅̀͊̈́͜3̸̛̼͇͕̠͖̝̖̜͍̞͉͓̺͕̜̮̺̲̘̰̫̰̬̦͇̂̓͋͐͑̓̍́̓͒̉̈́͒̓̍̂̕̕", d, h - 80, 8, l.guiwhite, "center");
+                    e.draw("Level " + A.__s.getLevel() + " " + Q[A.type].name, d - 170, h - 30, 24, l.magenta);
+                    c.draw("Final score: " + J.formatLargeNumber(Math.round(b.finalScore.get())), d - 170, h + 25, 50, l.teal);
+                    g.draw("\u231a Survived for " + J.timeForHumans(Math.round(b.finalLifetime.get())), d - 170, h + 55, 16, l.guiblack); //HERE
                     n.draw(w(), d - 170, h + 77, 16, l.guiwhite);
                     k.draw(p(), d - 170, h + 99, 16, l.guiwhite);
                     q = Math.ceil((b.respawnOn - Date.now()) / 1E3);
