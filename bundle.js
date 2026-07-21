@@ -1562,16 +1562,12 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
                 D.graphical.eyesenstivity =
             document.getElementById("optNoFlashy").checked;
           J.submitToLocalStorage("optNoFlashy");
-                J.submitToLocalStorage("optShield");
-                D.graphical.shieldbars = document.getElementById("optShield").checked;
-                J.submitToLocalStorage("optPrediction");
-                D.lag.newPrediction = document.getElementById("optPrediction").checked;
+            //    J.submitToLocalStorage("optShield");
+              //  D.graphical.shieldbars = document.getElementById("optShield").checked;
+              //  J.submitToLocalStorage("optPrediction");
+              //  D.lag.newPrediction = document.getElementById("optPrediction").checked;
                 J.submitToLocalStorage("optAutoLevel");
                 b.autoLevel = document.getElementById("optAutoLevel").checked;
-                J.submitToLocalStorage("optNoMusic");
-                D.audio.noMusic = document.getElementById("optNoMusic").checked;
-                J.submitToLocalStorage("optNoSound");
-                D.audio.noSound = document.getElementById("optNoSound").checked;
                 J.submitToLocalStorage("optBorders");
                 b.mobile && J.submitToLocalStorage("optMobile");
                 switch (document.getElementById("optBorders").value) {
