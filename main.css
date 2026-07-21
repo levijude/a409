@@ -1,3 +1,239 @@
+.j {
+  background-color: red;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+}
+.c1 {
+  background-color: red;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+}
+.c2 {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+}
+.c3 {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+}
+.c4 {
+  background-color: blue;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+}
+.c5 {
+  background-color: yellow;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+}
+.c6 {
+  background-color: magenta;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+}
+.helpme  {
+  color: red;
+  font: 100px "Kode Mono", sans-serif;
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  z-index: 0;
+  opacity: 0;
+}
+.helpme2  {
+  color: red;
+  font: 100px "Kode Mono", sans-serif;
+  position: fixed;
+  top: 300px;
+  left: 400px;
+  z-index: 0;
+  opacity: 0;
+}
+.helpme3  {
+  color: red;
+  font: 100px "Kode Mono", sans-serif;
+  position: fixed;
+  top: 50px;
+  left: 250px;
+  z-index: 0;
+  opacity: 0;
+}
+.helpme4  {
+  color: red;
+  font: 100px "Kode Mono", sans-serif;
+  position: fixed;
+  top: 350px;
+  left: 50px;
+  z-index: 0;
+  opacity: 0;
+}
+.helpme5  {
+  color: red;
+  font: 100px "Kode Mono", sans-serif;
+  position: fixed;
+  top: 250px;
+  left: 550px;
+  z-index: 0;
+  opacity: 0;
+}
+.helpme6  {
+  color: red;
+  font: 100px "Kode Mono", sans-serif;
+  position: fixed;
+  top: 25px;
+  left: 100px;
+  z-index: 0;
+  opacity: 0;
+}
+.helpme7  {
+  color: red;
+  font: 100px "Kode Mono", sans-serif;
+  position: fixed;
+  top: 300px;
+  left: 300px;
+  z-index: 0;
+  opacity: 0;
+}
+.helpme8  {
+  color: red;
+  font: 100px "Kode Mono", sans-serif;
+  position: fixed;
+  top: 400px;
+  left: 500px;
+  z-index: 0;
+  opacity: 0;
+}
+.helpme9  {
+  color: red;
+  font: 100px "Kode Mono", sans-serif;
+  position: fixed;
+  top: 600px;
+  left: 700px;
+  z-index: 0;
+  opacity: 0;
+}
+.helpme0  {
+  color: red;
+  font: 100px "Kode Mono", sans-serif;
+  position: fixed;
+  top: 400px;
+  left: 1000px;
+  z-index: 0;
+  opacity: 0;
+}
+.chaosrulesall  {
+  color: white;
+  font: 50px "Kode Mono", sans-serif;
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  z-index: 0;
+  opacity: 0;
+}
+.chaosrulesall2  {
+  color: white;
+  font: 50px "Kode Mono", sans-serif;
+  position: fixed;
+  top: 210px;
+  left: 100px;
+  z-index: 0;
+  opacity: 0;
+}
+.chaosrulesall3  {
+  color: white;
+  font: 50px "Kode Mono", sans-serif;
+  position: fixed;
+  top: 320px;
+  left: 100px;
+  z-index: 0;
+  opacity: 0;
+}
+.chaosrulesall4  {
+  color: white;
+  font: 50px "Kode Mono", sans-serif;
+  position: fixed;
+  top: 430px;
+  left: 100px;
+  z-index: 0;
+  opacity: 0;
+}
+.chaosrulesall5  {
+  color: white;
+  font: 50px "Kode Mono", sans-serif;
+  position: fixed;
+  top: 540px;
+  left: 100px;
+  z-index: 0;
+  opacity: 0;
+}
+.chaosrulesall6  {
+  color: black;
+  font: 50px "Kode Mono", sans-serif;
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  z-index: 0;
+  opacity: 0;
+}
+.chaosrulesall7  {
+  color: black;
+  font: 50px "Kode Mono", sans-serif;
+  position: fixed;
+  top: 210px;
+  left: 100px;
+  z-index: 0;
+  opacity: 0;
+}
+.chaosrulesall8  {
+  color: black;
+  font: 50px "Kode Mono", sans-serif;
+  position: fixed;
+  top: 320px;
+  left: 100px;
+  z-index: 0;
+  opacity: 0;
+}
+.chaosrulesall9  {
+  color: black;
+  font: 50px "Kode Mono", sans-serif;
+  position: fixed;
+  top: 430px;
+  left: 100px;
+  z-index: 0;
+  opacity: 0;
+}
+.chaosrulesall0  {
+  color: black;
+  font: 50px "Kode Mono", sans-serif;
+  position: fixed;
+  top: 540px;
+  left: 100px;
+  z-index: 0;
+  opacity: 0;
+}
 ::-webkit-scrollbar {
   width: 6px;
   height: 0;
@@ -12,19 +248,22 @@
 }
 
 html, body {
-  overflow: hidden;
+  overflow: hidden; 
   height: 100%;
+
   position: fixed;
   -webkit-overflow-scrolling: touch;
   -webkit-user-select: none;
   -moz-user-select: none;
-  user-select: none;
+  user-select: none; 
 }
 
 body {
-  font-family: Ubuntu;
-  font-size: 14px;
-  background-color: #484848;
+  font-family: "Jersey 10", sans-serif;
+  background-image: url("");
+
+  font-size: 15px;
+  background-color: #000000;
 }
 
 hr {
@@ -43,77 +282,108 @@ h1 {
   padding: 0;
   margin: 0;
   text-align: center;
-  font: bold 40px/1.1 Ubuntu;
+  font: bold 40px/1.1 "Jersey 10", sans-serif;
+}
+h2 {
+  padding: 0;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-align: center;
+  font: bold 30px/1.1 "Kode Mono", sans-serif;
 }
 
 div.optionsHeader {
   display: block;
-  margin: 8px 0 4px;
-  font: bold 13px/1 Ubuntu;
+  margin: 10px 0 4px;
+  font: 22px/1 "Jersey 10", sans-serif;
   color: #000000;
-  text-align: center;
-}
-div.optionsSubHeader {
   text-align: center;
 }
 
 h3 {
-  font-size: 14px;
-  color: #484848;
+  font-size: 17px;
+  color: #00ffff;
   text-align: center;
   padding: 0;
-  margin: 4px 0;
+  margin: 0px 0;
+}
+h4 {
+  font: 15px "Jersey 10", sans-serif;
+  color: #000000;
+  text-align: center;
+  padding: 0;
+  margin: 0px 0;
 }
 #startMenuSlidingTrigger:hover > h3 {
-  color: #323232;
+  color: #00aaaa;
 }
 #startMenuSlidingTrigger:hover > h3 > i.arrow {
-  border-color: #323232;
+  border-color: #00aaaa;
+}
+.viewOptionText {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.opts {
+  height: 300px;
+  width: 340px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 11.5px;
+  padding-left: 2px;
+  margin-top: 5px;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0.9, 0, 0, 0.3) rgba(0.3, 0, 0, 0.15);
 }
 
 .serverSelector {
-  height: 85px;
-  text-align: center;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 13px;
-  padding-left: 10px;
+  height: 60px;
+  text-align: left;
+  font-size: 23px;
+  font-weight: normal;
+  line-height: 11.5px;
+  padding-left: 0px;
+  margin-top: 20px;
   scroll-behavior: smooth;
   scrollbar-width: thin;
-  scrollbar-color: rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.15);
+  scrollbar-color: rgba(0.9, 0, 0, 0.3) rgba(0.3, 0, 0, 0.15);
 }
 .serverSelector tr {
-  color: #828282;
+  color: #222a2e;
   cursor: pointer;
 }
 .serverSelector tr.featured {
-  color: #e8ae00;
-  text-shadow: /*#ffe500 0 0 4px,*/ #fff27e 0 0 6px;
+  color: #0099ff;
+  text-shadow: /*#ffe500 0 0 4px,*/ #00ffff 0 0 10px;
 }
 .serverSelector tr.selected {
-  color: #8ABC3F;
+  color: #228f2c;
   cursor: default;
+  text-shadow: #30c93e 0 0 14px;
 }
 
 .shadowScroll {
   overflow-y: scroll;
   background:
     /* Shadow covers */
-    linear-gradient(#dde6eb 30%, rgba(255, 255, 255, 0)),
-    linear-gradient(rgba(255, 255, 255, 0), #dde6eb 70%) 0 100%,
+    linear-gradient(#eeeeee 30%, rgba(255, 255, 255, 0)),
+    linear-gradient(rgba(255, 255, 255, 0), #eeeeee 70%) 0 100%,
     /* Shadows */
     radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)),
     radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 0 100%;
   background-repeat: no-repeat;
-  background-color: #dde6eb;
+  background-color: #eeeeee;
   background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
   background-attachment: local, local, scroll, scroll;
 }
 a:link, a:visited {
-  color: #484848;
+  color: #114036;
 }
 a:link:hover, a:visited:hover {
-  color: #909090;
+  color: #49877a;
 }
 
 input {
@@ -126,36 +396,44 @@ input {
   margin-top: 5px;
   margin-bottom: 5px;
   outline: none;
-  font-family: Ubuntu;
+  font-family: "Kode Mono", sans-serif;
   transition: border 0.3s, background 0.3s, color 0.3s;
 }
 
 #playerNameInput {
-  padding: 10px;
+  padding: 3px;
+  margin-bottom: 5px;
+  margin-top: 40px;
   font-size: larger;
 }
 
+/*#playerKeyInput {
+  padding: 1px;
+}*/
+
 input:focus {
-  border: solid 1px #CCCCCC;
+  border: solid 3px #2f3b40;
 }
 
 input.error {
-  border: solid 1px #f00;
-  background: #fee;
-  color: #a00;
+  border: solid 3px #ff0000;
+  background: #f0bbbb;
+  color: #520a0a;
 }
 
 #mainWrapper {
-  padding: 75px 20px 0;
+  padding: 75px 30px 0;
 }
 
 #startMenu {
   position: relative;
   margin: 0 auto;
-  max-height: 390px;
+  max-height: 400px;
   padding: 10px;
-  border-radius: 5px;
-  background-color: #DDE6EB;
+  border-radius: 15px;
+  border: #300000 6px solid;
+  box-shadow: 0 0 30px 10px #ffffff, inset 0 0 0 1px #ffffff;
+  background-image: radial-gradient(magenta, black);
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -164,7 +442,7 @@ input.error {
   margin: 0 8px;
 }
 
-body.mobile #mainWrapper { padding: 10px 10px 0; }
+body.mobile #mainWrapper { padding: 50px 50px 0; }
 body.mobile #startMenu { max-height: 340px; }
 body.mobile #linkHolder { display: none; }
 
@@ -200,7 +478,7 @@ body.mobile #linkHolder { display: none; }
 }
 
 .startMenuHolder.shrinkable {
-  width: calc(100% - 780px);
+  width: calc(100% - 394px);
 }
 body.mobile .startMenuHolder {
   height: 300px;
@@ -212,7 +490,7 @@ body.mobile .startMenuHolder.shrinkable {
 a.menuTab {
   float: right;
   height: 13px;
-  font: 13px Ubuntu;
+  font: 19px "Jersey 10", sans-serif;
   padding: 6px 10px 7px 10px;
   border-radius: 5px 5px 0 0;
   color: #ffffff !important;
@@ -224,7 +502,7 @@ a.menuTab.discord {
   background: #7289DA url(/img/discord.svg) 8px 3px/22px no-repeat;
 }
 a.menuTab.stat {
-  background: #f00 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAKUlEQVQoU2NkQAP/////DxJiZGRkRJZC4YAkcCpEl6C9QrgNhKweSgoBUcBf8wTAguMAAAAASUVORK5CYII=) 10px 8px no-repeat;
+  background: #ff0000 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAKUlEQVQoU2NkQAP/////DxJiZGRkRJZC4YAkcCpEl6C9QrgNhKweSgoBUcBf8wTAguMAAAAASUVORK5CYII=) 10px 8px no-repeat;
   /*
   let canvas = document.body.appendChild(document.createElement('canvas'))
   canvas.width = 10
@@ -244,10 +522,10 @@ a.menuTab:link:hover, a.menuTab:visited:hover {
 }
 
 .changelogSelectorContainer {
-  height: 15px;
-  font: bold 12px Ubuntu;
+  height: 20px;
+  font: bold 25px "Kode Mono", sans-serif;
   text-align: center;
-  padding: 0 15px 5px 0;
+  padding: 0 15px 15px 0;
   overflow: auto hidden;
   scrollbar-width: none;
   scroll-behavior: smooth;
@@ -260,45 +538,37 @@ a.menuTab:link:hover, a.menuTab:visited:hover {
   width: 8px;
   pointer-events: none;
 }
-.changelogSelectorContainer::before {
-  background: linear-gradient(to right, rgba(221, 230, 235, 1) 0%, rgba(221, 230, 235, 0.3) 100%);
-}
-.changelogSelectorContainer::after {
-  top: 10px;
-  right: 10px;
-  background: linear-gradient(to left, rgba(221, 230, 235, 1) 0%, rgba(221, 230, 235, 0.3) 100%);
-}
 .changelogSelector {
   width: 340px;
 }
 .changelogSelector span {
   transition: color 500ms;
-  color: #222;
+  color: #0fddaf;
   cursor: pointer;
 }
 .changelogSelector span:hover {
   transition: color 200ms;
-  color: #555;
+  color: #c4ffff;
 }
 .changelogSelector span.active {
-  color: #777;
+  color: #c4ffff;
   cursor: default;
 }
 
 .changelogSelector span:not(:first-child)::before {
   content: ' ';
-  color: #aaa;
+  color: #aaaaaa;
   margin: 0 3px 0 0;
 }
 .changelogSelector span:not(:last-child)::after {
   content: ' |';
-  color: #aaa;
+  color: #c4ffff;
   margin: 0 0 0 3px;
 }
 
 .sliderHolder {
   width: 350px;
-  height: 295px;
+  height: 300px;
   overflow: hidden;
 }
 body.mobile .sliderHolder {
@@ -332,6 +602,8 @@ body.mobile .controlTable {
 .controlTable {
   border-collapse: collapse;
   margin: 0 2px;
+  font-size: 14px;
+  color: #00ffff;
 }
 .controlTable tr {
   border: 0;
@@ -366,11 +638,11 @@ body.mobile .controlTable {
   vertical-align: bottom;
 }
 .controlTable td b:hover {
-  color: #777;
+  color: #777777;
 }
 .controlTable td.editing b {
-  background: #fff;
-  color: #333;
+  background: #ffffff;
+  color: #333333;
   border: 1px solid #dcdcdc;
   border-radius: 4px;
   padding: 1px 4px;
@@ -387,16 +659,16 @@ body.mobile .controlTable {
 }
 
 #optColors {
-  width: 214px;
+  width: 170px;
 }
 #optMobile {
   display: none;
 }
 #optBorders {
-  width: 120px;
+  width: 170px;
 }
 body.mobile #optColors {
-  width: 340px;
+  width: 346px;
   margin-bottom: 4px;
 }
 body.mobile #optMobile, body.mobile #optBorders {
@@ -433,13 +705,13 @@ body.mobile .startMenuSlidingContent {
 
 .icon {
   display: block;
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
+  width: 340px;
+  height: 80px;
+  border-radius: 0%;
 }
 body.mobile .icon {
-  width: 48px;
-  height: 48px;
+  width: 90px;
+  height: 90px;
 }
 
 #patchNotes {
@@ -449,6 +721,7 @@ body.mobile .icon {
   overflow: hidden auto;
   scrollbar-width: thin;
   scrollbar-color: rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.15);
+  font: 14px "Acme", sans-serif;
 }
 
 #patchNotes ul {
@@ -457,7 +730,7 @@ body.mobile .icon {
 }
 
 #patchNotes table.poll-list {
-  margin: 8px 5px 20px;
+  margin: 8px 0px 20px 5px;
 }
 #patchNotes table.poll-table {
   text-align: center;
@@ -475,7 +748,7 @@ body.mobile .icon {
 
 #patchNotes div {
   transition: max-height 500ms, opacity 500ms, line-height 500ms;
-  max-height: 150000px;
+  max-height: 1500px;
   opacity: 1;
   margin-bottom: 0;
   line-height: 1.2;
@@ -522,25 +795,26 @@ body.mobile .icon {
   color: white;
   text-align: center;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.2);
-  background: #A9D86D;
+  background: #450045;
   border: 0;
-  border-bottom: 2px solid #8ABC3F;
+  border-bottom: 2px solid #ff66ff;
   cursor: pointer;
-  box-shadow: inset 0 -2px #8ABC3F;
+  box-shadow: inset 0 -2px #ff99ff;
   border-radius: 5px;
-  font: 16px Ubuntu;
+  font: 28px "Jersey 10", sans-serif;
 }
 #startButton:hover {
   margin-top: 1px;
   height: 39px;
-  border-bottom: 1px solid #8ABC3F;
+  border-bottom: 1px solid #ff77ff;
+  background: #ff77ff;
 }
 
 #startButton:active {
   margin-top: 2px;
   height: 38px;
-  background: #8ABC3F;
-  border-bottom: 0px
+  background: #ff77ff;
+  border-bottom: 0px;
   outline: none;
   box-shadow: none;
 }
@@ -553,7 +827,8 @@ body.mobile .icon {
   padding: 5px;
   width: 100px;
   height: 16px;
-  font-size: smaller;
+  font-size: 17px;
+  font-weight: normal;
   color: white;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
@@ -579,10 +854,10 @@ body.mobile .icon {
   position: relative;
   top: 0px;
   z-index: 2;
-  max-width: 1150px;
+  max-width: 755px;
   margin: 0 auto;
 }
-body.mobile #startMenuWrapper { max-width: 780px; }
+body.mobile #startMenuWrapper { max-width: 750px; }
 
 #gameAreaWrapper {
   position: absolute !important;
@@ -599,7 +874,7 @@ body.mobile #startMenuWrapper { max-width: 780px; }
 .count {
   display: inline-block;
   width: 20px;
-  font: bold 12px Ubuntu;
+  font: bold 17px "Jersey 10", sans-serif;
 }
 .count span {
   font-size: 10px;
@@ -630,26 +905,26 @@ body.mobile #startMenuWrapper { max-width: 780px; }
   height: 14px;
   width: 14px;
   border-radius: 4px;
-  background-color: #eee;
-  border: 1px solid #ccc;
+  background-color: #777777;
+  border: 1px solid #000000;
 }
 
 .container:hover input ~ .checkmark {
-  background-color: #ccc;
+  background-color: #555555;
 }
 
 .container input:disabled ~ .checkmark {
-  background-color: #ddd;
+  background-color: #dddddd;
 }
 
 .container input:checked ~ .checkmark {
-  background-color: #8ABC3F;
-  border: 1px solid #8ABC3F;
+  background-color: #333333;
+  border: 1px solid #333333;
 }
 
 .container:hover input:checked ~ .checkmark {
-  background-color: #7FA843;
-  border: 1px solid #7FA843;
+  background-color: #333333;
+  border: 1px solid #333333;
 }
 
 .container input:disabled:checked ~ .checkmark {
@@ -681,26 +956,26 @@ body.mobile #startMenuWrapper { max-width: 780px; }
   height: 14px;
   width: 14px;
   border-radius: 50%;
-  background-color: #eee;
-  border: 1px solid #ccc;
+  background-color: #eeeeee;
+  border: 1px solid #cccccc;
 }
 
 .container:hover input ~ .radio {
-  background-color: #ccc;
+  background-color: #cccccc;
 }
 
 .container input:disabled ~ .radio {
-  background-color: #ddd;
+  background-color: #dddddd;
 }
 
 .container input:checked ~ .radio {
-  background-color: #8ABC3F;
-  border: 1px solid #8ABC3F;
+  background-color: #eeeeee;
+  border: 1px solid #eeeeee;
 }
 
 .container:hover input:checked ~ .radio {
-  background-color: #7FA843;
-  border: 1px solid #7FA843;
+  background-color: #eeeeee;
+  border: 1px solid #eeeeee;
 }
 
 .container input:disabled:checked ~ .radio {
@@ -715,7 +990,7 @@ body.mobile #startMenuWrapper { max-width: 780px; }
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #fff;
+  background: #ffffff;
 }
 
 .container input:checked ~ .radio:after {
@@ -726,11 +1001,11 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  font: 13px/1 Ubuntu;
+  font: 16px/1 "Jersey 10", sans-serif;
   padding: 2px 28px 2px 8px;
   height: 21px;
   margin-left: 3px;
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAICAYAAAD0g6+qAAAAwklEQVQoU42QMQrCQBBFZxeGgJ7BI1jYa2GzTTY3sRUECy1yA0svEQhhEHIHLdRrqF2a5EuCkbgmmin/zLz5f5QxZsTMK2ZeR1F0p5ay1i7zPD+LiLT1S01Za7dEtCGiY5Zl8zRNH81h3/d3SqkFgFOSJJNOUBAEAwAHIpq6sAbkprWexXF86QSVjTaY53nhy8lfSBWtvuDAKhlAL8gHyHUGAFrr8a84zZhvR7VojBkyc1gUxV5Erl0/cfUvUN9Fd+4JA1JkCdbmVf8AAAAASUVORK5CYII=) 100% no-repeat #eee;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAICAYAAAD0g6+qAAAAwklEQVQoU42QMQrCQBBFZxeGgJ7BI1jYa2GzTTY3sRUECy1yA0svEQhhEHIHLdRrqF2a5EuCkbgmmin/zLz5f5QxZsTMK2ZeR1F0p5ay1i7zPD+LiLT1S01Za7dEtCGiY5Zl8zRNH81h3/d3SqkFgFOSJJNOUBAEAwAHIpq6sAbkprWexXF86QSVjTaY53nhy8lfSBWtvuDAKhlAL8gHyHUGAFrr8a84zZhvR7VojBkyc1gUxV5Erl0/cfUvUN9Fd+4JA1JkCdbmVf8AAAAASUVORK5CYII=) 100% no-repeat #eeeeee;
   /*
   let canvas = document.body.appendChild(document.createElement('canvas'))
   canvas.width = Math.ceil(8 * Math.sqrt(2)) + 6
@@ -750,13 +1025,13 @@ select {
   copy(canvas.toDataURL())
   */
   border-radius: 4px;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
 }
 select:hover {
-  background-color: #ccc;
+  background-color: #cccccc;
 }
 select:active {
-  background-color: #eee;
+  background-color: #eeeeee;
 }
 
 .tooltip {
@@ -768,8 +1043,8 @@ select:active {
   border-radius: 50%;
   text-align: center;
   background: rgb(0, 0, 0, 0.6);
-  font: bold 10px/15px Ubuntu;
-  color: #fff;
+  font: 19px/20px "Jersey 10", sans-serif;
+  color: #ffffff;
   margin: 0 4px;
 }
 .tooltip::before {
@@ -780,8 +1055,8 @@ select:active {
   position: absolute;
   width: 160px;
   background-color: #444444;
-  color: #fff;
-  font: bold 11px Ubuntu;
+  color: #ffffff;
+  font: 20px "Jersey 10", sans-serif;
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
@@ -822,7 +1097,7 @@ i.reset {
   display: inline-block;
   width: 8px;
   height: 8px;
-  border: #000 2px solid;
+  border: #000000 2px solid;
   border-right-color: transparent;
   border-radius: 50%;
   position: relative;
@@ -832,7 +1107,7 @@ i.reset::after {
   content: '';
   display: inline-block;
   border: 3px solid;
-  border-color: transparent #000 #000 transparent;
+  border-color: transparent #FFFFFF #FFFFFF transparent;
   position: relative;
   left: 3px;
   bottom: 8px;
@@ -850,7 +1125,7 @@ i.cross.x {
 i.cross::before, i.cross::after {
   content: '';
   display: inline-block;
-  background-color: #000;
+  background-color: #FFFFFF;
   border-radius: 2px;
   float: left;
 }
@@ -868,7 +1143,7 @@ i.flag {
   display: inline-block;
   width: 2px;
   height: 12px;
-  background: #000;
+  background: #000000;
   margin: 0 15px 0 5px;
 }
 i.flag::before {
@@ -876,25 +1151,10 @@ i.flag::before {
   display: inline-block;
   width: 9px;
   height: 7px;
-  background-color: #000;
+  background-color: #FFFFFF;
   margin: 0 0 5px 3px;
   transition: margin-bottom 500ms;
 }
 i.flag.down::before {
   margin-bottom: 2px;
-}
-
-.chatbox {
-    position: absolute;
-    width: 270px;
-    height: 200px;
-    background: rgba(255, 255, 255, 0.7);
-    bottom: 240px;
-    left: 15px;
-    border-radius: 5px;
-    pointer-events: all;
-}
-
-.checkboxOptions {
-  height: 203px;
 }
