@@ -3613,7 +3613,7 @@ function setVolume(val, type = 'global') { // todo: finish this shit
                     id: "ffa",
                     type: "ffa",
                     code: "digitalocean-newyork-f",
-                    at: m.digitalocean("oapp-server-z3cau")
+                    at: m.digitalocean("giga-test-fqe7u")
                 }, {
                     visible: 0,
                     id: "2tdm",
