@@ -1713,7 +1713,7 @@ let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-066
             xa = null;
         ab.on(!0,
             () => {
-                document.getElementById("referral-fallback").style.display = "block";
+             //   document.getElementById("referral-fallback").style.display = "block";
                 qa = !0;
                 a("event", "yes_adblock", {
                     event_category: "adblock_detection",
