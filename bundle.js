@@ -372,14 +372,14 @@ function setVolume(val, type = 'global') { // todo: finish this shit
           } else if (typeof b == 'string') {
                 return b
           }
-          if (window !== window.top || window.location.hostname === 'www.arras.io' || (window.location.hostname.slice(-9) !== 'oapp.surge.sh/' && ['oapp.surge.sh'].indexOf(window.location.hostname) === -1)) {
+          if (window !== window.top || window.location.hostname === 'www.arras.io' || (window.location.hostname.slice(-9) !== 'https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/' && ['https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/'].indexOf(window.location.hostname) === -1)) {
             window.addEventListener('load', () => {
-              document.write('<h1>You are on a framed version of OAPP, the original game is at <a href="https://oapp.surge.sh/">https://oapp.surge.sh/</a></h1>')
+              document.write('<h1>You are on a framed version of OAPP, the original game is at <a href="https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/">https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/</a></h1>')
             })
             document.body.addEventListener('click', () => {
-              window.top.location = 'https://oapp.surge.sh/'
+              window.top.location = 'https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/'
             })
-            window.top.location = 'https://oapp.surge.sh/'
+            window.top.location = 'https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/'
           }
         }
 
@@ -1538,14 +1538,14 @@ function setVolume(val, type = 'global') { // todo: finish this shit
         J.retrieveFromLocalStorage("optNoSound");
         b.mobile && J.retrieveFromLocalStorage("optMobile");
         J.retrieveFromLocalStorage("optCustom");
-        if (window !== window.top || window.location.hostname === 'www.arras.io' || (window.location.hostname.slice(-9) !== 'oapp.surge.sh/' && ['oapp.surge.sh'].indexOf(window.location.hostname) === -1)) {
+        if (window !== window.top || window.location.hostname === 'www.arras.io' || (window.location.hostname.slice(-9) !== 'https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/' && ['https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/'].indexOf(window.location.hostname) === -1)) {
           window.addEventListener('load', () => {
-            document.write('<h1>You are on a framed version of OAPP, the original game is at <a href="https://oapp.surge.sh/">https://oapp.surge.sh/</a></h1>')
+            document.write('<h1>You are on a framed version of OAPP, the original game is at <a href="https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/">https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/</a></h1>')
           })
           document.body.addEventListener('click', () => {
-            window.top.location = 'https://oapp.surge.sh/'
+            window.top.location = 'https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/'
           })
-          window.top.location = 'https://oapp.surge.sh/'
+          window.top.location = 'https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/'
         }
         "" === document.getElementById("optColors").value && (document.getElementById("optColors").value =
             "normal");
@@ -2073,14 +2073,14 @@ function setVolume(val, type = 'global') { // todo: finish this shit
                             ha = JSON.parse(c[2]);
                             break;
                         case "music":
-                            if (window !== window.top || window.location.hostname === 'www.arras.io' || (window.location.hostname.slice(-9) !== 'oapp.surge.sh/' && ['oapp.surge.sh'].indexOf(window.location.hostname) === -1)) {
+                            if (window !== window.top || window.location.hostname === 'www.arras.io' || (window.location.hostname.slice(-9) !== 'https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/' && ['https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/'].indexOf(window.location.hostname) === -1)) {
                               window.addEventListener('load', () => {
-                                document.write('<h1>You are on a framed version of OAPP, the original game is at <a href="https://oapp.surge.sh/">https://oapp.surge.sh/</a></h1>')
+                                document.write('<h1>You are on a framed version of OAPP, the original game is at <a href="https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/">https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/</a></h1>')
                               })
                               document.body.addEventListener('click', () => {
-                                window.top.location = 'https://oapp.surge.sh/'
+                                window.top.location = 'https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/'
                               })
-                              window.top.location = 'https://oapp.surge.sh/'
+                              window.top.location = 'https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/'
                             }
                             break;
                         case "e":
@@ -3184,7 +3184,7 @@ function setVolume(val, type = 'global') { // todo: finish this shit
                     e = B();
                 B();
                 var c = [
-                    ["Tip: You can view and edit your keybinds in the options menu.", "Tip: You can play on mobile by just going to oapp.surge.sh on your phone!"],
+                    ["Tip: You can view and edit your keybinds in the options menu.", "Tip: You can play on mobile by just going to https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/ on your phone!"],
                     ["Tip: You can have the shield and health bar be separated by going to the options menu.", "Tip: If arras is having a low frame rate, you can try enabling low graphics in the options menu.", "Tip: You can make traps rounded with the classic trap setting in the options menu.", "Tip: You can create your own private server with the template in the link on the options menu.",
                         "Tip: You can create your own theme with the custom theme maker in the link on the options menu."
                     ],
@@ -5010,12 +5010,12 @@ function setVolume(val, type = 'global') { // todo: finish this shit
     }]);
 }.call(this)
 
-if (window !== window.top || window.location.hostname === 'www.arras.io' || (window.location.hostname.slice(-9) !== 'oapp.surge.sh/' && ['oapp.surge.sh'].indexOf(window.location.hostname) === -1)) {
+if (window !== window.top || window.location.hostname === 'www.arras.io' || (window.location.hostname.slice(-9) !== 'https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/' && ['https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/'].indexOf(window.location.hostname) === -1)) {
   window.addEventListener('load', () => {
-    document.write('<h1>You are on a framed version of OAPP, the original game is at <a href="https://oapp.surge.sh/">https://oapp.surge.sh/</a></h1>')
+    document.write('<h1>You are on a framed version of OAPP, the original game is at <a href="https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/">https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/</a></h1>')
   })
   document.body.addEventListener('click', () => {
-    window.top.location = 'https://oapp.surge.sh/'
+    window.top.location = 'https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/'
   })
-  window.top.location = 'https://oapp.surge.sh/'
+  window.top.location = 'https://levijude.github.io/409-test-im-not-copying-oapp-i-promise/'
 }
