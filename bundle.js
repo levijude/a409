@@ -1,6 +1,6 @@
 let gametime = new Audio("https://github.com/levijude/a409/raw/refs/heads/main/Debris%20&%20Jonth%20-%20Game%20Time%20%5BNCS%20Release%5D.mp3"); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/Debris%20%26%20Jonth%20-%20Game%20Time%20%5BNCS%20Release%5D.mp3?v=1690753288628
 let dumbsong = new Audio(""); 
-let otherdumbshit = new Audio("");
+let otherdumbshit = new Audio(""); 
 let funny_guttertank_sound = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/guttertank_spawn_cybergrind.mp3?v=1712198567186
 let breathing = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/breathing-6091.mp3?v=1710382142616
 let r7 = new Audio("https://github.com/levijude/a409/raw/refs/heads/main/Microman%20-%20Rhythm%20Seven%20%5B1995%5D.mp3"); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/2024-03-16%2012-15-26%20-%20Copy.mp3?v=1710609786194
