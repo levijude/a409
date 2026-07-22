@@ -6,7 +6,7 @@ let breathing = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97
 let r7 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/2024-03-16%2012-15-26%20-%20Copy.mp3?v=1710609786194
 let horrorambience = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/sound-ambience-sonido-ambiente-3-14040.mp3?v=1710806553675
 let project22 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/Project_22.mp3?v=1731120007374
-let elita = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/yt1z.net%20-%20Elita%20-%20Sour%20Switchblade.mp3?v=1737170312114
+let elita = new Audio("https://github.com/levijude/a409/raw/refs/heads/main/yt1z.net%20-%20Elita%20-%20Sour%20Switchblade.mp3"); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/yt1z.net%20-%20Elita%20-%20Sour%20Switchblade.mp3?v=1737170312114
 let endsound = new Audio("");           //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/My%20Real%20Voice.mp3?v=1737170385301                                                                                                                                                                    
 let crashout = new Audio(''); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/bandicam%202025-01-20%2010-32-12-487.mp3?v=1737391358213
 let warning27 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/27warning.mp3?v=1737510693963
