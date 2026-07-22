@@ -1,3 +1,7 @@
+# Jul. 22, 2026 - Beta 0.01.2
+
+- Finished replacing all of the game's audio files.
+
 # Jul. 21, 2026 - Beta 0.01.1 (Secondary update)
 
 - The War Mode server now automatically restarts every two hours.
