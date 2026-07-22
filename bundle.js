@@ -1118,8 +1118,8 @@ let c14 = new Audio("https://github.com/levijude/a409/raw/refs/heads/main/strxwb
           }
         }
         function K(b) {
-            let d = D.graphical.neon ? l.white : l.black;
-            return D.graphical.darkBorders ? d : X(b, d, l.border)
+            let d = D.graphical.neon ? l.white : l.guiblack;
+            return D.graphical.darkBorders ? d : l.guiblack;
         }
 
         function w(b) {
