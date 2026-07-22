@@ -1,4 +1,4 @@
-let gametime = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/Debris%20%26%20Jonth%20-%20Game%20Time%20%5BNCS%20Release%5D.mp3?v=1690753288628
+let gametime = new Audio("https://github.com/levijude/a409/blob/42f7149aae692d1592da9cfff17699b478282039/Debris%20%26%20Jonth%20-%20Game%20Time%20%5BNCS%20Release%5D.mp3"); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/Debris%20%26%20Jonth%20-%20Game%20Time%20%5BNCS%20Release%5D.mp3?v=1690753288628
 let dumbsong = new Audio(""); 
 let otherdumbshit = new Audio("");
 let funny_guttertank_sound = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/guttertank_spawn_cybergrind.mp3?v=1712198567186
@@ -11,13 +11,13 @@ let endsound = new Audio("");           //https://cdn.glitch.global/812f72e5-bc1
 let crashout = new Audio(''); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/bandicam%202025-01-20%2010-32-12-487.mp3?v=1737391358213
 let warning27 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/27warning.mp3?v=1737510693963
 let dontfearthereaper = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/%C3%A5.mp3?v=1737773505697
-let gamerDie = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/A60KillEffect.mp3?v=1737779345575
+let gamerDie = new Audio("https://github.com/levijude/a409/blob/42f7149aae692d1592da9cfff17699b478282039/A60KillEffect.mp3"); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/A60KillEffect.mp3?v=1737779345575
 let sayso = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/Say%20so%20(Japanese%20version).mp3?v=1737871581843
-let killallhumans = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/KILL%20ALL%20HUMANS.mp3?v=1740282886458"
-let chaos = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/20250303.mp3?v=1741056037776
+let killallhumans = new Audio("https://github.com/levijude/a409/blob/42f7149aae692d1592da9cfff17699b478282039/KILL%20ALL%20HUMANS.mp3"); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/KILL%20ALL%20HUMANS.mp3?v=1740282886458"
+let chaos = new Audio("https://github.com/levijude/a409/blob/42f7149aae692d1592da9cfff17699b478282039/20250303.mp3"); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/20250303.mp3?v=1741056037776
 let ambience = new Audio("https://github.com/levijude/a409/raw/refs/heads/main/a409_ambience.mp3"); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/a409_ambience.mp3?v=1741125390303
 let gemsanctuary = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/gemsanctuary.mp3?v=1741218123992
-let chaos2 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/20250305_1.mp3?v=1741219825128
+let chaos2 = new Audio("https://github.com/levijude/a409/blob/42f7149aae692d1592da9cfff17699b478282039/20250305_1.mp3"); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/20250305_1.mp3?v=1741219825128
 let egigaab05 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/E-GIGA%20AB05%20Theme.mp3?v=1741416785188
 let r7_bp = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/Microman%20-%20Rhythm%20Seven%20%5B1995%5D.mp3?v=1741420297196
 let c14 = new Audio(""); //https://cdn.glitch.global/812f72e5-bc1a-43cd-97cc-0669969b1db9/strxwberrymilk%20-%20My%20Head%20Hurts.mp3?v=1741575165391
