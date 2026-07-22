@@ -1,3 +1,8 @@
+# Jul. 21, 2026 - Beta 0.01.1 (Secondary update)
+
+- The War Mode server now automatically restarts every two hours.
+- You can now take screenshots and recordings in-game using Q for screenshot and Z for recording.
+
 # Jul. 21, 2026 - Beta 0.01
 
 - THE GAME IS OFFICIALLY BACK.
