@@ -1675,7 +1675,7 @@ let c14 = new Audio("https://github.com/levijude/a409/raw/refs/heads/main/strxwb
                         b || 1 > y) {
                         let c = a + 1.1 * h + 15;
                         g.globalAlpha = t * t * q;
-                        D.graphical.shieldbars ? (O(d - f, d + f, c, 6 + D.graphical.barChunk, l.black), y ? (O(d - f, d - f + 2 * f * b, c + 1.5, 3, l.lgreen), g.globalAlpha *= .7, O(d - f, d - f + 2 * f * y, c - 1.5, 3, l.teal)) : O(d - f, d - f + 2 * f * b, c, 4, l.lgreen)) : (O(d - f, d + f, c, 3 + D.graphical.barChunk, l.black), O(d - f, d - f + 2 * f * b, c, 3, l.lgreen), y && (g.globalAlpha *= .3 + .3 * y, O(d - f, d - f + 2 * f * y, c, 3, l.teal)));
+                        D.graphical.shieldbars ? (O(d - f, d + f, c, 6 + D.graphical.barChunk, l.guiblack), y ? (O(d - f, d - f + 2 * f * b, c + 1.5, 3, l.lgreen), g.globalAlpha *= .7, O(d - f, d - f + 2 * f * y, c - 1.5, 3, l.teal)) : O(d - f, d - f + 2 * f * b, c, 4, l.lgreen)) : (O(d - f, d + f, c, 3 + D.graphical.barChunk, l.guiblack), O(d - f, d - f + 2 * f * b, c, 3, l.lgreen), y && (g.globalAlpha *= .3 + .3 * y, O(d - f, d - f + 2 * f * y, c, 3, l.teal)));
                         g.globalAlpha = q
                     }
                 }
@@ -1741,7 +1741,7 @@ let c14 = new Audio("https://github.com/levijude/a409/raw/refs/heads/main/strxwb
           darkBorders: !1,
           fancyAnimations: !0,
           colors: "normal",
-          pointy: !0,
+          pointy: !1,
           sharp: !1,
           fontSizeBoost: 1,
           shieldbars: !1,
@@ -3867,7 +3867,7 @@ let c14 = new Audio("https://github.com/levijude/a409/raw/refs/heads/main/strxwb
                                 a.font = "bold " + n + "px Kode Mono";
                                 a.textAlign = t;
                                 a.textBaseline = "middle";
-                                a.strokeStyle = l.black;
+                                a.strokeStyle = l.guiblack;
                                 a.fillStyle = q;
                                 a.lineCap = "round";
                                 a.lineJoin = "round";
@@ -4354,7 +4354,7 @@ let c14 = new Audio("https://github.com/levijude/a409/raw/refs/heads/main/strxwb
                             g.fillStyle = l.guiwhite;
                             I(0, 0, b.screenWidth, b.screenHeight);
                             C = k - 4;
-                            g.strokeStyle = l.black;
+                            g.strokeStyle = l.guiblack;
                             g.lineWidth = 2;
                             g.beginPath();
                             for (let [a, d] of c) E = b.screenWidth / 2 + (d.x - x.width / 2) * k + 1 + .5 * C, P = b.screenHeight / 2 + (d.y - x.height / 2) * k + 1 + .5 * C, g.moveTo(Math.round(b.screenWidth / 2 + (a.x - x.width / 2) * k + 1 + .5 * C) + .5, Math.round(b.screenHeight / 2 + (a.y - x.height / 2) * k + 1 + .5 * C) + .5), g.lineTo(Math.round(E) + .5, Math.round(P) + .5);
@@ -4364,7 +4364,7 @@ let c14 = new Audio("https://github.com/levijude/a409/raw/refs/heads/main/strxwb
                                     y: d,
                                     colorIndex: f,
                                     index: h
-                                } of a) E = b.screenWidth / 2 + (c - x.width / 2) * k + 2, P = b.screenHeight / 2 + (d - x.height / 2) * k + 2, g.globalAlpha = 1, g.fillStyle = e(f + 10), I(E, P, C, C), g.globalAlpha = .2, g.fillStyle = e(f), I(E, P, C, .6 * C), g.fillStyle = l.black, I(E, P + .6 * C, C, .4 * C), g.globalAlpha = 1, W = -Math.PI / 4, pa = F(h, A.color), V = Q[h].position, ma = .8 * C / V.axis, ja(E + .5 * C - ma * V.middle.x * Math.cos(W), P + .5 * C - ma * V.middle.x * Math.sin(W), pa, .5, 1, ma / pa.size * 2, W, !0), g.strokeStyle = l.black, g.lineWidth = 2, I(E, P, C, C, !0)
+                                } of a) E = b.screenWidth / 2 + (c - x.width / 2) * k + 2, P = b.screenHeight / 2 + (d - x.height / 2) * k + 2, g.globalAlpha = 1, g.fillStyle = e(f + 10), I(E, P, C, C), g.globalAlpha = .2, g.fillStyle = e(f), I(E, P, C, .6 * C), g.fillStyle = l.guiblack, I(E, P + .6 * C, C, .4 * C), g.globalAlpha = 1, W = -Math.PI / 4, pa = F(h, A.color), V = Q[h].position, ma = .8 * C / V.axis, ja(E + .5 * C - ma * V.middle.x * Math.cos(W), P + .5 * C - ma * V.middle.x * Math.sin(W), pa, .5, 1, ma / pa.size * 2, W, !0), g.strokeStyle = l.guiblack, g.lineWidth = 2, I(E, P, C, C, !0)
                         } while (0);
                         b.mobile && "joysticks" === ba.control &&
                             (x = Math.min(.6 * b.screenWidth, .12 * b.screenHeight), g.globalAlpha = .3, g.fillStyle = "#345678", g.beginPath(), g.arc(1 * b.screenWidth / 6, 2 * b.screenHeight / 3, x, 0, 2 * Math.PI), g.arc(5 * b.screenWidth / 6, 2 * b.screenHeight / 3, x, 0, 2 * Math.PI), g.fill());
@@ -4373,7 +4373,7 @@ let c14 = new Audio("https://github.com/levijude/a409/raw/refs/heads/main/strxwb
                         k = 20;
                         b.mobile && (k += (b.canSkill ? (200 / 3 + 20) / 1.4 * a.get() : 0) + (b.canUpgrade ? 120 / 1.4 * n.get() : 0));
                         for (C = fa.length - 1; 0 <= C; C--) E = fa[C], P = E.text, null == E.textobj && (E.textobj = B()), null == E.len && (E.len = Aa(P, 14)), g.globalAlpha = .5 * E.alpha, O(x - E.len / 2, x + E.len /
-                            2, k + 9, 18, l.black), g.globalAlpha = Math.min(1, E.alpha), E.textobj.draw(P, x, k + 9, 14, l.guiwhite, "center", !0), k += 22, 1 < E.status && (k -= 22 * (1 - Math.sqrt(E.alpha))), 1 < E.status ? (E.status -= .05, E.alpha += .05) : 0 === C && (6 < fa.length || 1E4 < Date.now() - E.time - E.extratime) && (E.status -= .05, E.alpha -= .05, 0 >= E.alpha && fa.shift());
+                            2, k + 9, 18, l.guiblack), g.globalAlpha = Math.min(1, E.alpha), E.textobj.draw(P, x, k + 9, 14, l.guiwhite, "center", !0), k += 22, 1 < E.status && (k -= 22 * (1 - Math.sqrt(E.alpha))), 1 < E.status ? (E.status -= .05, E.alpha += .05) : 0 === C && (6 < fa.length || 1E4 < Date.now() - E.time - E.extratime) && (E.status -= .05, E.alpha -= .05, 0 >= E.alpha && fa.shift());
                         g.globalAlpha = 1; // broadcasts fa = []
                         b.mobile && M(1 / 1.4);
                         if (!b.mobile) {
@@ -4398,12 +4398,12 @@ let c14 = new Audio("https://github.com/levijude/a409/raw/refs/heads/main/strxwb
                                     let k = D.gui.expectedMaxSkillLevel;
                                     var m = p < a;
                                     p > k && (k = p);
-                                    O(e + 7.5, e - 7.5 + c * v(p), f + 7.5, 12 + D.graphical.barChunk, l.black);
+                                    O(e + 7.5, e - 7.5 + c * v(p), f + 7.5, 12 + D.graphical.barChunk, l.guiblack);
                                     O(e + 7.5, e + 7.5 + (c - 35) * v(p), f + 7.5, 12, l.grey);
                                     O(e + 7.5, e + 7.5 + (c - 35) * v(w), f + 7.5, 11.5, t);
                                     if (m)
                                         for (g.lineWidth = 1, g.strokeStyle = l.grey, m = p + 1; m < k; m++) ta(e + (c - 35) * v(m), f + 1.5, e + (c - 35) * v(m), f - 3 + 15);
-                                    g.strokeStyle = l.black;
+                                    g.strokeStyle = l.guiblack;
                                     g.lineWidth =
                                         1;
                                     for (m = 1; m < w + 1; m++) ta(e + (c - 35) * v(m), f + 1.5, e + (c - 35) * v(m), f - 3 + 15);
@@ -4425,13 +4425,13 @@ let c14 = new Audio("https://github.com/levijude/a409/raw/refs/heads/main/strxwb
                         C = b.screenHeight - 20 - x;
                         qa || b.mobile || !b.died || (C -= 110);
                         g.lineWidth = 1;
-                        O(k, k + 330, C + x / 2, x - 3 + D.graphical.barChunk, l.black);
+                        O(k, k + 330, C + x / 2, x - 3 + D.graphical.barChunk, l.guiblack);
                         O(k, k + 330, C + x / 2, x - 3, l.grey);
                         O(k, k + 330 * A.__s.getProgress(), C + x / 2, x - 3.5, l.gold);
                         ca.draw("Level " + A.__s.getLevel() + " " + Q[A.type].name, k + 165, C + x / 2, x - 4, l.guiwhite, "center", !0);
                         x = 14;
                         C -= x + 4;
-                        O(k + 33, k + 297, C + x / 2, x - 3 + D.graphical.barChunk, l.black);
+                        O(k + 33, k + 297, C + x / 2, x - 3 + D.graphical.barChunk, l.guiblack);
                         O(k + 33, k + 297, C + x / 2, x - 3, l.grey);
                         O(k + 33, k + 330 * (.1 + .8 * (T ?
                             Math.min(1, A.__s.getScore() / T) : 1)), C + x / 2, x - 3.5, l.green);
@@ -4457,12 +4457,12 @@ let c14 = new Audio("https://github.com/levijude/a409/raw/refs/heads/main/strxwb
                             g.globalAlpha = .3;
                             g.fillStyle = X(l.grey, l.vlgrey);
                             b.radial ? I(a + d / 2, c + f / 2, d / 2) : I(a, c, d, f);
-                            for (let f of La.get()) g.fillStyle = X(e(f.color), l.black, .3), g.globalAlpha = f.alpha, 2 === f.type ? I(a + (f.x - f.size) / b.gameWidth * d - .4, c + (f.y - f.size) / b.gameWidth * d - 1, 2 * f.size / b.gameWidth * d + .2, 2 * f.size / b.gameWidth * d + .2) : 1 === f.type ? sa(a + f.x / b.gameWidth * d, c + f.y / b.gameWidth * d, f.size / b.gameWidth * d + .2) : f.id !== A.playerid && sa(a + f.x / b.gameWidth * d, c + f.y / b.gameWidth * d, h);
-                            g.fillStyle = l.black;
+                            for (let f of La.get()) g.fillStyle = X(e(f.color), l.guiblack, .3), g.globalAlpha = f.alpha, 2 === f.type ? I(a + (f.x - f.size) / b.gameWidth * d - .4, c + (f.y - f.size) / b.gameWidth * d - 1, 2 * f.size / b.gameWidth * d + .2, 2 * f.size / b.gameWidth * d + .2) : 1 === f.type ? sa(a + f.x / b.gameWidth * d, c + f.y / b.gameWidth * d, f.size / b.gameWidth * d + .2) : f.id !== A.playerid && sa(a + f.x / b.gameWidth * d, c + f.y / b.gameWidth * d, h);
+                            g.fillStyle = l.guiblack;
                             g.globalAlpha = 1;
                             sa(a + z.cx /
                                 b.gameWidth * d, c + z.cy / b.gameWidth * d, h);
-                            g.strokeStyle = l.black;
+                            g.strokeStyle = l.guiblack;
                             g.lineWidth = 3;
                             b.radial ? sa(a + d / 2, c + f / 2, d / 2, !0) : I(a, c, d, f, !0)
                         };
@@ -4478,7 +4478,7 @@ let c14 = new Audio("https://github.com/levijude/a409/raw/refs/heads/main/strxwb
                         b.mobile && M(1.4);
                         if (!D.graphical.screenshotMode) {
                             for (d = b.screenWidth - 200 - 20, x = 48, b.mobile && (x += (b.canSkill ? 200 / 3 / 1.4 * a.get() : 0) + (b.canUpgrade && 40 + 114 * A.upgrades.length > 1.4 * d ? 100 / 1.4 * n.get() : 0)), 0 < S.data.length && ka.draw("Leaderboard", Math.round(d + 100) + .5, Math.round(x - 10) + .5, 18, l.guiwhite, "center"), k = 0; k < S.data.length && (!b.mobile || 6 > k); k++) {
-                              C = S.data[k], O(d, d + 200, x + 7, 11 + D.graphical.barChunk, l.black),
+                              C = S.data[k], O(d, d + 200, x + 7, 11 + D.graphical.barChunk, l.guiblack),
                                 O(d, d + 200, x + 7, 11, l.grey),
                                 O(d, d + 200 * Math.min(1, C.score / T), x + 7, 10.5, C.barColor);
                                 if (C.name != 'LetDownAndHangingAround') na[k].draw(C.label + ": " + J.handleLargeNumber(Math.round(C.score)), d + 100, x + 7, 9, l.guiwhite, "center", !0),
@@ -4528,7 +4528,7 @@ let c14 = new Audio("https://github.com/levijude/a409/raw/refs/heads/main/strxwb
                                     p = 60 / d.axis;
                                     ja((c*upgradeBoxSize) + (50 - p * d.middle.x * Math.cos(ua)) * upgradeBoxSize, (f*upgradeBoxSize) + (50 * upgradeBoxSize) - p * d.middle.x * Math.sin(ua), t, 1, 1, (p / t.size)*upgradeMockupSize, ua, !0);
                                     false ? (ia.get(q).draw(t.name, (c*upgradeBoxSize) + (50 * upgradeBoxSize), (f*upgradeBoxSize) + (100 - 6) * upgradeBoxSize, upgradeNameSize, l.guiwhite, "center"), oa.get(q).draw("", (c*upgradeBoxSize) + (100 - 4) * upgradeBoxSize, (f*upgradeBoxSize) + (100 - 6) * upgradeBoxSize, upgradeNameSize, l.guiwhite, "right")) : ia.get(q).draw(t.name, (c*upgradeBoxSize) + (50 * upgradeBoxSize), (f*upgradeBoxSize) + (100 - 6) * upgradeBoxSize, upgradeNameSize, l.guiwhite, "center");
-                                    g.strokeStyle = l.black;
+                                    g.strokeStyle = l.guiblack;
                                     g.globalAlpha = 1;
                                     g.lineWidth =
                                         3;
@@ -4574,7 +4574,7 @@ let c14 = new Audio("https://github.com/levijude/a409/raw/refs/heads/main/strxwb
                                 d = Aa("IGNORE", 11*upgradeBoxSize) + 10;
                                 S = (k + 100 + 14 + n - 15) / 2;
                                 T = w + 100 + 14;
-                                O((S*upgradeBoxSize) - d / 2, (S*upgradeBoxSize) + d / 2, (T*upgradeBoxSize) + 7, (14*upgradeBoxSize) + D.graphical.barChunk, l.black);
+                                O((S*upgradeBoxSize) - d / 2, (S*upgradeBoxSize) + d / 2, (T*upgradeBoxSize) + 7, (14*upgradeBoxSize) + D.graphical.barChunk, l.guiblack);
                                 O((S*upgradeBoxSize) - d / 2, (S*upgradeBoxSize) + d / 2, (T*upgradeBoxSize) + 7, 14*upgradeBoxSize, l.white);
                                 ra.draw("IGNORE", S*upgradeBoxSize, (T*upgradeBoxSize) + 7, upgradeNameSize*(12/9.5), l.guiwhite, "center", !0);
                                 b.clickables.skipUpgrades.place(0, ((S - d / 2)*upgradeBoxSize) * h, (T*upgradeBoxSize) * h, d * h, 14 * h)
@@ -4610,13 +4610,13 @@ let c14 = new Audio("https://github.com/levijude/a409/raw/refs/heads/main/strxwb
                                     g.fillStyle =
                                         t;
                                     I(f, 20 + 2 * d / 3, 100 * w / q, 1 * d / 3);
-                                    g.strokeStyle = l.black;
+                                    g.strokeStyle = l.guiblack;
                                     g.lineWidth = 1;
                                     for (p = 1; p < a; p++) m = f + p / q * 100, ta(m, 20 + 2 * d / 3, m, 20 + d);
                                     w === a || !A.points || q !== a && w === q || b.clickables.stat.place(9 - k, f * h, 20 * h, 100 * h, d * h);
                                     v ? (U[k].draw(v, f + 50, 20 + .55 * d, d / 6, l.guiwhite, "center"), U[k].draw(y, f + 50, 20 + .3 * d, d / 6, l.guiwhite, "center")) : U[k].draw(y, f + 50, 20 + .425 * d, d / 6, l.guiwhite, "center");
                                     0 < w && r[k].draw(w >= q ? "MAX" : "+" + w, Math.round(f + 50) + .5, 20 + 1.3 * d, d / 4, t, "center");
-                                    g.strokeStyle = l.black;
+                                    g.strokeStyle = l.guiblack;
                                     g.globalAlpha = 1;
                                     g.lineWidth = 3;
                                     ta(f, 20 + 2 * d / 3, f + 100,
@@ -4684,7 +4684,7 @@ let c14 = new Audio("https://github.com/levijude/a409/raw/refs/heads/main/strxwb
                 let q = F(a, A.color);
                 a = Q[a].position;
                 let w = .6 * k / a.axis;
-                ja(.5 * k - w * a.middle.x * Math.cos(n), .5 * d - w * a.middle.x * Math.sin(n), q, 1, 1, w / q.size, n, !0); - 1 !== c && (b.draw(q.name, .9 * k / 2, d - 6, d / 8 - 3, l.guiwhite, "center"), g.strokeStyle = l.black, g.globalAlpha = 1, g.lineWidth = 3, I(0, 0, k, d, !0));
+                ja(.5 * k - w * a.middle.x * Math.cos(n), .5 * d - w * a.middle.x * Math.sin(n), q, 1, 1, w / q.size, n, !0); - 1 !== c && (b.draw(q.name, .9 * k / 2, d - 6, d / 8 - 3, l.guiwhite, "center"), g.strokeStyle = l.guiblack, g.globalAlpha = 1, g.lineWidth = 3, I(0, 0, k, d, !0));
                 c = g.canvas.toDataURL();
                 g.canvas.width = h;
                 g.canvas.height = f;
