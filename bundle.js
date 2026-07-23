@@ -3906,7 +3906,7 @@ let c14 = new Audio("https://github.com/levijude/a409/raw/refs/heads/main/strxwb
                                 g = -g;
                                 let l = 1 - 6 / (g * g);
                                 D.graphical.pointy && (b.lineJoin =
-                                    "miter");
+                                    "round");
                                 b.moveTo(a + e * Math.cos(f), d + e * Math.sin(f));
                                 for (let n = 0; n < g; n++) {
                                     c = (n + 1) / g * 2 * Math.PI;
@@ -3915,7 +3915,7 @@ let c14 = new Audio("https://github.com/levijude/a409/raw/refs/heads/main/strxwb
                                 }
                                 D.graphical.pointy && b.closePath();
                                 D.graphical.inversedRender ? (b.stroke(), b.fill()) : (b.fill(), b.stroke());
-                                D.graphical.pointy && (b.lineJoin = "round");
+                                D.graphical.pointy && (b.lineJoin = "miter");
                                 return
                             }
                             if (0 < g) {
