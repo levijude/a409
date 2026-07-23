@@ -1558,7 +1558,7 @@ let c14 = new Audio("https://github.com/levijude/a409/raw/refs/heads/main/strxwb
                 J.submitToLocalStorage("optFancy");
               //  D.graphical.pointy = !document.getElementById("optNoPointy").checked;
                // J.submitToLocalStorage("optNoPointy");
-                D.graphical.sharp = document.getElementById("optPointy").checked;
+                D.graphical.pointy = document.getElementById("optPointy").checked;
              J.submitToLocalStorage("optPointy");
                 D.graphical.fancyAnimations = !document.getElementById("optFancy").checked;
                 D.graphical.eyesenstivity =
